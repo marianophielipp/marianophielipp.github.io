@@ -42,43 +42,7 @@
 				visibleClass: 'is-menu-visible'
 			});
 
-	// Search (header).
-		var $search = $('#search'),
-			$search_input = $search.find('input');
-
-		$body
-			.on('click', '[href="#search"]', function(event) {
-
-				event.preventDefault();
-
-				// Not visible?
-					if (!$search.hasClass('visible')) {
-
-						// Reset form.
-							$search[0].reset();
-
-						// Show.
-							$search.addClass('visible');
-
-						// Focus input.
-							$search_input.focus();
-
-					}
-
-			});
-
-		$search_input
-			.on('keydown', function(event) {
-
-				if (event.keyCode == 27)
-					$search_input.blur();
-
-			})
-			.on('blur', function() {
-				window.setTimeout(function() {
-					$search.removeClass('visible');
-				}, 100);
-			});
+	// Search functionality removed
 
 	// Intro.
 		var $intro = $('#intro');
@@ -91,5 +55,25 @@
 			breakpoints.on('>large', function() {
 				$intro.prependTo($sidebar);
 			});
+
+	// Return to Top button.
+		var $returnToTop = $('#return-to-top');
+
+		// Show/hide return to top button based on scroll position
+		$window.on('scroll', function() {
+			if ($window.scrollTop() > 300) {
+				$returnToTop.fadeIn();
+			} else {
+				$returnToTop.fadeOut();
+			}
+		});
+
+		// Smooth scroll to top when clicked
+		$returnToTop.on('click', 'a', function(event) {
+			event.preventDefault();
+			$('html, body').animate({
+				scrollTop: 0
+			}, 600);
+		});
 
 })(jQuery);
