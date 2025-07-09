@@ -1,0 +1,980 @@
+{
+  "generated_at": "2025-07-09T10:11:31.658322Z",
+  "cleaned_at": "2025-07-09T10:11:31.658955Z",
+  "total_publications": 66,
+  "publications_with_years": 3,
+  "publications_with_citations": 45,
+  "publications": [
+    {
+      "title": "Dialogue system with audio watermark",
+      "authors": [
+        "Mariano J Phielipp"
+      ],
+      "venue": "",
+      "cited_by": 14,
+      "url": "",
+      "snippet": "Int. Cl. GIOL 21/00(2013. 01) GIOL 19/00(2013. 01) GIOL 19/018(2013. 01) GIOL 15/22(2006. 01) US CI. CPC............ GIOL 19/018 (2013. 01); G10L 15/22 (2013. 01); GIOL 2015/225 (2013. 01) Field of Classification Search None",
+      "year": 2013
+    },
+    {
+      "title": "Fast, accurate, and practical identity inference using tv remote controls",
+      "authors": [
+        "Mariano Phielip",
+        "Magdiel Galan",
+        "Richard Lee",
+        "Branislav Kveton",
+        "Jeffrey Hightower"
+      ],
+      "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+      "cited_by": 3,
+      "url": "",
+      "snippet": "Non-invasive identity inference in the home environment is a very challenging problem. A practical solution to the problem could have far reaching implications in many industries, such as home entertainment. In this work, we consider the problem of identity inference using a TV remote control. In particular, we address two challenges that have so far prevented the work of Chang et al.(2009) from being applied in a home entertainment system. First, we show how to learn the patterns of TV remote controls incrementally and online. Second, we generalize our results to partially labeled data. To achieve our goal, we use state-of-the-art methods for max-margin learning and online convex programming. Our solution is efficient, runs in real time, and comes with theoretical guarantees. It performs well in practice and we demonstrate this on 4 datasets of 2 to 4 people.",
+      "year": 2009
+    },
+    {
+      "title": "Automatic Identity Inference for Smart TVs.",
+      "authors": [
+        "Avneesh Singh Saluja",
+        "Frank Mokaya",
+        "Mariano Phielipp",
+        "Branislav Kveton"
+      ],
+      "venue": "",
+      "cited_by": 3,
+      "url": "",
+      "snippet": "In 2009, an average American spent 3 hours per day watching TV. Recent advances in TV entertainment technologies, such as on-demand content, browsing the Internet, and 3D displays, have changed the traditional role of the TV and turned it into the center of home entertainment. Most of these technologies are personal and would benefit from seamless identification of who sits in front of the TV. In this work, we propose a practical and highly accurate solution to this problem. This solution uses a camera, which is mounted on a TV, to recognize faces of people in front of the TV. To make the approach practical, we employ online learning on graphs and show that we can learn highly accurate face models in difficult circumstances from as little as one labeled example. To evaluate our solutions, we collected a 10-hour long dataset of 8 people who watch TV. Our precision and recall are in the upper nineties, and show the promise of utilizing our approach in an embedded setting.",
+      "year": 2009
+    },
+    {
+      "title": "Using words as lexical basis functions for automatically indexing face images in a manner that correlates with human perception of similarity",
+      "authors": [
+        "Mariano Phielipp",
+        "John A Black Jr",
+        "Sethuraman Panchanathan"
+      ],
+      "venue": "",
+      "cited_by": 0,
+      "url": "",
+      "snippet": "To facilitate collaboration between computers and people, computers should be able to perceive the world in a manner that correlates well with human perception. A good example of this is face image retrieval. Mathematically-based face indexing methods that are not based primarily on how humans perceive faces can produce retrievals that are disappointing to human users. This raises the question \"Can human faces be automatically indexed in a manner that correlates well with human perception of similarity?\" Humans use words to describe faces - words such as braided, graybearded, bearded, bespectacled, bald, blondish, blond, freckled, blue eyed, mustached, pale, Caucasian, brown eyed, dark skinned, or black eyed. Such words represent dimensions that span a shared concept space for faces. Therefore they might provide a useful guide to indexing faces in an intuitive manner. This paper describes \u2026",
+      "year": 0
+    },
+    {
+      "title": "Using collaborative conversational agents and metric prediction to perform prompt-based physical circuit design",
+      "authors": [
+        "Siddhartha Nath",
+        "Rajeshkumar Sambandam",
+        "Uday Mallappa",
+        "Somdeb Majumdar",
+        "Mariano Phielipp",
+        "Xia Zhu",
+        "Jianfang Olena Zhu",
+        "Francisco Javier Vera Rivera",
+        "MA Miaomiao"
+      ],
+      "venue": "",
+      "cited_by": 0,
+      "url": "",
+      "snippet": "(72) Inventors: Siddhartha Nath, Danville, CA (US); Rajeshkumar Sambandam, Santa Clara, CA (US); Uday Mallappa, Sunnyvale, CA (US); Somdeb Majumdar, Mission Viejo, CA (US); Mariano Phielipp, Mesa, AZ (US); Xia Zhu, Portland, OR (US); Jianfang Olena Zhu, Portland, OR (US); Francisco Javier Vera Rivera, Barcelona (ES); Miaomiao Ma, Sunnyvale, CA (US)",
+      "year": 0
+    },
+    {
+      "title": "User interface with software lensing for very long lists of content",
+      "authors": [
+        "Randy R Dunton",
+        "Mariano J Phielipp"
+      ],
+      "venue": "",
+      "cited_by": 17,
+      "url": "",
+      "snippet": "This application is a related to a commonly owned US patent application Ser. No. 1 1/323,088 titled \u201cA User Inter face For A Media Device'and filed on Dec. 30, 2005; a commonly owned US patent application Ser. No. 1 1/322, 937 titled \u201cTechniques For Generating Information Using A Remote Control and filed on Dec. 30, 2005; a commonly owned US patent application Ser. No. 1 1/322,580 titled \u201cA User Interface with Software Lensing and filed on Dec. 30. 2005; a commonly owned US patent application Ser. No. 11/761,881 titled \u201cA User Interface for Fast Channel Brows ing and filed on Jun. 12, 2007; and a commonly owned US patent application Ser. No. 1 1/761,872 titled \u201cChannel Lineup Reorganization Based on Metadata\u201d and filed on Jun. 12, 2007, all of which are incorporated herein by reference.",
+      "year": 0
+    },
+    {
+      "title": "Towards scalable imitation learning for multi-agent systems with graph neural networks",
+      "authors": [
+        "Siyu Zhou",
+        "Chaitanya Rajasekhar",
+        "Mariano J Phielipp",
+        "Heni Ben Amor"
+      ],
+      "venue": "",
+      "cited_by": 1,
+      "url": "",
+      "snippet": "We propose an implementation of GNN that predicts and imitates the motion be- haviors from observed swarm trajectory data. The network\u2019s ability to capture interaction dynamics in swarms is demonstrated through transfer learning. We finally discuss the inherent availability and challenges in the scalability of GNN, and proposed a method to improve it with layer-wise tuning and mixing of data enabled by padding.",
+      "year": 0
+    },
+    {
+      "title": "The Reflective Explorer: Online Meta-Exploration from Offline Data in Realistic Robotic Tasks",
+      "authors": [
+        "Rafael Rafailov",
+        "Varun Kumar Vijay",
+        "Tianhe Yu",
+        "Avi Singh",
+        "Mariano Phielipp",
+        "Chelsea Finn"
+      ],
+      "venue": "",
+      "cited_by": 3,
+      "url": "",
+      "snippet": "Reinforcement learning is difficult to apply to real world problems due to high sample complexity, the need to adapt to frequent distribution shifts and the complexities of learning from high-dimensional inputs, such as images. Over the last several years, meta-learning has emerged as a promising approach to tackle these problems by explicitly training an agent to quickly adapt to new tasks. However, such methods still require huge amounts of data during training and are difficult to optimize in high-dimensional domains. One potential solution is to consider offline or batch meta-reinforcement learning (RL) - learning from existing datasets without additional environment interactions during training. In this work we develop the first offline model-based meta-RL algorithm that operates from images in tasks with sparse rewards. Our approach has three main components: a novel strategy to construct meta-exploration trajectories from offline data, which allows agents to learn meaningful meta-test time task inference strategy; representation learning via variational filtering and latent conservative model-free policy optimization. We show that our method completely solves a realistic meta-learning task involving robot manipulation, while naive combinations of previous approaches fail.",
+      "year": 0
+    },
+    {
+      "title": "Technologies for predictive monitoring of a characteristic of a system",
+      "authors": [
+        "Indrajit Manna",
+        "Jakub Wenus",
+        "Mariano J Phielipp",
+        "Suraj Sindia"
+      ],
+      "venue": "",
+      "cited_by": 0,
+      "url": "",
+      "snippet": "Technologies for monitoring a characteristic of a monitored system include determining a measured value of the primary characteristic of the monitored system sensed by a primary sensor and a measured value of the secondary characteristic of the monitored system sensed by a secondary sensor, and predicating a predicted value of the primary characteristic based on the measured value of the secondary characteristic.",
+      "year": 0
+    },
+    {
+      "title": "Technologies for physical assault detection using secure clothing and/or clothing accessories",
+      "authors": [
+        "Balkaran Gill",
+        "Suraj Sindia",
+        "Zhen Yao",
+        "Mariano Phielipp"
+      ],
+      "venue": "",
+      "cited_by": 0,
+      "url": "",
+      "snippet": "Technologies for detecting a physical assault against a user include one or more clothing sensor modules coupled to a garment of the user. Each clothing sensor module is con figured to produce sensor data indicative of the removal of the garment from the user and determine whether a physical assault is presently occurring against the user using an assault detection model with the sensor data as an input to the assault detection model. In response to a determination of the physical assault against the user, the clothing sensor module is configured to alert a trust party.",
+      "year": 0
+    },
+    {
+      "title": "Systems, methods, and computer program products for capturing natural responses to advertisements",
+      "authors": [
+        "Mariano J Phielipp"
+      ],
+      "venue": "",
+      "cited_by": 0,
+      "url": "",
+      "snippet": "Systems, methods, and computer program products described herein may allow for the capture of a user's reaction to an advertisement. The reaction may be verbal or may take the form of a gesture. Once the reaction is captured, the reaction may be interpreted to infer whether the user's opinion of the advertised product or service is positive. The opinion may be combined with metadata that is associated with the advertisement. The metadata may include the identity of the product or service being adver tised and/or may include the identity of the advertiser, ie, the producer or source of the product or service. The combination of the user's identity information, the metadata, and the user's opinion may collectively represent the user's interest in the advertised product or service. This interest information may be saved in a wish list or shopping list for the user, and may be stored via a network at a location removed from the \u2026",
+      "year": 0
+    },
+    {
+      "title": "System, method and computer program product for linking content availability to media consumption",
+      "authors": [
+        "John W Carroll",
+        "Mariano J Phielipp"
+      ],
+      "venue": "",
+      "cited_by": 5,
+      "url": "",
+      "snippet": "The systems, methods and computer program products described herein may allow a user to view a desired content item, on the condition that the user has viewed other content that the content provider defines as a prerequisite content item. When a user views content, this fact may be recorded in the viewing history data structure associated with the user. If the user wishes to see a content item that has a prerequisite content item, the content provider may scan the viewing history to see whether or not the user has seen the prerequisite content item. If so, then the requested content item may be",
+      "year": 0
+    },
+    {
+      "title": "System and method of using neuroevolution-enhanced multi-objective optimization for mixed-precision quantization of deep neural networks",
+      "authors": [
+        "Santiago Miret",
+        "Vui Seng Chua",
+        "Mattias Marder",
+        "Mariano J Phielipp",
+        "Nilesh Jain",
+        "Somdeb Majumdar"
+      ],
+      "venue": "",
+      "cited_by": 0,
+      "url": "",
+      "snippet": "BACKGROUND [0002] A DNN takes in an input, assigns importance (learnable weights and biases) to various aspects/objects in the input, and generates an output. DNNs are used exten sively for a variety of artificial intelligence applications ranging from computer vision to speech recognition and natural language processing. However, many DNNs are too big to fit in systems having limited computing resources, eg, limited memory or limited processing power.",
+      "year": 0
+    },
+    {
+      "title": "System and method for pruning filters in deep neural networks",
+      "authors": [
+        "Santiago Miret",
+        "Vui Seng Chua",
+        "Mariano J Phielipp",
+        "Nilesh Jain"
+      ],
+      "venue": "",
+      "cited_by": 1,
+      "url": "",
+      "snippet": "An apparatus is provided to compress DNNs using filter pruning on a per-group basis. For example, the apparatus accesses a trained DNN that includes a plurality of layers. The apparatus generates a sequential graph representation of the plurality of layers. The sequential graph representation includes a sequence of nodes. Each node is a graph repre sentation of a layer. The apparatus clusters the layers into layer groups. A layer group includes one or more layers. The A apparatus determines a pruning ratio for a layer group and prunes the filters of the layers in the layer group based on the pruning ratio. The apparatus may cluster the layers and determine the pruning ratio by using a GNN. The apparatus generates compressed layers from the layers in the layer group through the filter pruning proces The apparatus further updates the DNN by replacing the layers in the layer group with the compressed layers.",
+      "year": 0
+    },
+    {
+      "title": "System and method for controlling inter-agent communication in multi-agent systems",
+      "authors": [
+        "Varun Kumar Vijay",
+        "Hassam Ullah Sheikh",
+        "Somdeb Majumdar",
+        "Mariano J Phielipp"
+      ],
+      "venue": "",
+      "cited_by": 1,
+      "url": "",
+      "snippet": "Applicants: Varun Kumar Vijay, San Francisco, CA (US); Hassam Ullah Sheikh, Orlando, FL (US); Somdeb Majumdar, Mission Viejo, CA (US); Mariano J. Phielipp, Mesa, AZ (US) a",
+      "year": 0
+    },
+    {
+      "title": "SwarmNet: Towards Imitation Learning of Multi-Robot Behavior with Graph Neural Networks",
+      "authors": [
+        "Siyu Zhou",
+        "Mariano J Phielipp",
+        "Jorge Sefair",
+        "Sara I Walker",
+        "Heni Ben Amor"
+      ],
+      "venue": "",
+      "cited_by": 0,
+      "url": "",
+      "snippet": "In this paper, we propose SwarmNet\u2013a neural network architecture that can learn to predict and imitate the behavior of an observed swarm of agents in a centralized manner. Tested on artificially generated swarm motion data, the network achieves high levels of prediction accuracy and imitation authenticity. We compare our model to previous approaches for modelling interaction systems and finally discuss an extension of SwarmNet that can deal with nondeterministic, noisy, and uncertain environments, as often found in robotics applications.",
+      "year": 0
+    },
+    {
+      "title": "Shrouds: Optimal separating surfaces for enumerated volumes",
+      "authors": [
+        "Gregory M Nielson",
+        "Gary Graf",
+        "Ryan Holmes",
+        "Adam Huang",
+        "Mariano Phielipp"
+      ],
+      "venue": "VisSym",
+      "cited_by": 25,
+      "url": "",
+      "snippet": "We describe new techniques for computing a smooth triangular mesh surface that surrounds an enumerated volume consisting of a collection of points from a 3D rectilinear grid. The surface has the topology of an isosurface computed by a marching cubes method applied to a field function that has the value one at the points in the volume and zero for points not in the volume. The vertices are confined to the edges of the grid that penetrate this separating surface and the precise positions are computed so as to optimize a certain energy functional applied to the surface. We use efficient iterative methods to compute the optimal separating surfaces. We lift the concept of energy functionals for planar curves to isosurfaces by means of the 4*-network which is a unique collection of orthogonal planar polygons lying on the isosurface. The general strategy that we describe here leads to methods that are simple, efficient, and \u2026",
+      "year": 0
+    },
+    {
+      "title": "Searching for high-value molecules using reinforcement learning and transformers",
+      "authors": [
+        "Raj Ghugare",
+        "Santiago Miret",
+        "Adriana Hugessen",
+        "Mariano Phielipp",
+        "Glen Berseth"
+      ],
+      "venue": "arXiv preprint arXiv:2310.02902",
+      "cited_by": 17,
+      "url": "",
+      "snippet": "Reinforcement learning (RL) over text representations can be effective for finding high-value policies that can search over graphs. However, RL requires careful structuring of the search space and algorithm design to be effective in this challenge. Through extensive experiments, we explore how different design choices for text grammar and algorithmic choices for training can affect an RL policy's ability to generate molecules with desired properties. We arrive at a new RL-based molecular design algorithm (ChemRLformer) and perform a thorough analysis using 25 molecule design tasks, including computationally complex protein docking simulations. From this analysis, we discover unique insights in this problem space and show that ChemRLformer achieves state-of-the-art performance while being more straightforward than prior work by demystifying which design choices are actually helpful for text-based molecule design.",
+      "year": 0
+    },
+    {
+      "title": "Pretraining graph neural networks for few-shot analog circuit modeling and design",
+      "authors": [
+        "Kourosh Hakhamaneshi",
+        "Marcel Nassar",
+        "Mariano Phielipp",
+        "Pieter Abbeel",
+        "Vladimir Stojanovic"
+      ],
+      "venue": "IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems",
+      "cited_by": 39,
+      "url": "",
+      "snippet": "Being able to predict the performance of circuits without running expensive simulations is a desired capability that can catalyze automated design. In this article, we present a supervised pretraining approach to learn circuit representations that can be adapted to new circuit topologies or unseen prediction tasks. We hypothesize that if we train a neural network (NN) that can predict the output direct current (dc) voltages of a wide range of circuit instances it will be forced to learn generalizable knowledge about the role of each circuit element and how they interact with each other. The dataset for this supervised learning objective can be easily collected at scale since the required dc simulation to get ground truth labels is relatively cheap. This representation would then be helpful for few-shot generalization to unseen circuit metrics that require more time-consuming simulations for obtaining the ground-truth labels. To cope \u2026",
+      "year": 0
+    },
+    {
+      "title": "Predicting Future User Activities with Constrained Non-Linear Models",
+      "authors": [
+        "Mariano Phielipp",
+        "Brano Kveton"
+      ],
+      "venue": "",
+      "cited_by": 0,
+      "url": "",
+      "snippet": "Prediction of future user activities from their history, all past activities, is a challenging problem. One reason is that the number of all potential histories grows exponentially with the length of the history. Recently, deep-learning models have been proposed for solving this problem [4, 8].It is easy to learn a simple predictor of future user activities, by averaging all past activities of the user and then learning an activity classifier from this average representation, for instance by logistic regression [7]. This approach tends to have a high bias, due to using a simple feature representation and model. It is also easy to apply sequence models in deep learning [11] to learn a predictor of future user activities. This approach tends to have a high variance, because of the large number of parameters in the neural network.",
+      "year": 0
+    },
+    {
+      "title": "PARSAC: Fast, Human-quality Floorplanning for Modern SoCs with Complex Design Constraints",
+      "authors": [
+        "Hesham Mostafa",
+        "Uday Mallappa",
+        "Mikhail Galkin",
+        "Mariano Phielipp",
+        "Somdeb Majumdar"
+      ],
+      "venue": "arXiv preprint arXiv:2405.05495",
+      "cited_by": 2,
+      "url": "",
+      "snippet": "The floorplanning of Systems-on-a-Chip (SoCs) and of chip sub-systems is a crucial step in the physical design flow as it determines the optimal shapes and locations of the blocks that make up the system. Simulated Annealing (SA) has been the method of choice for tackling classical floorplanning problems where the objective is to minimize wire-length and the total placement area. The goal in industry-relevant floorplanning problems, however, is not only to minimize area and wire-length, but to do that while respecting hard placement constraints that specify the general area and/or the specific locations for the placement of some blocks. We show that simply incorporating these constraints into the SA objective function leads to sub-optimal, and often illegal, solutions. We propose the Constraints-Aware Simulated Annealing (CA-SA) method and show that it strongly outperforms vanilla SA in floorplanning problems with hard placement constraints. We developed a new floorplanning tool on top of CA-SA: PARSAC (Parallel Simulated Annealing with Constraints). PARSAC is an efficient, easy-to-use, and massively parallel floorplanner. Unlike current SA-based or learning-based floorplanning tools that cannot effectively incorporate hard placement-constraints, PARSAC can quickly construct the Pareto-optimal legal solutions front for constrained floorplanning problems. PARSAC also outperforms traditional SA on legacy floorplanning benchmarks. PARSAC is available as an open-source repository for researchers to replicate and build on our result.",
+      "year": 0
+    },
+    {
+      "title": "On Training Flexible Robots using Deep Reinforcement Learning",
+      "authors": [
+        "Zach Dwiel",
+        "Madhavun Candadai",
+        "Mariano Phielipp"
+      ],
+      "venue": "",
+      "cited_by": 4,
+      "url": "",
+      "snippet": "The use of robotics in controlled environments has flourished over the last several decades and training robots to perform tasks using control strategies developed from dynamical models of their hardware have proven very effective. However, in many real-world settings, the uncertainties of the environment, the safety requirements and generalized capabilities that are expected of robots make rigid industrial robots unsuitable. This created great research interest in developing control strategies for flexible robot hardware for which building dynamical models are challenging. In this paper, inspired by the success of deep reinforcement learning (DRL), we systematically study the efficacy of policy search methods using DRL in training flexible robots. Our results indicate that DRL is successfully able to learn efficient and robust policies for complex tasks at various degrees of flexibility. We also note that DRL using Deep \u2026",
+      "year": 0
+    },
+    {
+      "title": "Offline Policy Comparison with Confidence: Benchmarks and Baselines",
+      "authors": [
+        "Anurag Koul",
+        "Mariano Phielipp",
+        "Alan Fern"
+      ],
+      "venue": "arXiv preprint arXiv:2205.10739",
+      "cited_by": 0,
+      "url": "",
+      "snippet": "Decision makers often wish to use offline historical data to compare sequential-action policies at various world states. Importantly, computational tools should produce confidence values for such offline policy comparison (OPC) to account for statistical variance and limited data coverage. Nevertheless, there is little work that directly evaluates the quality of confidence values for OPC. In this work, we address this issue by creating benchmarks for OPC with Confidence (OPCC), derived by adding sets of policy comparison queries to datasets from offline reinforcement learning. In addition, we present an empirical evaluation of the risk versus coverage trade-off for a class of model-based baselines. In particular, the baselines learn ensembles of dynamics models, which are used in various ways to produce simulations for answering queries with confidence values. While our results suggest advantages for certain baseline variations, there appears to be significant room for improvement in future work.",
+      "year": 0
+    },
+    {
+      "title": "Neuroevolution-enhanced multi-objective optimization for mixed-precision quantization",
+      "authors": [
+        "Santiago Miret",
+        "Vui Seng Chua",
+        "Mattias Marder",
+        "Mariano Phiellip",
+        "Nilesh Jain",
+        "Somdeb Majumdar"
+      ],
+      "venue": "",
+      "cited_by": 8,
+      "url": "",
+      "snippet": "Mixed-precision quantization is a powerful tool to enable memory and compute savings of neural network workloads by deploying different sets of bit-width precisions on separate compute operations. In this work, we present a flexible and scalable framework for automated mixed-precision quantization that concurrently optimizes task performance, memory compression, and compute savings through multi-objective evolutionary computing. Our framework centers on Neuroevolution-Enhanced Multi-Objective Optimization (NEMO), a novel search method, which combines established search methods with the representational power of neural networks. Within NEMO, the population is divided into structurally distinct sub-populations, or species, which jointly create the Pareto frontier of solutions for the multi-objective problem. At each generation, species perform separate mutation and crossover operations, and are re \u2026",
+      "year": 0
+    },
+    {
+      "title": "Moto: Offline to online fine-tuning for model-based reinforcement learning",
+      "authors": [
+        "Rafael Rafailov",
+        "Kyle Beltran Hatch",
+        "Victor Kolev",
+        "John D Martin",
+        "Mariano Phielipp",
+        "Chelsea Finn"
+      ],
+      "venue": "",
+      "cited_by": 1,
+      "url": "",
+      "snippet": "We study the problem of offline-to-online reinforcement learning from high-dimensional pixel observations. While recent model-free approaches successfully use offline pre-training with online fine-tuning to either improve the performance of the data-collection policy or adapt to novel tasks, model-based approaches still remain underutilized in this setting. In this work, we argue that existing methods for high-dimensional model-based offline RL are not suitable for offline-to-online fine-tuning due to issues with representation learning shifts, off-dynamics data, and non-stationary rewards. We propose a simple on-policy model-based method with adaptive behavior regularization. In our simulation experiments, we find that our approach successfully solves long-horizon robot manipulation tasks completely from images by using a combination of offline data and online interactions.",
+      "year": 0
+    },
+    {
+      "title": "Moto: Offline pre-training to online fine-tuning for model-based robot learning",
+      "authors": [
+        "Rafael Rafailov",
+        "Kyle Beltran Hatch",
+        "Victor Kolev",
+        "John D Martin",
+        "Mariano Phielipp",
+        "Chelsea Finn"
+      ],
+      "venue": "",
+      "cited_by": 18,
+      "url": "",
+      "snippet": "We study the problem of offline pre-training and online fine-tuning for reinforcement learning from high-dimensional observations in the context of realistic robot tasks. Recent offline model-free approaches successfully use online fine-tuning to either improve the performance of the agent over the data collection policy or adapt to novel tasks. At the same time, model-based RL algorithms have achieved significant progress in sample efficiency and the complexity of the tasks they can solve, yet remain under-utilized in the fine-tuning setting. In this work, we argue that existing methods for high-dimensional model-based offline RL are not suitable for offline-to-online fine-tuning due to issues with distribution shifts, off-dynamics data, and non-stationary rewards. We propose an on-policy model-based method that can efficiently reuse prior data through model-based value expansion and policy regularization, while preventing model exploitation by controlling epistemic uncertainty. We find that our approach successfully solves tasks from the MetaWorld benchmark, as well as the Franka Kitchen robot manipulation environment completely from images. To our knowledge, MOTO is the first and only method to solve this environment from pixels.",
+      "year": 0
+    },
+    {
+      "title": "Motion2vec: Semi-supervised representation learning from surgical videos",
+      "authors": [
+        "Ajay Kumar Tanwani",
+        "Pierre Sermanet",
+        "Andy Yan",
+        "Raghav Anand",
+        "Mariano Phielipp",
+        "Ken Goldberg"
+      ],
+      "venue": "",
+      "cited_by": 59,
+      "url": "",
+      "snippet": "Learning meaningful visual representations in an embedding space can facilitate generalization in downstream tasks such as action segmentation and imitation. In this paper, we learn a motion-centric representation of surgical video demonstrations by grouping them into action segments/subgoals/options in a semi-supervised manner. We present Motion2Vec, an algorithm that learns a deep embedding feature space from video observations by minimizing a metric learning loss in a Siamese network: images from the same action segment are pulled together while pushed away from randomly sampled images of other segments, while respecting the temporal ordering of the images. The embeddings are iteratively segmented with a recurrent neural network for a given parametrization of the embedding space after pre-training the Siamese network. We only use a small set of labeled video segments to semantically \u2026",
+      "year": 0
+    },
+    {
+      "title": "Modularity through attention: Efficient training and transfer of language-conditioned policies for robot manipulation",
+      "authors": [
+        "Yifan Zhou",
+        "Shubham Sonawani",
+        "Mariano Phielipp",
+        "Simon Stepputtis",
+        "Heni Ben Amor"
+      ],
+      "venue": "arXiv preprint arXiv:2212.04573",
+      "cited_by": 25,
+      "url": "",
+      "snippet": "Language-conditioned policies allow robots to interpret and execute human instructions. Learning such policies requires a substantial investment with regards to time and compute resources. Still, the resulting controllers are highly device-specific and cannot easily be transferred to a robot with different morphology, capability, appearance or dynamics. In this paper, we propose a sample-efficient approach for training language-conditioned manipulation policies that allows for rapid transfer across different types of robots. By introducing a novel method, namely Hierarchical Modularity, and adopting supervised attention across multiple sub-modules, we bridge the divide between modular and end-to-end learning and enable the reuse of functional building blocks. In both simulated and real world robot manipulation experiments, we demonstrate that our method outperforms the current state-of-the-art methods and can transfer policies across 4 different robots in a sample-efficient manner. Finally, we show that the functionality of learned sub-modules is maintained beyond the training process and can be used to introspect the robot decision-making process. Code is available at https://github.com/ir-lab/ModAttn.",
+      "year": 0
+    },
+    {
+      "title": "Model-Based Adversarial Imitation Learning As Online Fine-Tuning",
+      "authors": [
+        "Rafael Rafailov",
+        "Victor Kolev",
+        "Kyle Beltran Hatch",
+        "John D Martin",
+        "Mariano Phielipp",
+        "Jiajun Wu",
+        "Chelsea Finn"
+      ],
+      "venue": "",
+      "cited_by": 0,
+      "url": "",
+      "snippet": "In many real world applications of sequential decision-making problems, such as robotics or autonomous driving,  expert-level data is available (or easily obtainable) with methods such as tele-operation. However, directly learning to copy these expert behaviours can result in poor performance due to distribution shift at deployment time. Adversarial imitation learning algorithms alleviate this issue by learning to match the expert state-action distribution through additional environment interactions. Such methods are built around standard reinforcement-learning algorithms with both model-based and model-free approaches. In this work we focus on the model-based approach and argue that algorithms developed for online RL are sub-optimal for the distribution matching problem. We theoretically justify utilizing conservative algorithms developed for the offline learning paradigm in online adversarial imitation learning and empirically demonstrate improved performance and safety on a complex long-range robot manipulation task, directly from images.",
+      "year": 0
+    },
+    {
+      "title": "Minimizing communication while maximizing performance in multi-agent reinforcement learning",
+      "authors": [
+        "Varun Kumar Vijay",
+        "Hassam Sheikh",
+        "Somdeb Majumdar",
+        "Mariano Phielipp"
+      ],
+      "venue": "arXiv preprint arXiv:2106.08482",
+      "cited_by": 7,
+      "url": "",
+      "snippet": "Inter-agent communication can significantly increase performance in multi-agent tasks that require co-ordination to achieve a shared goal. Prior work has shown that it is possible to learn inter-agent communication protocols using multi-agent reinforcement learning and message-passing network architectures. However, these models use an unconstrained broadcast communication model, in which an agent communicates with all other agents at every step, even when the task does not require it. In real-world applications, where communication may be limited by system constraints like bandwidth, power and network capacity, one might need to reduce the number of messages that are sent. In this work, we explore a simple method of minimizing communication while maximizing performance in multi-task learning: simultaneously optimizing a task-specific objective and a communication penalty. We show that the objectives can be optimized using Reinforce and the Gumbel-Softmax reparameterization. We introduce two techniques to stabilize training: 50% training and message forwarding. Training with the communication penalty on only 50% of the episodes prevents our models from turning off their outgoing messages. Second, repeating messages received previously helps models retain information, and further improves performance. With these techniques, we show that we can reduce communication by 75% with no loss of performance.",
+      "year": 0
+    },
+    {
+      "title": "Minimally Invasive Morphology Adaptation via Parameter Efficient Fine-Tuning",
+      "authors": [
+        "Michael Przystupa",
+        "Hongyao Tang",
+        "Mariano Phielipp",
+        "Santiago Miret",
+        "Martin J\u00e4gersand",
+        "Glen Berseth"
+      ],
+      "venue": "",
+      "cited_by": 0,
+      "url": "",
+      "snippet": "Learning reinforcement learning policies to control individual robots is often computationally non-economical because minor variations in robot morphology (e.g. dynamics or number of limbs) can negatively impact policy performance. This limitation has motivated morphology agnostic policy learning, in which a monolithic deep learning policy learns to generalize between robotic morphologies. Unfortunately, these policies still have sub-optimal zero-shot performance compared to end-to-end finetuning on target morphologies. This limitation has ramifications in practical robotic applications, as online finetuning large neural networks can require immense computation. In this work, we investigate \\textit{parameter efficient finetuning} techniques to specialize morphology-agnostic policies to a target robot that minimizes the number of learnable parameters adapted during online learning. We compare direct finetuning,  which update subsets of the base model parameters, and input-learnable approaches, which add additional parameters to manipulate inputs passed to the base model. Our analysis concludes that tuning relatively few parameters (0.01\\% of the base model) can measurably improve policy performance over zero shot. These results serve a prescriptive purpose for future research for which scenarios certain PEFT approaches are best suited for adapting policy's to new robotic morphologies.",
+      "year": 0
+    },
+    {
+      "title": "Method of determining profiles for widget channel viewers",
+      "authors": [
+        "Mariano J Phielipp"
+      ],
+      "venue": "",
+      "cited_by": 16,
+      "url": "",
+      "snippet": "BACKGROUNDWhen providing digital content for interactive television (TV) systems, there is a need to identify and/or describe the viewer in order to target the available content to the viewer or to perform an action based on the viewers attributes. One problem is that there is often a lack of participation on the part of the viewer in providing his or her interests or specifically entering a viewer profile. Therefore, there is a need to identify the demographics and interests of the viewer without requir ing an\" opt-in\u201d system and without forcing explicit inputs of that information from the viewer.",
+      "year": 0
+    },
+    {
+      "title": "Maximizing ensemble diversity in deep reinforcement learning",
+      "authors": [
+        "Hassam Sheikh",
+        "Mariano Phielipp",
+        "Ladislau Boloni"
+      ],
+      "venue": "",
+      "cited_by": 17,
+      "url": "",
+      "snippet": "Modern deep reinforcement learning (DRL) has been successful in solving a range of challenging sequential decision-making problems. Most of these algorithms use an ensemble of neural networks as their backbone structure and benefit from the diversity among the neural networks to achieve optimal results. Unfortunately, the members of the ensemble can converge to the same point either the parametric space or representation space during the training phase, therefore, losing all the leverage of an ensemble. In this paper, we describe Maximize Ensemble Diversity in Reinforcement Learning (MED-RL), a set of regularization methods inspired from the economics and consensus optimization to improve diversity in the ensemble-based deep reinforcement learning methods by encouraging inequality between the networks during training. We integrated MED-RL in five of the most common ensemble-based deep RL algorithms for both continuous and discrete control tasks and evaluated on six Mujoco environments and six Atari games. Our results show that MED-RL augmented algorithms outperform their un-regularized counterparts significantly and in some cases achieved more than 300 in performance gains.",
+      "year": 0
+    },
+    {
+      "title": "Learning sparse control tasks from pixels by latent nearest-neighbor-guided explorations",
+      "authors": [
+        "Ruihan Zhao",
+        "Ufuk Topcu",
+        "Sandeep Chinchali",
+        "Mariano Phielipp"
+      ],
+      "venue": "arXiv preprint arXiv:2302.14242",
+      "cited_by": 3,
+      "url": "",
+      "snippet": "Recent progress in deep reinforcement learning (RL) and computer vision enables artificial agents to solve complex tasks, including locomotion, manipulation and video games from high-dimensional pixel observations. However, domain specific reward functions are often engineered to provide sufficient learning signals, requiring expert knowledge. While it is possible to train vision-based RL agents using only sparse rewards, additional challenges in exploration arise. We present a novel and efficient method to solve sparse-reward robot manipulation tasks from only image observations by utilizing a few demonstrations. First, we learn an embedded neural dynamics model from demonstration transitions and further fine-tune it with the replay buffer. Next, we reward the agents for staying close to the demonstrated trajectories using a distance metric defined in the embedding space. Finally, we use an off-policy, model-free vision RL algorithm to update the control policies. Our method achieves state-of-the-art sample efficiency in simulation and enables efficient training of a real Franka Emika Panda manipulator.",
+      "year": 0
+    },
+    {
+      "title": "Learning modular language-conditioned robot policies through attention",
+      "authors": [
+        "Yifan Zhou",
+        "Shubham Sonawani",
+        "Mariano Phielipp",
+        "Heni Ben Amor",
+        "Simon Stepputtis"
+      ],
+      "venue": "Autonomous Robots",
+      "cited_by": 12,
+      "url": "",
+      "snippet": "Training language-conditioned policies is typically time-consuming and resource-intensive. Additionally, the resulting controllers are tailored to the specific robot they were trained on, making it difficult to transfer them to other robots with different dynamics. To address these challenges, we propose a new approach called Hierarchical Modularity, which enables more efficient training and subsequent transfer of such policies across different types of robots. The approach incorporates Supervised Attention which bridges the gap between modular and end-to-end learning by enabling the re-use of functional building blocks. In this contribution, we build upon our previous work, showcasing the extended utilities and improved performance by expanding the hierarchy to include new tasks and introducing an automated pipeline for synthesizing a large quantity of novel objects. We demonstrate the effectiveness of this \u2026",
+      "year": 0
+    },
+    {
+      "title": "Learning intrinsic symbolic rewards in reinforcement learning",
+      "authors": [
+        "Hassam Ullah Sheikh",
+        "Shauharda Khadka",
+        "Santiago Miret",
+        "Somdeb Majumdar",
+        "Mariano Phielipp"
+      ],
+      "venue": "",
+      "cited_by": 13,
+      "url": "",
+      "snippet": "Learning effective policies for sparse objectives is a key challenge in Deep Reinforcement Learning (RL). A common approach is to design task-related dense rewards to improve task learnability. While such rewards are easily interpreted, they rely on heuristics and domain expertise. Alternate approaches that train neural networks to discover dense surrogate rewards avoid heuristics, but are high-dimensional, black-box solutions offering little interpretability. In this paper, we present a method that discovers dense rewards in the form of low-dimensional symbolic trees - thus making them more tractable for analysis. The trees use simple functional operators to map an agent's observations to a scalar reward, which then supervises the policy gradient learning of a neural network policy. We test our method on continuous action spaces in Mujoco and discrete action spaces in Atari and Pygame environments. We show \u2026",
+      "year": 0
+    },
+    {
+      "title": "Learning conditional policies for crystal design using offline reinforcement learning",
+      "authors": [
+        "Prashant Govindarajan",
+        "Santiago Miret",
+        "Jarrid Rector-Brooks",
+        "Mariano Phielipp",
+        "Janarthanan Rajendran",
+        "Sarath Chandar"
+      ],
+      "venue": "Digital Discovery",
+      "cited_by": 10,
+      "url": "",
+      "snippet": "Navigating through the exponentially large chemical space to search for desirable materials is an extremely challenging task in material discovery. Recent developments in generative and geometric deep learning have shown promising results in molecule and material discovery but often lack evaluation with high-accuracy computational methods. This work aims to design novel and stable crystalline materials conditioned on a desired band gap. To achieve conditional generation, we: (1) formulate crystal design as a sequential decision-making problem, create relevant trajectories based on high-quality materials data, and use conservative Q-learning to learn a conditional policy from these trajectories. To do so, we formulate a reward function that incorporates constraints for energetic and electronic properties obtained directly from density functional theory (DFT) calculations; (2) evaluate the generated materials \u2026",
+      "year": 0
+    },
+    {
+      "title": "Learning Transferable Policies By Inferring Agent Morphology",
+      "authors": [
+        "Brandon Trabucco",
+        "Mariano Phielipp",
+        "Glen Berseth"
+      ],
+      "venue": "",
+      "cited_by": 0,
+      "url": "",
+      "snippet": "The prototypical approach to reinforcement learning involves training policies tailored to a particular agent from scratch for every new morphology. Recent work aims to eliminate the re-training of policies by investigating whether a morphology-agnostic policy, trained on a diverse set of agents with similar task objectives, can be transferred to new agents with unseen morphologies without re-training. This is a challenging problem that required previous approaches to use hand-designed descriptions of the new agent's morphology. Instead of hand-designing this description, we propose a data-driven method that learns a representation of morphology directly from the reinforcement learning objective. Ours is the first reinforcement learning algorithm that can train a policy to generalize to new agent morphologies without requiring a description of the agent's morphology in advance. We evaluate our approach on a standard benchmark for agent-agnostic control, and improve over the state of the art in zero-shot generalization.  Importantly, our method attains good performance \\textit{without} an explicit description of morphology.",
+      "year": 0
+    },
+    {
+      "title": "Language-conditioned imitation learning for robot manipulation tasks",
+      "authors": [
+        "Simon Stepputtis",
+        "Joseph Campbell",
+        "Mariano Phielipp",
+        "Stefan Lee",
+        "Chitta Baral",
+        "Heni Ben Amor"
+      ],
+      "venue": "Advances in Neural Information Processing Systems",
+      "cited_by": 238,
+      "url": "",
+      "snippet": "Imitation learning is a popular approach for teaching motor skills to robots. However, most approaches focus on extracting policy parameters from execution traces alone (ie, motion trajectories and perceptual data). No adequate communication channel exists between the human expert and the robot to describe critical aspects of the task, such as the properties of the target object or the intended shape of the motion. Motivated by insights into the human teaching process, we introduce a method for incorporating unstructured natural language into imitation learning. At training time, the expert can provide demonstrations along with verbal descriptions in order to describe the underlying intent (eg,\" go to the large green bowl\"). The training process then interrelates these two modalities to encode the correlations between language, perception, and motion. The resulting language-conditioned visuomotor policies can be conditioned at runtime on new human commands and instructions, which allows for more fine-grained control over the trained policies while also reducing situational ambiguity. We demonstrate in a set of simulation experiments how our approach can learn language-conditioned manipulation policies for a seven-degree-of-freedom robot arm and compare the results to a variety of alternative methods.",
+      "year": 0
+    },
+    {
+      "title": "Instance-based generalization in reinforcement learning",
+      "authors": [
+        "Martin Bertran",
+        "Natalia Martinez",
+        "Mariano Phielipp",
+        "Guillermo Sapiro"
+      ],
+      "venue": "Advances in Neural Information Processing Systems",
+      "cited_by": 24,
+      "url": "",
+      "snippet": "Agents trained via deep reinforcement learning (RL) routinely fail to generalize to unseen environments, even when these share the same underlying dynamics as the training levels. Understanding the generalization properties of RL is one of the challenges of modern machine learning. Towards this goal, we analyze policy learning in the context of Partially Observable Markov Decision Processes (POMDPs) and formalize the dynamics of training levels as instances. We prove that, independently of the exploration strategy, reusing instances introduces significant changes on the effective Markov dynamics the agent observes during training. Maximizing expected rewards impacts the learned belief state of the agent by inducing undesired instance-specific speed-running policies instead of generalizable ones, which are sub-optimal on the training set. We provide generalization bounds to the value gap in train and test environments based on the number of training instances, and use insights based on these to improve performance on unseen levels. We propose training a shared belief representation over an ensemble of specialized policies, from which we compute a consensus policy that is used for data collection, disallowing instance-specific exploitation. We experimentally validate our theory, observations, and the proposed computational solution over the CoinRun benchmark.",
+      "year": 0
+    },
+    {
+      "title": "Improved Silent Data Error Detection Through Test Optimization Using Reinforcement Learning",
+      "authors": [
+        "Manu Shamsa",
+        "John D Martin",
+        "Mariano Phielipp",
+        "Thiago Macieira",
+        "Loganathan Lingappan",
+        "Brad Kelly",
+        "David Lerner",
+        "Michael Tucknott",
+        "Ethan Hansen"
+      ],
+      "venue": "",
+      "cited_by": 0,
+      "url": "",
+      "snippet": "Silent Data Errors (SDE) are a serious concern for at-scale computing in data centers because they may cause data loss or data corruption. It is therefore critical to identify defective devices that may experience SDE events and remove them before customer workloads are impacted. Because of the subtle nature of these defects, and the specific combination of events required for SDE to occur, detection is time consuming and costly. This paper reports the results of applying reinforcement learning methods to a family of open-source Eigen tests, and how this work improved the effectiveness of these tests at detecting SDE events.",
+      "year": 0
+    },
+    {
+      "title": "Imitation learning of robot policies by combining language, vision and demonstration",
+      "authors": [
+        "Simon Stepputtis",
+        "Joseph Campbell",
+        "Mariano Phielipp",
+        "Chitta Baral",
+        "Heni Ben Amor"
+      ],
+      "venue": "arXiv preprint arXiv:1911.11744",
+      "cited_by": 6,
+      "url": "",
+      "snippet": "In this work we propose a novel end-to-end imitation learning approach which combines natural language, vision, and motion information to produce an abstract representation of a task, which in turn is used to synthesize specific motion controllers at run-time. This multimodal approach enables generalization to a wide variety of environmental conditions and allows an end-user to direct a robot policy through verbal communication. We empirically validate our approach with an extensive set of simulations and show that it achieves a high task success rate over a variety of conditions while remaining amenable to probabilistic interpretability.",
+      "year": 0
+    },
+    {
+      "title": "Imitation Learning of Robot Policies using Language, Vision and Motion",
+      "authors": [
+        "Simon Stepputtis",
+        "Joseph Campbell",
+        "Mariano Phielipp",
+        "Chitta Baral",
+        "Heni Ben Amor"
+      ],
+      "venue": "",
+      "cited_by": 0,
+      "url": "",
+      "snippet": "In this work we propose a novel end-to-end imitation learning approach which combines natural language, vision, and motion information to produce an abstract representation of a task, which in turn can be used to synthesize specific motion controllers at run-time. This multimodal approach enables generalization to a wide variety of environmental conditions and allows an end-user to influence a robot policy through verbal communication. We empirically validate our approach with an extensive set of simulations and show that it achieves a high task success rate over a variety of conditions while remaining amenable to probabilistic interpretability.",
+      "year": 0
+    },
+    {
+      "title": "Human perception driven indexing and labeling of faces",
+      "authors": [
+        "Mariano Phielipp"
+      ],
+      "venue": "",
+      "cited_by": 0,
+      "url": "",
+      "snippet": "With the proliferation of digitally encoded data, computers are being relied on more and more to search for relevant information. This search can be viewed as a collaborative effort between a computer and a human, making it important that retrieval systems index archived data in a manner that correlates well with human concepts. With regard to human face retrievals, the performance of current retrieval systems has been disappointing, largely because their indexing has been based on low-level features, which do not correlate well with human perception of faces. This research develops and validates methods that are useful for indexing human faces in terms of human concepts. First, a method for establishing ground truth conceptual descriptions of faces is devised. Second, that method is used to collect ground truth data from human participants. Third, the resulting ground truth data was studied to see if the \u2026",
+      "year": 0
+    },
+    {
+      "title": "Hierarchical policy learning is sensitive to goal space design",
+      "authors": [
+        "Zach Dwiel",
+        "Madhavun Candadai",
+        "Mariano Phielipp",
+        "Arjun K Bansal"
+      ],
+      "venue": "arXiv preprint arXiv:1905.01537",
+      "cited_by": 19,
+      "url": "",
+      "snippet": "Hierarchy in reinforcement learning agents allows for control at multiple time scales yielding improved sample efficiency, the ability to deal with long time horizons and transferability of sub-policies to tasks outside the training distribution. It is often implemented as a master policy providing goals to a sub-policy. Ideally, we would like the goal-spaces to be learned, however, properties of optimal goal spaces still remain unknown and consequently there is no method yet to learn optimal goal spaces. Motivated by this, we systematically analyze how various modifications to the ground-truth goal-space affect learning in hierarchical models with the aim of identifying important properties of optimal goal spaces. Our results show that, while rotation of ground-truth goal spaces and noise had no effect, having additional unnecessary factors significantly impaired learning in hierarchical models.",
+      "year": 0
+    },
+    {
+      "title": "Group SELFIES: a robust fragment-based molecular string representation",
+      "authors": [
+        "Austin H Cheng",
+        "Andy Cai",
+        "Santiago Miret",
+        "Gustavo Malkomes",
+        "Mariano Phielipp",
+        "Al\u00e1n Aspuru-Guzik"
+      ],
+      "venue": "Digital Discovery",
+      "cited_by": 55,
+      "url": "",
+      "snippet": "We introduce Group SELFIES, a molecular string representation that leverages group tokens to represent functional groups or entire substructures while maintaining chemical robustness guarantees. Molecular string representations, such as SMILES and SELFIES, serve as the basis for molecular generation and optimization in chemical language models, deep generative models, and evolutionary methods. While SMILES and SELFIES leverage atomic representations, Group SELFIES builds on top of the chemical robustness guarantees of SELFIES by enabling group tokens, thereby creating additional flexibility to the representation. Moreover, the group tokens in Group SELFIES can take advantage of inductive biases of molecular fragments that capture meaningful chemical motifs. The advantages of capturing chemical motifs and flexibility are demonstrated in our experiments, which show that Group SELFIES \u2026",
+      "year": 0
+    },
+    {
+      "title": "Goal-conditioned imitation learning",
+      "authors": [
+        "Yiming Ding",
+        "Carlos Florensa",
+        "Pieter Abbeel",
+        "Mariano Phielipp"
+      ],
+      "venue": "Advances in neural information processing systems",
+      "cited_by": 312,
+      "url": "",
+      "snippet": "Designing rewards for Reinforcement Learning (RL) is challenging because it needs to convey the desired task, be efficient to optimize, and be easy to compute. The latter is particularly problematic when applying RL to robotics, where detecting whether the desired configuration is reached might require considerable supervision and instrumentation. Furthermore, we are often interested in being able to reach a wide range of configurations, hence setting up a different reward every time might be unpractical. Methods like Hindsight Experience Replay (HER) have recently shown promise to learn policies able to reach many goals, without the need of a reward. Unfortunately, without tricks like resetting to points along the trajectory, HER might require many samples to discover how to reach certain areas of the state-space. In this work we propose a novel algorithm goalGAIL, which incorporates demonstrations to drastically speed up the convergence to a policy able to reach any goal, surpassing the performance of an agent trained with other Imitation Learning algorithms. Furthermore, we show our method can also be used when the available expert trajectories do not contain the actions or when the expert is suboptimal, which makes it applicable when only kinesthetic, third person or noisy demonstration is available.",
+      "year": 0
+    },
+    {
+      "title": "FloorSet-a VLSI Floorplanning Dataset with Design Constraints of Real-World SOCs.",
+      "authors": [
+        "Uday Mallappa",
+        "Hesham Mostafa",
+        "Mikhail Galkin",
+        "Mariano Phielipp",
+        "Somdeb Majumdar"
+      ],
+      "venue": "",
+      "cited_by": 4,
+      "url": "",
+      "snippet": "Floorplanning for systems-on-a-chip (SoCs) and its sub-systems is a crucial and non-trivial step of the physical design flow. It represents a difficult combinatorial optimization problem. A typical large scale SoC with 120 partitions generates a search-space of ~ 10250. As novel machine learning (ML) approaches emerge to tackle such problems, there is a growing need for a modern benchmark that comprises a large training dataset and performance metrics that better reflect real-world constraints and objectives compared to existing benchmarks. To address this need, we present FloorSet - two comprehensive datasets of synthetic fixed-outline floorplan layouts that reflect the distribution of real SoCs. Each dataset has 1M training samples and 100 test samples where each sample is a synthetic floor-plan. FloorSet-Prime comprises fully-abutted rectilinear partitions and near-optimal wire-length. A simplified dataset that \u2026",
+      "year": 0
+    },
+    {
+      "title": "Efficient Morphology-Aware Policy Transfer to New Embodiments",
+      "authors": [
+        "Michael Przystupa",
+        "Hongyao Tang",
+        "Glen Berseth",
+        "Mariano Phielipp",
+        "Santiago Miret",
+        "Martin J\u00e4gersand",
+        "Matthew E Taylor"
+      ],
+      "venue": "",
+      "cited_by": 0,
+      "url": "",
+      "snippet": "Morphology-aware policy learning is a means of enhancing policy sample efficiency by aggregating data from multiple agents. These types of policies have previously been shown to help generalize over dynamic, kinematic, and limb configuration variations between agent morphologies. Unfortunately, these policies still have sub-optimal zero-shot performance compared to end-to-end finetuning on morphologies at deployment. This limitation has ramifications in practical applications such as robotics because further data collection to perform end-to-end finetuning can be computationally expensive. In this work, we investigate combining morphology-aware pretraining with \\textit{parameter efficient finetuning} (PEFT) techniques to help reduce the learnable parameters necessary to specialize a morphology-aware policy to a target embodiment. We compare directly tuning sub-sets of model weights, input learnable adapters, and prefix tuning techniques for online finetuning. Our analysis reveals that PEFT techniques in conjunction with policy pre-training generally help reduce the number of samples to necessary to improve a policy compared to training models end-to-end from scratch. We further find that tuning as few as less than 1\\% of total parameters will improve policy performance compared the zero-shot performance of the base pretrained a policy.",
+      "year": 0
+    },
+    {
+      "title": "Efficient Design-and-Control Automation with Reinforcement Learning and Adaptive Exploration",
+      "authors": [
+        "Jiajun Fan",
+        "Hongyao Tang",
+        "Michael Przystupa",
+        "Mariano Phielipp",
+        "Santiago Miret",
+        "Glen Berseth"
+      ],
+      "venue": "",
+      "cited_by": 0,
+      "url": "",
+      "snippet": "Seeking good designs is a central goal of many important domains, such as robotics, integrated circuits (IC), medicine, and materials science. These design problems are expensive, time-consuming, and traditionally performed by human experts. Moreover, the barriers to domain knowledge make it challenging to propose a universal solution that generalizes to different design problems. In this paper, we propose a new method called  Efficient Design and Stable Control (EDiSon) for automatic design and control in different design problems. The key ideas of our method are (1) interactive sequential modeling of the design and control process and (2) adaptive exploration and design replay. To decompose the difficulty of learning design and control as a whole, we leverage sequential modeling for both the design process and control process, with a design policy to generate step-by-step design proposals and a control policy to optimize the objective by operating the design. With deep reinforcement learning (RL), the policies learn to find good designs by maximizing a reward signal that evaluates the quality of designs. Furthermore, we propose an adaptive exploration and replay mechanism based on a design memory that maintains high-quality designs generated so far. By regulating between constructing a design from scratch or replaying a design from memory to refine it, EDiSon balances the trade-off between exploration and exploitation in the design space and stabilizes the learning of the control policy. In the experiments, we evaluate our method in robotic morphology design and Tetris-based design tasks. Our framework has the potential to \u2026",
+      "year": 0
+    },
+    {
+      "title": "Device and method for real-time offset adjustment of a semiconductor die placement",
+      "authors": [
+        "Hong Seung Yeon",
+        "Mariano Phielipp",
+        "Yi Li",
+        "LIU Minglu",
+        "Robin Mcree",
+        "Yosuke Kanaoka",
+        "Gang Duan"
+      ],
+      "venue": "",
+      "cited_by": 0,
+      "url": "",
+      "snippet": "A method for real-time offset adjustment of a semiconductor die placement comprising: obtaining or receiving operational parameters of a die mounting tool in real-time, wherein the die mounting tool is configured for placing the semiconductor die on a panel; predicting an offset adjustment of the semiconductor die placement based on the operational parameters; and determining semiconductor die placement coordinates based on an original die placement and the offset adjustment.",
+      "year": 0
+    },
+    {
+      "title": "Description of a modeling, simulation, animation, and real-time control (mosart) environment for a class of 6-dof dynamical systems",
+      "authors": [
+        "Armando A Rodriguez",
+        "Oguzhan Cifdaloz",
+        "Mariano Phielipp",
+        "Jeff Dickeson"
+      ],
+      "venue": "",
+      "cited_by": 6,
+      "url": "",
+      "snippet": "This paper describes an interactive modeling, simulation, animation, and real-time control (MoSART) environment that is useful for controls education and research. The described MoSART environment is shown to be useful for analyzing, designing, visualizing, and evaluating control systems for a broad class of six degree-of-freedom (6-DOF) dynamical systems which include: various fixed-wing aircraft, helicopters, unmanned air vehicles (tilt-wing rotorcraft), missiles, submarines, and satellites. The environment - referred to as Control3D-Lab - is based on Microsoft Windows, Visual C++, Direct-3D, and MATLAB/Simulink. The environment can be used as a stand-alone application or together with MATLAB, Simulink, and toolboxes. In either case, the interface permits users to access the following (via pull-down menus): animation models, mesh properties, texture and lighting models, system-specific visual indicators \u2026",
+      "year": 0
+    },
+    {
+      "title": "Description of a modeling, simulation, animation, and real-time control (MoSART) environment for a broad class of dynamical systems",
+      "authors": [
+        "Armando A Rodriguez",
+        "Oguzhan Cifdaloz",
+        "Mariano Phielipp",
+        "Jeff Dickeson",
+        "Paul Koziol",
+        "David Miles",
+        "Miguel Garcia",
+        "Robert McCullen",
+        "Jerald Willis",
+        "Jose Benavides"
+      ],
+      "venue": "",
+      "cited_by": 3,
+      "url": "",
+      "snippet": "This paper describes an interactive modeling, simulation, animation, and real-time control (MoSART) environment that is useful for controls education and research. The described MoSART environment is shown to be useful for analyzing, designing, visualizing, and evaluating control systems for a broad class of dynamical systems which include: a collection of pendulum/robotic systems, aircraft, helicopters, and other six degree-of-freedom systems. The environment - referred to as Control3D-Lab - is based on Microsoft Windows, Visual C++, Direct-3D, and MATLAB/Simulink. The environment can be used as a stand-alone application or together with MATLAB, Simulink, and toolboxes. When used as a standalone application, a friendly graphical user interface permits easy interaction. Users may select (via pull-down menus): systems, dynamical models, control laws, exogenous signals (including joystick inputs) and \u2026",
+      "year": 0
+    },
+    {
+      "title": "DNS: Determinantal point process based neural network sampler for ensemble reinforcement learning",
+      "authors": [
+        "Hassam Sheikh",
+        "Kizza Frisbee",
+        "Mariano Phielipp"
+      ],
+      "venue": "",
+      "cited_by": 11,
+      "url": "",
+      "snippet": "The application of an ensemble of neural networks is becoming an imminent tool for advancing state-of-the-art deep reinforcement learning algorithms. However, training these large numbers of neural networks in the ensemble has an exceedingly high computation cost which may become a hindrance in training large-scale systems. In this paper, we propose DNS: a Determinantal Point Process based Neural Network Sampler that specifically uses k-DPP to sample a subset of neural networks for backpropagation at every training step thus significantly reducing the training time and computation cost. We integrated DNS in REDQ for continuous control tasks and evaluated on MuJoCo environments. Our experiments show that DNS augmented REDQ matches the baseline REDQ in terms of average cumulative reward and achieves this using less than 50% computation when measured in FLOPS. The code is available at https://github. com/IntelLabs/DNS",
+      "year": 0
+    },
+    {
+      "title": "CrystalGym: A New Benchmark for Materials Discovery Using Reinforcement Learning",
+      "authors": [
+        "Prashant Govindarajan",
+        "Mathieu Reymond",
+        "Antoine Clavaud",
+        "Mariano Phielipp",
+        "Santiago Miret",
+        "Sarath Chandar"
+      ],
+      "venue": "",
+      "cited_by": 0,
+      "url": "",
+      "snippet": "*In silico* design and optimization of new materials primarily relies on high-accuracy atomic simulators that perform density functional theory (DFT) calculations. While recent works showcase the strong potential of machine learning to accelerate the material design process, they mostly consist of generative approaches that do not use direct DFT signals as feedback to improve training and generation mainly due to DFT's high computational cost. To aid the adoption of direct DFT signals in the materials design loop through online reinforcement learning (RL), we propose **CrystalGym**, an open-source RL environment for crystalline material discovery. Using CrystalGym, we benchmark value- and policy-based reinforcement learning algorithms for designing various crystals conditioned on target properties. Concretely, we optimize for challenging properties like the band gap, bulk modulus, and density, which are \u2026",
+      "year": 0
+    },
+    {
+      "title": "Crystal Design Amidst Noisy DFT Signals: A Reinforcement Learning Approach",
+      "authors": [
+        "Prashant Govindarajan",
+        "Mathieu Reymond",
+        "Santiago Miret",
+        "Mariano Phielipp",
+        "Sarath Chandar"
+      ],
+      "venue": "",
+      "cited_by": 1,
+      "url": "",
+      "snippet": "In-silico design of novel materials demands a large number of atom-level calculations for optimizing the desired properties. In practice, it is extremely time-consuming and cumbersome to perform density functional theory calculations at an exponential scale. In the hope of accelerating material discovery, we investigate the feasibility of an active learning-inspired reinforcement learning approach based on online reward model fine-tuning to learn a policy that can generate compositions of crystalline materials optimized for a specific band gap. Through an extensive set of online learning experiments, we show that while RL policies can be effectively trained using machine learning-based proxy reward functions, they fail to converge for DFT-based rewards. This failure of convergence could be related to the inherently noisy nature of DFT in resolving the electronic band structure, which severely affects policy learning. To this end, we emphasize the need for more specialized and domain-driven methods for band gap optimization.",
+      "year": 0
+    },
+    {
+      "title": "Conformer search using SE3-transformers and imitation learning",
+      "authors": [
+        "Luca Thiede",
+        "Santiago Miret",
+        "Krzysztof Sadowski",
+        "Haoping Xu",
+        "Mariano Phielipp",
+        "Alan Aspuru-Guzik"
+      ],
+      "venue": "",
+      "cited_by": 4,
+      "url": "",
+      "snippet": "We introduce a novel approach to conformer search, the discovery of three-dimensional structures for two-dimensional molecular formulas. We focus on organic molecules using deep imitation learning and equivariant graph neural networks, with the prospect of using reinforcement learning algorithms for fine tuning. To that end, we present our interactive environment that describes the molecule in a ridig-rotor approximation and leverage a behavioral cloning torsion policy to autoregressively determine the dihedral angles of the molecule ultimately yielding a three-dimensional molecular structure. For our policy architecture, we leverage an SE(3) equivariant neural network, which enables us to exploit inherent molecular symmetries and to respect the topology of the angle distribution using a Mixture of Projected Normals action distribution. Our preliminary results for a policy trained on a behavioral cloning objective using the QM9 dataset for expert trajectories shows that the policy can accurately predict torsion angles for various molecules. We believe this to be a promising starting point for future work pertaining to performing conformer search using deep reinforcement learning.",
+      "year": 0
+    },
+    {
+      "title": "Computing systems for peripheral control",
+      "authors": [
+        "Wendy March",
+        "Jameson H Williams",
+        "Mei Lu",
+        "Todd S Harple",
+        "Bryan R Peebler",
+        "Benjamin S Weigand",
+        "Mariano J Phielipp",
+        "Min Liu"
+      ],
+      "venue": "",
+      "cited_by": 5,
+      "url": "",
+      "snippet": "Embodiments of computing systems, and related methods, are disclosed herein. In some embodiments, a computing system may include a peripheral device (eg, an image capture device and/or an audio output device) and control logic. The control logic may be coupled with a sensor System and the peripheral device to receive a trigger signal; receive, from the sensor System, one or more interaction signals indicative of a user interaction with the computing system; and, in response to receipt of the trigger signal and the one or more interaction signals, generate a control signal for output to the peripheral device to control operation of the peripheral device. Other embodiments may be disclosed and/or claimed.",
+      "year": 0
+    },
+    {
+      "title": "Clone swarms: Learning to predict and control multi-robot systems by imitation",
+      "authors": [
+        "Siyu Zhou",
+        "Mariano J Phielipp",
+        "Jorge A Sefair",
+        "Sara I Walker",
+        "Heni Ben Amor"
+      ],
+      "venue": "",
+      "cited_by": 24,
+      "url": "",
+      "snippet": "In this paper, we propose SwarmNet \u2013 a neural network architecture that can learn to predict and imitate the behavior of an observed swarm of agents in a centralized manner. Tested on artificially generated swarm motion data, the network achieves high levels of prediction accuracy and imitation authenticity. We compare our model to previous approaches for modelling interaction systems and show how modifying components of other models gradually approaches the performance of ours. Finally, we also discuss an extension of SwarmNet that can deal with nondeterministic, noisy, and uncertain environments, as often found in robotics applications.",
+      "year": 0
+    },
+    {
+      "title": "Can the high-level content of natural images be indexed using local analysis?",
+      "authors": [
+        "John Arthur Black Jr",
+        "Mariano Phielipp",
+        "Greg Nielson",
+        "Sethuraman Panchanathan"
+      ],
+      "venue": "",
+      "cited_by": 1,
+      "url": "",
+      "snippet": "Early methods of image indexing relied heavily on color histograms, which characterize the global content of images. However, global indexing methods proved to be unsatisfactory, and researchers now employ more localized measures of image content, based on relatively small regions. At the same time, it has also become clear that image indexing should be based on higher-level visual content. This raises an important question: \u201cCan the higher-level content of images be reliably indexed using local analysis?\u201d In general, humans are better at indexing mid-level and high-level visual content than today\u2019s automated indexing algorithms. Therefore, it makes sense to ascertain how well humans can perform midlevel or high-level indexing, based on small regions. This paper describes research that employs a set of outdoor scenery images (called the NaturePix image set) to compare how successfully humans can \u2026",
+      "year": 0
+    },
+    {
+      "title": "Behavioral cloning for crystal design",
+      "authors": [
+        "Prashant Govindarajan",
+        "Santiago Miret",
+        "Jarrid Rector-Brooks",
+        "Mariano Phielipp",
+        "Janarthanan Rajendran",
+        "Sarath Chandar"
+      ],
+      "venue": "",
+      "cited_by": 3,
+      "url": "",
+      "snippet": "Solid-state materials, which are made up of periodic 3D crystal structures, are particularly useful for a variety of real-world applications such as batteries, fuel cells and catalytic materials. Designing solid-state materials, especially in a robust and automated fashion, remains an ongoing challenge. To further the automated design of crystalline materials, we propose a method to learn to design valid crystal structures given a crystal skeleton. By incorporating Euclidean equivariance into a policy network, we portray the problem of designing new crystals as a sequential prediction task suited for imitation learning. At each step, given an incomplete graph of a crystal skeleton, an agent assigns an element to a specific node. We adopt a behavioral cloning strategy to train the policy network on data consisting of curated trajectories generated from known crystals.",
+      "year": 0
+    },
+    {
+      "title": "Automatic user identification from button presses recorded in a feature vector",
+      "authors": [
+        "Mariano J Phielipp",
+        "Magdiel F Gal\u00e1n",
+        "Branislav Kveton"
+      ],
+      "venue": "",
+      "cited_by": 4,
+      "url": "",
+      "snippet": "BACKGROUNDAny given consumer may have access to a broad range of multimedia content, whether through broadcast television, subscription television, or the Internet. For a number of rea sons it may be desirable to tailor content delivery for indi vidual users. It would simplify the user experience, for example, if the range of possibilities were narrowed to chan nels and content that are consistent with the user's prefer ences. Such tailoring could also conserve bandwidth, memory, and other transmission and computing resources. Moreover, some content may not be appropriate for all users. Some content may be restricted to adults, for example, and should not be made available to children. Tailoring of content for children should reflect such considerations. In addition, media providers may wish to include advertising in the deliv ery of content. In this situation, advertising resources would be used more efficiently if \u2026",
+      "year": 0
+    },
+    {
+      "title": "Anymorph: Learning transferable polices by inferring agent morphology",
+      "authors": [
+        "Brandon Trabucco",
+        "Mariano Phielipp",
+        "Glen Berseth"
+      ],
+      "venue": "",
+      "cited_by": 34,
+      "url": "",
+      "snippet": "The prototypical approach to reinforcement learning involves training policies tailored to a particular agent from scratch for every new morphology. Recent work aims to eliminate the re-training of policies by investigating whether a morphology-agnostic policy, trained on a diverse set of agents with similar task objectives, can be transferred to new agents with unseen morphologies without re-training. This is a challenging problem that required previous approaches to use hand-designed descriptions of the new agent\u2019s morphology. Instead of hand-designing this description, we propose a data-driven method that learns a representation of morphology directly from the reinforcement learning objective. Ours is the first reinforcement learning algorithm that can train a policy to generalize to new agent morphologies without requiring a description of the agent\u2019s morphology in advance. We evaluate our approach on the standard benchmark for agent-agnostic control, and improve over the current state of the art in zero-shot generalization to new agents. Importantly, our method attains good performance without an explicit description of morphology.",
+      "year": 0
+    },
+    {
+      "title": "Analytically directed data collection in sensor network",
+      "authors": [
+        "Robert L Vaughn",
+        "Sukhwinder S Cheema",
+        "Mark D Savoy",
+        "Mariano J Phielipp",
+        "Suraj Sindia"
+      ],
+      "venue": "",
+      "cited_by": 9,
+      "url": "",
+      "snippet": "Inventors: Robert L. VAUGHN, Portland, OR (US); Sukhwinder S. CHEEMA, Santa Clara, CA (US); Mark D. SAVOY,",
+      "year": 0
+    },
+    {
+      "title": "Accelerating Visual Sparse-Reward Learning with Latent Nearest-Demonstration-Guided Explorations",
+      "authors": [
+        "Ruihan Zhao",
+        "Sandeep P Chinchali",
+        "Mariano Phielipp"
+      ],
+      "venue": "",
+      "cited_by": 0,
+      "url": "",
+      "snippet": "Recent progress in deep reinforcement learning (RL) and computer vision enables artificial agents to solve complex tasks, including locomotion, manipulation, and video games from high-dimensional pixel observations. However, RL usually relies on domain-specific reward functions for sufficient learning signals, requiring expert knowledge. While vision-based agents could learn skills from only sparse rewards, exploration challenges arise. We present Latent Nearest-demonstration-guided Exploration (LaNE), a novel and efficient method to solve sparse-reward robot manipulation tasks from image observations and a few demonstrations. First, LaNE builds on the pre-trained DINOv2 feature extractor to learn an embedding space for forward prediction. Next, it rewards the agent for exploring near the demos, quantified by quadratic control costs in the embedding space. Finally, LaNE optimizes the policy for the augmented rewards with RL. Experiments demonstrate that our method achieves state-of-the-art sample efficiency in Robosuite simulation and enables under-an-hour RL training from scratch on a Franka Panda robot, using only a few demonstrations.",
+      "year": 0
+    },
+    {
+      "title": "A Reinforcement Learning Pipeline for Band Gap-directed Crystal Generation",
+      "authors": [
+        "Prashant Govindarajan",
+        "Mathieu Reymond",
+        "Santiago Miret",
+        "Antoine Clavaud",
+        "Mariano Phielipp",
+        "Sarath Chandar"
+      ],
+      "venue": "",
+      "cited_by": 0,
+      "url": "",
+      "snippet": "Property-driven AI-automated material discovery presents unique challenges owing to the complex nature of the chemical structural space and computationally expensive simulations. For crystalline solids, the band gap is an important property for designing semiconductors and batteries. However, optimizing crystals for a target band gap is difficult and not well-explored. Reinforcement learning (RL) shows promise towards optimizing crystals, as it can freely explore the chemical space. However, it relies on regular band gap evaluations, which can only be accurately computed through expensive Density Functional Theory (DFT) simulations. In this study, we propose an active learning-inspired pipeline that combines RL and DFT simulations for optimizing crystal compositions given a target band gap. The pipeline includes an RL policy for predicting atom types and a band gap network that is fine-tuned with DFT data. Preliminary results indicate the need for furthering the state-of-the-art to address the inherent challenges of the problem.",
+      "year": 0
+    }
+  ]
+}

@@ -596,7 +596,7 @@
 				// Load publications data
 				async function loadPublications() {
 					try {
-						const response = await fetch('_data/publications_cleaned.json?v=' + Date.now());
+						const response = await fetch('data.json?v=' + Date.now());
 						const data = await response.json();
 						allPublications = data.publications || [];
 						filteredPublications = [...allPublications];
