@@ -60,10 +60,10 @@ function populateYearFilter() {
 	});
 }
 
-// Determine publication type
+// Determine publication type (safe for missing title/snippet).
 function getPublicationType(pub) {
-	const title = pub.title.toLowerCase();
-	const snippet = pub.snippet.toLowerCase();
+	const title = (pub.title != null) ? String(pub.title).toLowerCase() : '';
+	const snippet = (pub.snippet != null) ? String(pub.snippet).toLowerCase() : '';
 	
 	if (title.includes('patent') || snippet.includes('patent') || 
 		title.includes('inventor') || snippet.includes('inventor') ||
