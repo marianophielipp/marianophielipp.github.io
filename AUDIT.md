@@ -205,7 +205,15 @@ Use it for title, venue, snippet, and each author when building the HTML. For ar
 
 ---
 
-## 7. Prioritized Fix List
+## 7. Implemented Fixes (Refactor Round)
+
+- **Avatar/face images:** Removed inline `width="389" height="389"` from all author and logo avatar images so CSS controls size. Template uses `.author img { width: 4em; border-radius: 100% }` for circles and `#intro .logo` + `:before` SVG for the hexagonal sidebar logo. Added `height: 4em; object-fit: cover` for author avatars and `height: auto; object-fit: cover` for the logo image so they are no longer elongated.
+- **Footer CSS:** Consolidated duplicate `.footer-research-block` and article footer overrides into a single block in `main.css` and removed `!important` where possible.
+- **Jekyll refactor:** Not applied. The site remains static HTML so it works without a build step. A future move to Jekyll (or another SSG) with `_includes` for header, menu, sidebar, and footer would reduce duplication; see "Larger refactors" below.
+
+---
+
+## 8. Prioritized Fix List
 
 ### High priority (do first)
 
