@@ -176,7 +176,11 @@ body.dark-mode .footer-research-publications {
 	color: #c0c0c0;
 }
 
-/* Theme toggle button in header (icon styled by Font Awesome) */
+/* Theme toggle in header: show label so users can find dark mode */
 #theme-toggle .label {
-	display: none;
+	display: inline;
+	margin-left: 0.35em;
+}
+#theme-toggle {
+	white-space: nowrap;
 }

@@ -2955,16 +2955,16 @@ input, select, textarea {
 
 			.post {
 				padding: 1.5em 1.5em 0.1em 1.5em ;
-				left: -1.5em;
+				left: 0;
 				margin: 0 0 2em 0;
-				width: calc(100% + (1.5em * 2));
+				width: 100%;
 			}
 
 				.post > header {
 					padding: 3em 1.5em 0.5em 1.5em ;
-					left: -1.5em;
-					margin: -1.5em 0 1.5em 0;
-					width: calc(100% + 3em);
+					left: 0;
+					margin: 0 0 1.5em 0;
+					width: 100%;
 				}
 
 					.post > header .title h2 {
@@ -2997,9 +2997,9 @@ input, select, textarea {
 				}
 
 			.post > .image.featured {
-				margin-left: -1.5em;
-				margin-top: calc(-1.5em - 1px);
-				width: calc(100% + 3em);
+				margin-left: 0;
+				margin-top: 0;
+				width: 100%;
 			}
 
 			.post > footer {
@@ -3333,6 +3333,7 @@ input, select, textarea {
 		opacity: 1;
 		padding: 4.5em;
 		width: 90em;
+		overflow-x: visible;
 	}
 
 		body.is-menu-visible #wrapper {
@@ -3376,6 +3377,8 @@ input, select, textarea {
 		flex-grow: 1;
 		-ms-flex: 1;
 		width: 100%;
+		min-width: 0;
+		overflow-x: visible;
 	}
 
 /* Sidebar */
