@@ -2,10 +2,23 @@
 let allPublications = [];
 let filteredPublications = [];
 
+/** Escape text for safe use in HTML text content (prevents XSS). */
+function escapeHtml(str) {
+	if (str == null) return '';
+	const div = document.createElement('div');
+	div.textContent = str;
+	return div.innerHTML;
+}
+
+/** Return publication authors array (safe for missing/malformed data). */
+function getAuthors(pub) {
+	return Array.isArray(pub.authors) ? pub.authors : [];
+}
+
 // Load publications data
 async function loadPublications() {
 	try {
-		const response = await fetch('data.json?v=' + Date.now());
+		const response = await fetch('data.json');
 		const data = await response.json();
 		allPublications = data.publications || [];
 		filteredPublications = [...allPublications];
@@ -80,9 +93,9 @@ function filterPublications() {
 	
 	filteredPublications = allPublications.filter(pub => {
 		// Search filter
-		const matchesSearch = !searchTerm || 
-			pub.title.toLowerCase().includes(searchTerm) ||
-			pub.authors.some(author => author.toLowerCase().includes(searchTerm)) ||
+		const matchesSearch = !searchTerm ||
+			(pub.title && pub.title.toLowerCase().includes(searchTerm)) ||
+			getAuthors(pub).some(author => String(author).toLowerCase().includes(searchTerm)) ||
 			(pub.venue && pub.venue.toLowerCase().includes(searchTerm)) ||
 			(pub.snippet && pub.snippet.toLowerCase().includes(searchTerm));
 		
@@ -117,7 +130,7 @@ function sortPublications(sortBy) {
 			filteredPublications.sort((a, b) => (a.cited_by || 0) - (b.cited_by || 0));
 			break;
 		case 'title':
-			filteredPublications.sort((a, b) => a.title.localeCompare(b.title));
+			filteredPublications.sort((a, b) => (a.title || '').localeCompare(b.title || ''));
 			break;
 	}
 }
@@ -134,18 +147,22 @@ function displayPublications() {
 	const publicationsHTML = filteredPublications.map(pub => {
 		const type = getPublicationType(pub);
 		const typeClass = type === 'patent' ? 'patent' : type === 'paper' ? 'paper' : 'report';
-		
+		const authors = getAuthors(pub);
+		const title = escapeHtml(pub.title || '');
+		const authorsStr = authors.map(escapeHtml).join(', ');
+		const venue = pub.venue ? escapeHtml(pub.venue) : '';
+		const snippet = pub.snippet ? escapeHtml(pub.snippet.substring(0, 200)) + (pub.snippet.length > 200 ? '...' : '') : '';
 		return `
 			<div class="publication-item">
-				<div class="publication-title">${pub.title}</div>
-				<div class="publication-authors">${pub.authors.join(', ')}</div>
-				${pub.venue ? `<div class="publication-venue">${pub.venue}</div>` : ''}
+				<div class="publication-title">${title}</div>
+				<div class="publication-authors">${authorsStr}</div>
+				${venue ? `<div class="publication-venue">${venue}</div>` : ''}
 				<div class="publication-meta">
 					${pub.year ? `<span class="publication-year">${pub.year}</span>` : ''}
-					${pub.cited_by > 0 ? `<span class="publication-citations">${pub.cited_by} citations</span>` : ''}
+					${(pub.cited_by || 0) > 0 ? `<span class="publication-citations">${escapeHtml(String(pub.cited_by))} citations</span>` : ''}
 					<span class="publication-type ${typeClass}">${type.toUpperCase()}</span>
 				</div>
-				${pub.snippet ? `<div class="publication-snippet">${pub.snippet.substring(0, 200)}${pub.snippet.length > 200 ? '...' : ''}</div>` : ''}
+				${snippet ? `<div class="publication-snippet">${snippet}</div>` : ''}
 			</div>
 		`;
 	}).join('');
