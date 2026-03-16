@@ -4,7 +4,7 @@ This is the source code for my professional website hosted at [marianophielipp.g
 
 ## About
 
-Dr. Mariano Phielipp is a Principal Engineer at Intel AI Labs, specializing in Deep Learning, Reinforcement Learning, Machine Learning, and Artificial Intelligence. His research focuses on robotics, computer vision, natural language processing, and AI for Science.
+Dr. Mariano Phielipp is a Director of Embodied Intelligence, specializing in Deep Learning, Reinforcement Learning, Machine Learning, and Artificial Intelligence. His research focuses on robotics, computer vision, natural language processing, and AI for Science.
 
 ## Website Structure
 
