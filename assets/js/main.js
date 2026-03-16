@@ -56,6 +56,37 @@
 				$intro.prependTo($sidebar);
 			});
 
+	// Dark mode toggle.
+		var themeKey = 'marianophielipp-theme';
+		var $themeToggle = $('#theme-toggle');
+
+		function applyTheme(dark) {
+			if (dark) {
+				$body.addClass('dark-mode');
+				$themeToggle.removeClass('fa-moon').addClass('fa-sun').attr('aria-label', 'Switch to light mode');
+			} else {
+				$body.removeClass('dark-mode');
+				$themeToggle.removeClass('fa-sun').addClass('fa-moon').attr('aria-label', 'Switch to dark mode');
+			}
+			try { localStorage.setItem(themeKey, dark ? 'dark' : 'light'); } catch (e) {}
+		}
+
+		function initTheme() {
+			try {
+				var saved = localStorage.getItem(themeKey);
+				applyTheme(saved === 'dark');
+			} catch (e) {
+				applyTheme(false);
+			}
+		}
+
+		initTheme();
+
+		$themeToggle.on('click', function(e) {
+			e.preventDefault();
+			applyTheme(!$body.hasClass('dark-mode'));
+		});
+
 	// Return to Top button.
 		var $returnToTop = $('#return-to-top');
 
