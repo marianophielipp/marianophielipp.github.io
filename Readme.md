@@ -4,7 +4,7 @@ This is the source code for my professional website hosted at [marianophielipp.g
 
 ## About
 
-Dr. Mariano Phielipp is a Principal Engineer at Intel AI Labs, specializing in Deep Learning, Reinforcement Learning, Machine Learning, and Artificial Intelligence. His research focuses on robotics, computer vision, natural language processing, and AI for Science.
+Dr. Mariano Phielipp is a Director of Embodied Intelligence, specializing in Deep Learning, Reinforcement Learning, Machine Learning, and Artificial Intelligence. His research focuses on robotics, computer vision, natural language processing, and AI for Science.
 
 ## Website Structure
 
@@ -32,6 +32,10 @@ To run the site locally, open a terminal in this directory and run:
 python -m http.server 8000
 ```
 Then visit `http://localhost:8000` in your web browser.
+
+## Maintenance
+
+- **Navigation/footer changes:** Update header, menu, sidebar, and footer in every HTML file (index, bio, research, contact, publications, 404) so they stay in sync. A future refactor to a static site generator (e.g. Jekyll) with shared includes would reduce this duplication; see `AUDIT.md`.
 
 ## Contact
 

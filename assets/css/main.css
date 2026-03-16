@@ -1,5 +1,5 @@
 @import url(fontawesome-all.min.css);
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Raleway:400,800,900");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Raleway:400,800,900&display=swap");
 
 /*
 	Future Imperfect by HTML5 UP
@@ -1811,6 +1811,8 @@ input, select, textarea {
 			border-radius: 100%;
 			display: block;
 			width: 4em;
+			height: 4em;
+			object-fit: cover;
 		}
 
 		.author:hover .name {
@@ -3438,6 +3440,9 @@ input, select, textarea {
 			display: block;
 			margin-left: -0.25em;
 			width: 4.5em;
+			height: auto;
+			max-width: 100%;
+			object-fit: cover;
 		}
 
 	#intro header h2 {
@@ -3747,14 +3752,35 @@ input, select, textarea {
 
 		}
 
-.footer-research-block {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-width: 180px;
-  margin: 2em auto 0 auto;
+/* Post footer overrides: center content and research block */
+article.post > footer,
+article > footer,
+.post > footer {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 2em;
 }
+
+article.post > footer .actions,
+article > footer .actions,
+.post > footer .actions {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  margin-bottom: 1.5em;
+}
+
+.footer-research-block {
+  display: block;
+  width: 100%;
+  margin: 2em auto 0;
+  text-align: center;
+  clear: both;
+  padding-top: 1em;
+  min-width: 180px;
+}
+
 .footer-research-label {
   font-size: 0.85em;
   letter-spacing: 0.15em;
@@ -3762,59 +3788,24 @@ input, select, textarea {
   margin-bottom: 0.5em;
   font-weight: 600;
 }
+
 .footer-research-items {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 0.7em;
 }
+
 .footer-research-icon {
   color: #e25555;
   font-size: 1.2em;
   vertical-align: middle;
 }
+
 .footer-research-ai,
 .footer-research-publications {
   font-size: 1em;
   color: #444;
   font-weight: 500;
   letter-spacing: 0.05em;
-}
-
-article > footer {
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
-  width: 100% !important;
-}
-.footer-research-block {
-  margin-top: 2em !important;
-  width: 100% !important;
-  text-align: center !important;
-}
-
-article.post > footer,
-article > footer,
-.post > footer {
-  display: block !important;
-  width: 100% !important;
-  text-align: center !important;
-  padding-bottom: 2em;
-}
-
-article > footer .actions,
-article.post > footer .actions,
-.post > footer .actions {
-  display: flex !important;
-  justify-content: center !important;
-  gap: 2em !important;
-  margin-bottom: 1.5em !important;
-}
-
-.footer-research-block {
-  display: block !important;
-  width: 100% !important;
-  margin: 0 auto 0 auto !important;
-  text-align: center !important;
-  clear: both !important;
-  padding-top: 1em !important;
 }

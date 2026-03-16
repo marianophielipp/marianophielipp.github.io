@@ -4,11 +4,11 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
+<html lang="en">
 	<head>
 		<title>Page Not Found - Mariano Phielipp</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="description" content="Page not found - Dr. Mariano Phielipp's professional website" />
 		
 		<!-- OpenGraph meta tags -->
@@ -26,9 +26,13 @@
 		<meta name="twitter:image" content="https://marianophielipp.github.io/images/avatar.jpeg" />
 		<meta name="twitter:site" content="@mphielipp" />
 		
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/theme.css" />
 	</head>
 	<body class="is-preload">
+		<script>(function(){try{var t=localStorage.getItem('marianophielipp-theme');if(t==='dark')document.body.classList.add('dark-mode');}catch(e){}})();</script>
 
 		<!-- Wrapper -->
 			<div id="wrapper">
@@ -46,6 +50,7 @@
 						</nav>
 						<nav class="main">
 							<ul>
+								<li><a href="#" id="theme-toggle" class="icon solid fa-moon" aria-label="Switch to dark mode"><span class="label">Theme</span></a></li>
 								<li class="menu">
 									<a class="fa-bars" href="#menu">Menu</a>
 								</li>
@@ -173,7 +178,7 @@
 								<a href="#" class="logo"><img src="images/avatar.jpeg" alt="Mariano Phielipp" /></a>
 								<header>
 									<h2>Mariano Phielipp</h2>
-									<p>Principal Engineer, Humanoid</p>
+									<p>Director of Embodied Intelligence</p>
 								</header>
 							</section>
 
@@ -250,7 +255,7 @@
 						<!-- Footer -->
 							<section id="footer">
 								<ul class="icons">
-									<li><a href="https://www.linkedin.com/in/mariano-phielipp/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="https://www.linkedin.com/in/mariano-phielipp-941624/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
 									<li><a href="https://x.com/mphielipp" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
 									<li><a href="https://scholar.google.com/citations?hl=en&user=YArRsvEAAAAJ" class="icon solid fa-graduation-cap"><span class="label">Google Scholar</span></a></li>
 									<li><a href="mailto:mphielipp@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
@@ -264,15 +269,15 @@
 
 		<!-- Return to Top Button -->
 			<div id="return-to-top">
-				<a href="#" class="icon solid fa-arrow-up"><span class="label">Return to Top</span></a>
+				<a href="#wrapper" class="icon solid fa-arrow-up" aria-label="Return to top"><span class="label">Return to Top</span></a>
 			</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			<script src="assets/js/jquery.min.js" defer></script>
+			<script src="assets/js/browser.min.js" defer></script>
+			<script src="assets/js/breakpoints.min.js" defer></script>
+			<script src="assets/js/util.js" defer></script>
+			<script src="assets/js/main.js" defer></script>
 
 	</body>
 </html> 
