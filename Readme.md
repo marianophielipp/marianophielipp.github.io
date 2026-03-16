@@ -21,6 +21,18 @@ Dr. Mariano Phielipp is a Principal Engineer at Intel AI Labs, specializing in D
 - FontAwesome icons
 - Based on HTML5 UP "Future Imperfect" template
 
+## Local Development
+
+Due to modern browser CORS (Cross-Origin Resource Sharing) policies, the `publications.html` page must be served over a fast local web server (instead of double-clicking the file locally to open via the `file://` protocol). 
+
+To run the site locally, open a terminal in this directory and run:
+
+```bash
+# For Python 3
+python -m http.server 8000
+```
+Then visit `http://localhost:8000` in your web browser.
+
 ## Contact
 
 - LinkedIn: [mariano-phielipp-941624](https://www.linkedin.com/in/mariano-phielipp-941624/)
