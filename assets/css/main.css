@@ -98,6 +98,10 @@ input, select, textarea {
 		box-sizing: inherit;
 	}
 
+	html, body {
+		overflow-x: visible;
+	}
+
 	body {
 		background: #f4f4f4;
 	}
@@ -2875,8 +2879,8 @@ input, select, textarea {
 			.post {
 				border-left: 0;
 				border-right: 0;
-				left: -3em;
-				width: calc(100% + (3em * 2));
+				left: 0;
+				width: 100%;
 			}
 
 				.post > header {
@@ -2886,6 +2890,9 @@ input, select, textarea {
 					flex-direction: column;
 					padding: 3.75em 3em 1.25em 3em ;
 					border-left: 0;
+					left: 0;
+					margin: 0 0 2em 0;
+					width: 100%;
 				}
 
 					.post > header .title {
