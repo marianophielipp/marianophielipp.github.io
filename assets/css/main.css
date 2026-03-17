@@ -3776,9 +3776,41 @@ article.post > footer .actions,
 article > footer .actions,
 .post > footer .actions {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 2em;
+  gap: 1em 2em;
+  margin-left: 0;
   margin-bottom: 1.5em;
+  padding: 0 0.5em;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+article.post > footer .actions li,
+article > footer .actions li,
+.post > footer .actions li {
+  padding-left: 0;
+}
+
+@media screen and (max-width: 640px) {
+  article.post > footer .actions,
+  article > footer .actions,
+  .post > footer .actions {
+    flex-direction: column;
+    align-items: center;
+  }
+  article.post > footer .actions li,
+  article > footer .actions li,
+  .post > footer .actions li {
+    width: 100%;
+    max-width: 18em;
+  }
+  article.post > footer .actions li .button,
+  article > footer .actions li .button,
+  .post > footer .actions li .button {
+    width: 100%;
+    box-sizing: border-box;
+  }
 }
 
 .footer-research-block {
