@@ -19,6 +19,32 @@ function getPublicationYear(pub) {
 	return Number(pub.issued_year || pub.year || 0);
 }
 
+function updatePublicationActions() {
+	const searchInput = document.getElementById('search-input');
+	const typeFilter = document.getElementById('type-filter');
+	const yearFilter = document.getElementById('year-filter');
+	const sortBy = document.getElementById('sort-by');
+	const clearButton = document.getElementById('clear-filters');
+	const exportButton = document.getElementById('export-json');
+	const exportCount = document.getElementById('export-count');
+
+	const hasActiveControls = Boolean(
+		searchInput.value.trim() ||
+		typeFilter.value ||
+		yearFilter.value ||
+		sortBy.value !== 'year-desc'
+	);
+	const resultCount = filteredPublications.length;
+
+	clearButton.disabled = !hasActiveControls;
+	exportButton.disabled = resultCount === 0;
+	exportButton.setAttribute(
+		'aria-label',
+		`Export ${resultCount} filtered publication${resultCount === 1 ? '' : 's'} as JSON`
+	);
+	exportCount.textContent = `${resultCount} ${resultCount === 1 ? 'record' : 'records'}`;
+}
+
 /** True if keyboard events should not run page shortcuts (user is typing elsewhere). */
 function isTypingContext(el) {
 	if (!el) return false;
@@ -39,6 +65,7 @@ async function loadPublications() {
 		updateStats();
 		populateYearFilter();
 		displayPublications();
+		updatePublicationActions();
 	} catch (error) {
 		console.error('Error loading publications:', error);
 		document.getElementById('publications-container').innerHTML = 
@@ -123,6 +150,7 @@ function filterPublications() {
 	sortPublications(sortBy);
 	
 	displayPublications();
+	updatePublicationActions();
 }
 
 // Sort publications
@@ -206,6 +234,7 @@ function exportJSON() {
 // Event listeners
 document.addEventListener('DOMContentLoaded', function() {
 	loadPublications();
+	updatePublicationActions();
 	
 	document.getElementById('search-input').addEventListener('input', filterPublications);
 	document.getElementById('type-filter').addEventListener('change', filterPublications);

@@ -15,8 +15,11 @@
 	margin-bottom: 1rem;
 }
 
-.publications-controls .row:last-child {
-	margin-top: 1.5rem;
+.publications-controls .publications-actions {
+	border-top: 1px solid rgba(104, 116, 122, 0.18);
+	justify-content: flex-end;
+	margin: 1.25rem 0 0;
+	padding-top: 1rem;
 }
 
 .publications-controls input,
@@ -37,28 +40,87 @@
 	box-shadow: 0 0 0 2px rgba(46,186,174,0.1);
 }
 
-.publications-controls button {
-	display: flex;
+.publications-controls .publication-action {
+	appearance: none;
+	-webkit-appearance: none;
+	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	border: 2px solid #2ebaae;
-	color: #2ebaae;
-	font-weight: 600;
-	background: #fff;
-	transition: background 0.2s, color 0.2s, box-shadow 0.2s;
-	box-shadow: none;
+	gap: 0.55rem;
+	border: 1px solid transparent;
+	border-radius: 999px;
+	font-weight: 700;
+	min-height: 44px;
+	margin: 0;
+	transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
 	font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
-	font-size: 1rem;
+	font-size: 0.76rem;
 	line-height: normal;
-	padding: 0.7rem 1.5rem;
+	padding: 0.72rem 1.15rem;
 	box-sizing: border-box;
 	vertical-align: middle;
-	letter-spacing: normal;
+	letter-spacing: 0.08em;
 }
 
-.publications-controls button:hover {
-	background: #2ebaae;
+.publications-controls .publication-action .icon {
+	font-size: 0.9rem;
+	line-height: 1;
+}
+
+.publications-controls .publication-action-secondary {
+	background: transparent;
+	border-color: rgba(35, 143, 136, 0.38);
+	color: var(--accent-strong);
+}
+
+.publications-controls .publication-action-secondary:hover:not(:disabled) {
+	background: rgba(35, 143, 136, 0.09);
+	border-color: var(--accent);
+	box-shadow: 0 6px 18px rgba(35, 143, 136, 0.12);
+}
+
+.publications-controls .publication-action-primary {
+	background: var(--accent);
+	border-color: var(--accent);
+	box-shadow: 0 8px 20px rgba(35, 143, 136, 0.2);
 	color: #fff !important;
+}
+
+.publications-controls .publication-action-primary:hover:not(:disabled) {
+	background: var(--accent-strong);
+	border-color: var(--accent-strong);
+	box-shadow: 0 10px 26px rgba(35, 143, 136, 0.28);
+	color: #fff !important;
+	transform: translateY(-1px);
+}
+
+.publications-controls .publication-action-count {
+	background: rgba(255, 255, 255, 0.18);
+	border-radius: 999px;
+	font-size: 0.62rem;
+	letter-spacing: 0.04em;
+	padding: 0.2rem 0.48rem;
+}
+
+.publications-controls .publication-action:disabled {
+	box-shadow: none;
+	cursor: not-allowed;
+	opacity: 0.48;
+	transform: none;
+}
+
+body.dark-mode .publications-controls .publications-actions {
+	border-top-color: rgba(228, 239, 241, 0.14);
+}
+
+body.dark-mode .publications-controls .publication-action-secondary {
+	background: rgba(255, 255, 255, 0.025);
+	border-color: rgba(101, 215, 207, 0.4);
+	color: var(--accent-strong);
+}
+
+body.dark-mode .publications-controls .publication-action-secondary:hover:not(:disabled) {
+	background: rgba(101, 215, 207, 0.1);
 }
 
 /* Publications Stats */
@@ -239,8 +301,12 @@
 	
 	.publications-controls input,
 	.publications-controls select,
-	.publications-controls button {
+	.publications-controls .publication-action {
 		width: 100%;
+	}
+
+	.publications-controls .publications-actions {
+		gap: 0.75rem;
 	}
 	
 	.publications-stats {
