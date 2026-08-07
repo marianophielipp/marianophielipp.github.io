@@ -1,12 +1,14 @@
 {
   "generated_at": "2025-07-09T10:11:31.658322Z",
   "cleaned_at": "2025-07-09T10:11:31.658955Z",
-  "total_publications": 66,
+  "total_publications": 67,
   "publications_with_years": 3,
   "publications_with_citations": 45,
   "publications": [
     {
       "title": "Dialogue system with audio watermark",
+      "type": "patent",
+      "issued_year": 2017,
       "authors": [
         "Mariano J Phielipp"
       ],
@@ -14,6 +16,19 @@
       "cited_by": 14,
       "url": "",
       "snippet": "Int. Cl. GIOL 21/00(2013. 01) GIOL 19/00(2013. 01) GIOL 19/018(2013. 01) GIOL 15/22(2006. 01) US CI. CPC............ GIOL 19/018 (2013. 01); G10L 15/22 (2013. 01); GIOL 2015/225 (2013. 01) Field of Classification Search None",
+      "year": 2013
+    },
+    {
+      "title": "System, method and computer program product for identity inference in a user device",
+      "type": "patent",
+      "issued_year": 2013,
+      "authors": [
+        "Mariano J Phielipp"
+      ],
+      "venue": "US 2013/0006898",
+      "cited_by": 0,
+      "url": "",
+      "snippet": "Patent for identity inference in a user device.",
       "year": 2013
     },
     {
@@ -60,6 +75,8 @@
     },
     {
       "title": "Using collaborative conversational agents and metric prediction to perform prompt-based physical circuit design",
+      "type": "patent",
+      "issued_year": 2024,
       "authors": [
         "Siddhartha Nath",
         "Rajeshkumar Sambandam",
@@ -79,6 +96,8 @@
     },
     {
       "title": "User interface with software lensing for very long lists of content",
+      "type": "patent",
+      "issued_year": 2015,
       "authors": [
         "Randy R Dunton",
         "Mariano J Phielipp"
@@ -121,6 +140,8 @@
     },
     {
       "title": "Technologies for predictive monitoring of a characteristic of a system",
+      "type": "patent",
+      "issued_year": 2019,
       "authors": [
         "Indrajit Manna",
         "Jakub Wenus",
@@ -135,6 +156,8 @@
     },
     {
       "title": "Technologies for physical assault detection using secure clothing and/or clothing accessories",
+      "type": "patent",
+      "issued_year": 2019,
       "authors": [
         "Balkaran Gill",
         "Suraj Sindia",
@@ -149,6 +172,8 @@
     },
     {
       "title": "Systems, methods, and computer program products for capturing natural responses to advertisements",
+      "type": "patent",
+      "issued_year": 2020,
       "authors": [
         "Mariano J Phielipp"
       ],
@@ -160,6 +185,8 @@
     },
     {
       "title": "System, method and computer program product for linking content availability to media consumption",
+      "type": "patent",
+      "issued_year": 2013,
       "authors": [
         "John W Carroll",
         "Mariano J Phielipp"
@@ -172,6 +199,8 @@
     },
     {
       "title": "System and method of using neuroevolution-enhanced multi-objective optimization for mixed-precision quantization of deep neural networks",
+      "type": "patent",
+      "issued_year": 2022,
       "authors": [
         "Santiago Miret",
         "Vui Seng Chua",
@@ -188,6 +217,8 @@
     },
     {
       "title": "System and method for pruning filters in deep neural networks",
+      "type": "patent",
+      "issued_year": 2022,
       "authors": [
         "Santiago Miret",
         "Vui Seng Chua",
@@ -202,6 +233,8 @@
     },
     {
       "title": "System and method for controlling inter-agent communication in multi-agent systems",
+      "type": "patent",
+      "issued_year": 2022,
       "authors": [
         "Varun Kumar Vijay",
         "Hassam Ullah Sheikh",
@@ -455,6 +488,8 @@
     },
     {
       "title": "Method of determining profiles for widget channel viewers",
+      "type": "patent",
+      "issued_year": 2014,
       "authors": [
         "Mariano J Phielipp"
       ],
@@ -845,6 +880,8 @@
     },
     {
       "title": "Computing systems for peripheral control",
+      "type": "patent",
+      "issued_year": 2016,
       "authors": [
         "Wendy March",
         "Jameson H Williams",
@@ -908,6 +945,8 @@
     },
     {
       "title": "Automatic user identification from button presses recorded in a feature vector",
+      "type": "patent",
+      "issued_year": 2014,
       "authors": [
         "Mariano J Phielipp",
         "Magdiel F Gal\u00e1n",
@@ -934,6 +973,8 @@
     },
     {
       "title": "Analytically directed data collection in sensor network",
+      "type": "patent",
+      "issued_year": 2018,
       "authors": [
         "Robert L Vaughn",
         "Sukhwinder S Cheema",

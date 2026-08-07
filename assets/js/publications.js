@@ -15,10 +15,23 @@ function getAuthors(pub) {
 	return Array.isArray(pub.authors) ? pub.authors : [];
 }
 
+function getPublicationYear(pub) {
+	return Number(pub.issued_year || pub.year || 0);
+}
+
+/** True if keyboard events should not run page shortcuts (user is typing elsewhere). */
+function isTypingContext(el) {
+	if (!el) return false;
+	if (el.isContentEditable) return true;
+	const tag = el.tagName ? el.tagName.toLowerCase() : '';
+	if (tag === 'input' || tag === 'textarea' || tag === 'select') return true;
+	return el.closest && el.closest('[contenteditable="true"]');
+}
+
 // Load publications data
 async function loadPublications() {
 	try {
-		const response = await fetch('data.json');
+		const response = await fetch('data.json?v=20260807');
 		const data = await response.json();
 		allPublications = data.publications || [];
 		filteredPublications = [...allPublications];
@@ -49,7 +62,7 @@ function updateStats() {
 
 // Populate year filter
 function populateYearFilter() {
-	const years = [...new Set(allPublications.map(pub => pub.year).filter(year => year > 0))].sort((a, b) => b - a);
+	const years = [...new Set(allPublications.map(getPublicationYear).filter(year => year > 0))].sort((a, b) => b - a);
 	const yearFilter = document.getElementById('year-filter');
 	
 	years.forEach(year => {
@@ -62,12 +75,10 @@ function populateYearFilter() {
 
 // Determine publication type (safe for missing title/snippet).
 function getPublicationType(pub) {
+	if (pub && ['paper', 'patent', 'report'].includes(pub.type)) return pub.type;
 	const title = (pub.title != null) ? String(pub.title).toLowerCase() : '';
-	const snippet = (pub.snippet != null) ? String(pub.snippet).toLowerCase() : '';
 	
-	if (title.includes('patent') || snippet.includes('patent') || 
-		title.includes('inventor') || snippet.includes('inventor') ||
-		snippet.includes('ser. no.') || snippet.includes('application')) {
+	if (title.includes('patent')) {
 		return 'patent';
 	} else if (pub.venue && (pub.venue.includes('arXiv') || pub.venue.includes('preprint'))) {
 		return 'report';
@@ -103,7 +114,7 @@ function filterPublications() {
 		const matchesType = !typeFilter || getPublicationType(pub) === typeFilter;
 		
 		// Year filter
-		const matchesYear = !yearFilter || pub.year == yearFilter;
+		const matchesYear = !yearFilter || getPublicationYear(pub) == yearFilter;
 		
 		return matchesSearch && matchesType && matchesYear;
 	});
@@ -118,10 +129,10 @@ function filterPublications() {
 function sortPublications(sortBy) {
 	switch(sortBy) {
 		case 'year-desc':
-			filteredPublications.sort((a, b) => (b.year || 0) - (a.year || 0));
+			filteredPublications.sort((a, b) => getPublicationYear(b) - getPublicationYear(a));
 			break;
 		case 'year-asc':
-			filteredPublications.sort((a, b) => (a.year || 0) - (b.year || 0));
+			filteredPublications.sort((a, b) => getPublicationYear(a) - getPublicationYear(b));
 			break;
 		case 'citations-desc':
 			filteredPublications.sort((a, b) => (b.cited_by || 0) - (a.cited_by || 0));
@@ -152,13 +163,14 @@ function displayPublications() {
 		const authorsStr = authors.map(escapeHtml).join(', ');
 		const venue = pub.venue ? escapeHtml(pub.venue) : '';
 		const snippet = pub.snippet ? escapeHtml(pub.snippet.substring(0, 200)) + (pub.snippet.length > 200 ? '...' : '') : '';
+		const year = getPublicationYear(pub);
 		return `
 			<div class="publication-item">
 				<div class="publication-title">${title}</div>
 				<div class="publication-authors">${authorsStr}</div>
 				${venue ? `<div class="publication-venue">${venue}</div>` : ''}
 				<div class="publication-meta">
-					${pub.year ? `<span class="publication-year">${pub.year}</span>` : ''}
+					${year ? `<span class="publication-year">${year}</span>` : ''}
 					${(pub.cited_by || 0) > 0 ? `<span class="publication-citations">${escapeHtml(String(pub.cited_by))} citations</span>` : ''}
 					<span class="publication-type ${typeClass}">${type.toUpperCase()}</span>
 				</div>
@@ -202,19 +214,28 @@ document.addEventListener('DOMContentLoaded', function() {
 	document.getElementById('clear-filters').addEventListener('click', clearFilters);
 	document.getElementById('export-json').addEventListener('click', exportJSON);
 	
-	// Add keyboard shortcuts
+	// Keyboard shortcuts (avoid Cmd/Ctrl+F and Cmd/Ctrl+R so browser Find and Reload still work)
 	document.addEventListener('keydown', function(e) {
-		if (e.ctrlKey || e.metaKey) {
-			switch(e.key) {
-				case 'f':
-					e.preventDefault();
-					document.getElementById('search-input').focus();
-					break;
-				case 'r':
-					e.preventDefault();
-					clearFilters();
-					break;
+		// / — focus search (skip in other fields; allow "/" inside the search box)
+		if (e.key === '/' && !e.ctrlKey && !e.metaKey && !e.altKey) {
+			const t = e.target;
+			if (t && t.id === 'search-input') return;
+			if (isTypingContext(e.target)) return;
+			e.preventDefault();
+			document.getElementById('search-input').focus();
+			return;
+		}
+		// Ctrl+Shift+L / Cmd+Shift+L — clear filters (still works from selects; not in other text fields)
+		if ((e.ctrlKey || e.metaKey) && e.shiftKey && e.key.toLowerCase() === 'l') {
+			const t = e.target;
+			if (t) {
+				if (t.isContentEditable) return;
+				const tag = t.tagName ? t.tagName.toLowerCase() : '';
+				if (tag === 'textarea') return;
+				if (tag === 'input' && t.id !== 'search-input') return;
 			}
+			e.preventDefault();
+			clearFilters();
 		}
 	});
 	
