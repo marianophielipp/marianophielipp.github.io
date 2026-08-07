@@ -34,7 +34,7 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/theme.css?v=20260807d" />
-		<link rel="stylesheet" href="assets/css/publications.css" />
+		<link rel="stylesheet" href="assets/css/publications.css?v=20260807b" />
 	</head>
 	<body class="is-preload">
 		<script>(function(){try{var t=localStorage.getItem('marianophielipp-theme');if(t==='dark'||(!t&&window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches))document.body.classList.add('dark-mode');}catch(e){}})();</script>
@@ -173,9 +173,16 @@
 											<option value="title">Title (A-Z)</option>
 										</select>
 									</div>
-									<div class="row">
-										<button id="clear-filters">Clear Filters</button>
-										<button id="export-json">Export JSON</button>
+									<div class="row publications-actions">
+										<button type="button" id="clear-filters" class="publication-action publication-action-secondary" disabled>
+											<span class="icon solid fa-undo-alt" aria-hidden="true"></span>
+											<span>Clear filters</span>
+										</button>
+										<button type="button" id="export-json" class="publication-action publication-action-primary" aria-label="Export filtered publications as JSON" disabled>
+											<span class="icon solid fa-download" aria-hidden="true"></span>
+											<span>Export JSON</span>
+											<span id="export-count" class="publication-action-count" aria-hidden="true">Loading</span>
+										</button>
 									</div>
 								</div>
 								
@@ -303,7 +310,7 @@
 			<script src="assets/js/breakpoints.min.js" defer></script>
 			<script src="assets/js/util.js?v=20260807" defer></script>
 			<script src="assets/js/main.js?v=20260807" defer></script>
-			<script src="assets/js/publications.js?v=20260807" defer></script>
+			<script src="assets/js/publications.js?v=20260807b" defer></script>
 
 	</body>
 </html>
