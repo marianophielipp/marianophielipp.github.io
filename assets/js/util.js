@@ -308,7 +308,7 @@
 
 		// No elements?
 			if (this.length == 0)
-				return $this;
+				return $(this);
 
 		// Multiple elements?
 			if (this.length > 1) {
@@ -316,7 +316,7 @@
 				for (var i=0; i < this.length; i++)
 					$(this[i]).placeholder();
 
-				return $this;
+				return $(this);
 
 			}
 

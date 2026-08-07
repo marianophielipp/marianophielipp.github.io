@@ -42,6 +42,23 @@
 				visibleClass: 'is-menu-visible'
 			});
 
+		var $menuTrigger = $('a[href="#menu"]');
+		$menuTrigger.attr({ 'aria-controls': 'menu', 'aria-expanded': 'false' });
+		$menu.attr('aria-hidden', 'true');
+
+		function syncMenuState() {
+			var visible = $body.hasClass('is-menu-visible');
+			$menuTrigger.attr('aria-expanded', visible ? 'true' : 'false');
+			$menu.attr('aria-hidden', visible ? 'false' : 'true');
+		}
+
+		if (window.MutationObserver) {
+			new MutationObserver(syncMenuState).observe(document.body, {
+				attributes: true,
+				attributeFilter: ['class']
+			});
+		}
+
 	// Search functionality removed
 
 	// Intro.
@@ -60,7 +77,7 @@
 		var themeKey = 'marianophielipp-theme';
 		var $themeToggle = $('#theme-toggle');
 
-		function applyTheme(dark) {
+		function applyTheme(dark, persist) {
 			if (dark) {
 				$body.addClass('dark-mode');
 				$themeToggle.removeClass('fa-moon').addClass('fa-sun').attr('aria-label', 'Switch to light mode');
@@ -68,15 +85,21 @@
 				$body.removeClass('dark-mode');
 				$themeToggle.removeClass('fa-sun').addClass('fa-moon').attr('aria-label', 'Switch to dark mode');
 			}
-			try { localStorage.setItem(themeKey, dark ? 'dark' : 'light'); } catch (e) {}
+			if (persist) {
+				try { localStorage.setItem(themeKey, dark ? 'dark' : 'light'); } catch (e) {}
+			}
 		}
 
 		function initTheme() {
 			try {
 				var saved = localStorage.getItem(themeKey);
-				applyTheme(saved === 'dark');
+				if (saved === 'dark' || saved === 'light') {
+					applyTheme(saved === 'dark', false);
+				} else {
+					applyTheme(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches, false);
+				}
 			} catch (e) {
-				applyTheme(false);
+				applyTheme(false, false);
 			}
 		}
 
@@ -84,7 +107,7 @@
 
 		$themeToggle.on('click', function(e) {
 			e.preventDefault();
-			applyTheme(!$body.hasClass('dark-mode'));
+			applyTheme(!$body.hasClass('dark-mode'), true);
 		});
 
 	// Return to Top button.
