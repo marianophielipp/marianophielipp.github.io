@@ -463,3 +463,116 @@ body.dark-mode .publication-type.patent {
 body.dark-mode .publication-title a:hover {
 	color: #65d7cf;
 }
+
+
+/* ------------------------------------------------------------------
+   Card affordances, August 2026
+   The year and type chips were inert <span>s styled as pills, so clicking
+   "PAPER" did nothing. They are buttons now and drive the filters. The card
+   hover-lift is limited to cards whose title is actually a link, so nothing
+   promises interactivity it does not have.
+   ------------------------------------------------------------------ */
+
+.publication-item {
+	transform: none;
+}
+
+.publication-item:hover {
+	transform: none;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.publication-item.has-link:hover {
+	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+	transform: translateY(-2px);
+}
+
+.publication-item:hover::before {
+	width: 4px;
+}
+
+.publication-item.has-link:hover::before {
+	width: 8px;
+}
+
+/* Interactive chips.
+   main.css sets `color: #3c3b3b !important` on every button, which lands dark grey
+   on the dark-teal chip (1.82:1) the moment these stop being <span>s. Same trap that
+   made "Clear filters" invisible, so force the intended colour back. */
+button.publication-year,
+button.publication-type {
+	appearance: none;
+	-webkit-appearance: none;
+	border: 0;
+	color: #ffffff !important;
+	cursor: pointer;
+	font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+	height: auto;
+	line-height: normal;
+	margin: 0;
+	transition: filter 0.15s ease, box-shadow 0.15s ease;
+}
+
+body.dark-mode button.publication-year,
+body.dark-mode button.publication-type.paper {
+	color: #08211f !important;
+}
+
+body.dark-mode button.publication-type.report {
+	color: #10181c !important;
+}
+
+body.dark-mode button.publication-type.patent {
+	color: #24052b !important;
+}
+
+button.publication-year:hover,
+button.publication-type:hover,
+button.publication-year:focus-visible,
+button.publication-type:focus-visible {
+	box-shadow: 0 0 0 2px rgba(23, 109, 104, 0.35);
+	filter: brightness(1.12);
+}
+
+/* Citations are a fact, not a control - so stop styling them as a chip. */
+.publication-citations {
+	background: transparent;
+	color: #5c666b;
+	font-weight: 400;
+	letter-spacing: 0;
+	padding: 0.25rem 0;
+	text-transform: none;
+}
+
+body.dark-mode .publication-citations {
+	color: #a9b4b8;
+}
+
+/* 45 of 67 records carry no URL. Offer a search instead of a dead title. */
+.publication-find {
+	border-bottom: 1px dotted rgba(23, 109, 104, 0.45);
+	color: #5c666b;
+	font-size: 0.78rem;
+	margin-left: auto;
+}
+
+.publication-find:hover {
+	border-bottom-color: var(--accent-strong, #176d68);
+	color: var(--accent-strong, #176d68);
+}
+
+body.dark-mode .publication-find {
+	border-bottom-color: rgba(101, 215, 207, 0.45);
+	color: #a9b4b8;
+}
+
+body.dark-mode .publication-find:hover {
+	border-bottom-color: #65d7cf;
+	color: #65d7cf;
+}
+
+@media screen and (max-width: 736px) {
+	.publication-find {
+		margin-left: 0;
+	}
+}

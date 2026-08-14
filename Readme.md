@@ -15,7 +15,6 @@ menu panel, the prev/next footer and the sidebar.
 - **About** (`bio.html`) — background, roles, education, awards, patents
 - **Research** (`research.html`) — research themes
 - **Publications & Patents** (`publications.html`) — searchable record driven by `data.json`
-- **CV** (`cv-mariano-phielipp.pdf`) — full curriculum vitae
 - **Contact** (`contact.html`) — reachable from the header action, not a peer section
 - **404** (`404.html`)
 

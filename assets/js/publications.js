@@ -212,6 +212,7 @@ function displayPublications() {
 	const publicationsHTML = filteredPublications.map(pub => {
 		const type = getPublicationType(pub);
 		const typeClass = type === 'patent' ? 'patent' : type === 'paper' ? 'paper' : 'report';
+		const typeLabel = (type === 'report' ? 'preprint' : type);
 		const authors = getAuthors(pub);
 		const title = escapeHtml(pub.title || '');
 		const authorsStr = authors.map(escapeHtml).join(', ');
@@ -219,17 +220,22 @@ function displayPublications() {
 		const showSnippet = type !== 'patent';
 		const snippet = (showSnippet && pub.snippet) ? escapeHtml(pub.snippet.substring(0, 200)) + (pub.snippet.length > 200 ? '...' : '') : '';
 		const year = getPublicationYear(pub);
+		const hasLink = Boolean(pub.url);
+		// No URL on the record? Offer a search rather than a dead title.
+		const scholarUrl = 'https://scholar.google.com/scholar?q=' +
+			encodeURIComponent(pub.title || '');
 		return `
-			<div class="publication-item">
-				<div class="publication-title">${pub.url
+			<div class="publication-item ${hasLink ? 'has-link' : 'no-link'}">
+				<div class="publication-title">${hasLink
 					? `<a href="${escapeHtml(pub.url)}" rel="noopener noreferrer" target="_blank">${title}</a>`
 					: title}</div>
 				<div class="publication-authors">${authorsStr}</div>
 				${venue ? `<div class="publication-venue">${venue}</div>` : ''}
 				<div class="publication-meta">
-					${year ? `<span class="publication-year">${year}</span>` : ''}
+					${year ? `<button type="button" class="publication-year" data-filter-year="${year}" title="Show only ${year}" aria-label="Filter to ${year}">${year}</button>` : ''}
+					<button type="button" class="publication-type ${typeClass}" data-filter-type="${type}" title="Show only ${typeLabel}s" aria-label="Filter to ${typeLabel}s">${typeLabel.toUpperCase()}</button>
 					${(pub.cited_by || 0) > 0 ? `<span class="publication-citations">${escapeHtml(String(pub.cited_by))} citations</span>` : ''}
-					<span class="publication-type ${typeClass}">${(type === 'report' ? 'preprint' : type).toUpperCase()}</span>
+					${hasLink ? '' : `<a class="publication-find" href="${escapeHtml(scholarUrl)}" rel="noopener noreferrer" target="_blank">Find on Google Scholar</a>`}
 				</div>
 				${snippet ? `<div class="publication-snippet">${snippet}</div>` : ''}
 			</div>
@@ -260,10 +266,36 @@ function exportJSON() {
 	URL.revokeObjectURL(url);
 }
 
+/** The year and type chips look like filters, so make them behave like filters. */
+function wirePublicationChips() {
+	const container = document.getElementById('publications-container');
+	if (!container) return;
+	container.addEventListener('click', function (e) {
+		const chip = e.target.closest('[data-filter-type], [data-filter-year]');
+		if (!chip) return;
+		e.preventDefault();
+		const type = chip.getAttribute('data-filter-type');
+		const year = chip.getAttribute('data-filter-year');
+		const typeSelect = document.getElementById('type-filter');
+		const yearSelect = document.getElementById('year-filter');
+		// Clicking the chip you are already filtered by clears it again.
+		if (type !== null) {
+			typeSelect.value = (typeSelect.value === type) ? '' : type;
+		}
+		if (year !== null) {
+			yearSelect.value = (yearSelect.value === year) ? '' : year;
+		}
+		filterPublications();
+		document.querySelector('.publications-controls')
+			.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+	});
+}
+
 // Event listeners
 document.addEventListener('DOMContentLoaded', function() {
 	loadPublications();
 	updatePublicationActions();
+	wirePublicationChips();
 	
 	document.getElementById('search-input').addEventListener('input', filterPublications);
 	document.getElementById('type-filter').addEventListener('change', filterPublications);
