@@ -80,8 +80,8 @@
 }
 
 .publications-controls .publication-action-primary {
-	background: var(--accent);
-	border-color: var(--accent);
+	background: var(--accent-strong);
+	border-color: var(--accent-strong);
 	box-shadow: 0 8px 20px rgba(35, 143, 136, 0.2);
 	color: #fff !important;
 }
@@ -95,7 +95,7 @@
 }
 
 .publications-controls .publication-action-count {
-	background: rgba(255, 255, 255, 0.18);
+	background: rgba(0, 0, 0, 0.28);
 	border-radius: 999px;
 	font-size: 0.62rem;
 	letter-spacing: 0.04em;
@@ -143,14 +143,14 @@ body.dark-mode .publications-controls .publication-action-secondary:hover:not(:d
 .stats-number {
 	font-size: 2rem;
 	font-weight: bold;
-	color: #2ebaae;
+	color: var(--accent-strong, #176d68);
 	display: block;
 	margin-bottom: 0.25rem;
 }
 
 .stats-label {
 	font-size: 0.8rem;
-	color: #a0a0a0;
+	color: #5c666b;
 	text-transform: uppercase;
 	letter-spacing: 0.5px;
 }
@@ -206,7 +206,7 @@ body.dark-mode .publications-controls .publication-action-secondary:hover:not(:d
 .publication-venue {
 	font-weight: 600;
 	margin-bottom: 0.75rem;
-	color: #2ebaae;
+	color: var(--accent-strong, #176d68);
 	font-size: 0.9rem;
 }
 
@@ -220,8 +220,8 @@ body.dark-mode .publications-controls .publication-action-secondary:hover:not(:d
 
 .publication-year {
 	display: inline-block;
-	background: #2ebaae;
-	color: white;
+	background: #176d68;
+	color: #ffffff;
 	padding: 0.25rem 0.75rem;
 	border-radius: 20px;
 	font-size: 0.75rem;
@@ -252,15 +252,15 @@ body.dark-mode .publications-controls .publication-action-secondary:hover:not(:d
 }
 
 .publication-type.patent {
-	background: #9C27B0;
+	background: #7b1e8c;
 }
 
 .publication-type.paper {
-	background: #2ebaae;
+	background: #176d68;
 }
 
 .publication-type.report {
-	background: #607D8B;
+	background: #4d616b;
 }
 
 .publication-snippet {
@@ -350,4 +350,229 @@ body.dark-mode .publications-controls .publication-action-secondary:hover:not(:d
 	appearance: none;
 	-webkit-appearance: none;
 	-moz-appearance: none;
+}
+
+
+/* ------------------------------------------------------------------
+   Review fixes, August 2026
+   ------------------------------------------------------------------ */
+
+/* BUG: `select:not([value=""])` always matched, because a <select> has no
+   reflected value attribute - so every dropdown looked permanently "filtered".
+   The active state is now driven by publications.js. */
+.publications-controls select:not([value=""]) {
+	border-color: #e0e0e0;
+	background-color: #ffffff;
+}
+
+.publications-controls input.is-filter-active,
+.publications-controls select.is-filter-active {
+	border-color: var(--accent-strong, #176d68);
+	background-color: rgba(23, 109, 104, 0.06);
+}
+
+/* main.css sets `color: #3c3b3b !important` on every button, which made the
+   "Clear filters" label 1.26:1 against the dark surface - effectively invisible. */
+.publications-controls .publication-action-secondary,
+.publications-controls .publication-action-secondary:hover:not(:disabled) {
+	color: var(--accent-strong, #176d68) !important;
+}
+
+/* Fill the desktop width instead of stacking four controls in a column. */
+.publications-controls .row:first-child {
+	align-items: stretch;
+}
+
+.publications-controls .row:first-child > input {
+	flex: 1 1 100%;
+	min-width: 0;
+}
+
+.publications-controls .row:first-child > select {
+	flex: 1 1 30%;
+	min-width: 8.5rem;
+}
+
+.publications-freshness {
+	color: #5c666b;
+	font-size: 0.8rem;
+	margin: 0 0 1.25rem;
+}
+
+.publication-title a {
+	border-bottom: 1px dotted rgba(23, 109, 104, 0.5);
+	color: inherit;
+}
+
+.publication-title a:hover {
+	border-bottom-color: var(--accent-strong, #176d68);
+	color: var(--accent-strong, #176d68);
+}
+
+body.dark-mode .publications-freshness,
+body.dark-mode .stats-label {
+	color: #a9b4b8;
+}
+
+body.dark-mode .stats-number,
+body.dark-mode .publication-venue {
+	color: #65d7cf;
+}
+
+body.dark-mode .publications-controls select:not([value=""]) {
+	background-color: transparent;
+	border-color: rgba(228, 239, 241, 0.2);
+}
+
+body.dark-mode .publications-controls input.is-filter-active,
+body.dark-mode .publications-controls select.is-filter-active {
+	background-color: rgba(101, 215, 207, 0.1);
+	border-color: var(--accent-strong, #65d7cf);
+}
+
+/* On the bright dark-mode teal, dark ink beats white: 2.12:1 -> 9.1:1. */
+body.dark-mode .publications-controls .publication-action-primary,
+body.dark-mode .publications-controls .publication-action-primary:hover:not(:disabled) {
+	color: #08211f !important;
+}
+
+body.dark-mode .publications-controls .publication-action-count {
+	background: rgba(0, 0, 0, 0.22);
+}
+
+body.dark-mode .publication-year {
+	background: #65d7cf;
+	color: #08211f;
+}
+
+body.dark-mode .publication-type.paper {
+	background: #65d7cf;
+	color: #08211f;
+}
+
+body.dark-mode .publication-type.report {
+	background: #9fb3bd;
+	color: #10181c;
+}
+
+body.dark-mode .publication-type.patent {
+	background: #d9a3e8;
+	color: #24052b;
+}
+
+body.dark-mode .publication-title a:hover {
+	color: #65d7cf;
+}
+
+
+/* ------------------------------------------------------------------
+   Card affordances, August 2026
+   The year and type chips were inert <span>s styled as pills, so clicking
+   "PAPER" did nothing. They are buttons now and drive the filters. The card
+   hover-lift is limited to cards whose title is actually a link, so nothing
+   promises interactivity it does not have.
+   ------------------------------------------------------------------ */
+
+.publication-item {
+	transform: none;
+}
+
+.publication-item:hover {
+	transform: none;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.publication-item.has-link:hover {
+	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+	transform: translateY(-2px);
+}
+
+.publication-item:hover::before {
+	width: 4px;
+}
+
+.publication-item.has-link:hover::before {
+	width: 8px;
+}
+
+/* Interactive chips.
+   main.css sets `color: #3c3b3b !important` on every button, which lands dark grey
+   on the dark-teal chip (1.82:1) the moment these stop being <span>s. Same trap that
+   made "Clear filters" invisible, so force the intended colour back. */
+button.publication-year,
+button.publication-type {
+	appearance: none;
+	-webkit-appearance: none;
+	border: 0;
+	color: #ffffff !important;
+	cursor: pointer;
+	font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+	height: auto;
+	line-height: normal;
+	margin: 0;
+	transition: filter 0.15s ease, box-shadow 0.15s ease;
+}
+
+body.dark-mode button.publication-year,
+body.dark-mode button.publication-type.paper {
+	color: #08211f !important;
+}
+
+body.dark-mode button.publication-type.report {
+	color: #10181c !important;
+}
+
+body.dark-mode button.publication-type.patent {
+	color: #24052b !important;
+}
+
+button.publication-year:hover,
+button.publication-type:hover,
+button.publication-year:focus-visible,
+button.publication-type:focus-visible {
+	box-shadow: 0 0 0 2px rgba(23, 109, 104, 0.35);
+	filter: brightness(1.12);
+}
+
+/* Citations are a fact, not a control - so stop styling them as a chip. */
+.publication-citations {
+	background: transparent;
+	color: #5c666b;
+	font-weight: 400;
+	letter-spacing: 0;
+	padding: 0.25rem 0;
+	text-transform: none;
+}
+
+body.dark-mode .publication-citations {
+	color: #a9b4b8;
+}
+
+/* 45 of 67 records carry no URL. Offer a search instead of a dead title. */
+.publication-find {
+	border-bottom: 1px dotted rgba(23, 109, 104, 0.45);
+	color: #5c666b;
+	font-size: 0.78rem;
+	margin-left: auto;
+}
+
+.publication-find:hover {
+	border-bottom-color: var(--accent-strong, #176d68);
+	color: var(--accent-strong, #176d68);
+}
+
+body.dark-mode .publication-find {
+	border-bottom-color: rgba(101, 215, 207, 0.45);
+	color: #a9b4b8;
+}
+
+body.dark-mode .publication-find:hover {
+	border-bottom-color: #65d7cf;
+	color: #65d7cf;
+}
+
+@media screen and (max-width: 736px) {
+	.publication-find {
+		margin-left: 0;
+	}
 }

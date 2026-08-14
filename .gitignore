@@ -1,0 +1,15 @@
+# Local scratch from the August 2026 review session.
+# _backup_pre_audit_20260814/ holds byte-exact copies of every file the review
+# touched; git tag pre-audit-20260814 is the canonical recovery point.
+# _to_delete/ exists only because the remote file bridge cannot unlink files.
+_backup_pre_audit_20260814/
+_to_delete/
+
+.venv/
+.uv/
+scripts/.venv/
+scripts/.uv/
+scripts/_data/
+.DS_Store
+_backup_pre_structure_20260814/
+_backup_pre_patch3_20260814/
