@@ -2,7 +2,7 @@
   "generated_at": "2025-07-09T10:11:31.658322Z",
   "cleaned_at": "2025-07-09T10:11:31.658955Z",
   "total_publications": 67,
-  "publications_with_years": 31,
+  "publications_with_years": 32,
   "publications_with_citations": 45,
   "publications": [
     {
@@ -792,11 +792,13 @@
         "Yosuke Kanaoka",
         "Gang Duan"
       ],
-      "venue": "",
+      "venue": "US 12,557,594 (granted 2026)",
       "cited_by": 0,
-      "url": "",
+      "url": "https://patents.google.com/patent/US12557594B2/en",
       "snippet": "A method for real-time offset adjustment of a semiconductor die placement comprising: obtaining or receiving operational parameters of a die mounting tool in real-time, wherein the die mounting tool is configured for placing the semiconductor die on a panel; predicting an offset adjustment of the semiconductor die placement based on the operational parameters; and determining semiconductor die placement coordinates based on an original die placement and the offset adjustment.",
-      "year": 0
+      "year": 0,
+      "type": "patent",
+      "issued_year": 2026
     },
     {
       "title": "Description of a modeling, simulation, animation, and real-time control (mosart) environment for a class of 6-dof dynamical systems",

@@ -716,3 +716,200 @@ body.dark-mode #footer .copyright {
 	border-radius: 100%;
 	object-fit: cover;
 }
+
+
+/* ------------------------------------------------------------------
+   Navigation and structure, August 2026
+   ------------------------------------------------------------------ */
+
+/* The hamburger duplicated the header nav at every width. Header nav is
+   hidden below 737px, so the panel trigger belongs there and nowhere else. */
+@media screen and (min-width: 737px) {
+	#header nav.main li.menu {
+		display: none;
+	}
+}
+
+/* Contact reads as an action, not a fifth peer section. */
+#header nav.links ul li.nav-cta a {
+	border: 1px solid var(--accent-strong, #176d68);
+	border-radius: 999px;
+	color: var(--accent-strong, #176d68);
+	display: inline-block;
+	line-height: 1;
+	padding: 0.6em 1.1em;
+}
+
+#header nav.links ul li.nav-cta a:hover {
+	background: var(--accent-strong, #176d68);
+	color: #ffffff;
+}
+
+body.dark-mode #header nav.links ul li.nav-cta a {
+	border-color: #65d7cf;
+	color: #65d7cf;
+}
+
+body.dark-mode #header nav.links ul li.nav-cta a:hover {
+	background: #65d7cf;
+	color: #08211f;
+}
+
+/* Which page you are on, stated once, in the nav itself. */
+#header nav.links ul li a[aria-current="page"] {
+	border-bottom: 2px solid var(--accent-strong, #176d68);
+	padding-bottom: 0.25em;
+}
+
+body.dark-mode #header nav.links ul li a[aria-current="page"] {
+	border-bottom-color: #65d7cf;
+}
+
+#header nav.links ul li.nav-cta a[aria-current="page"] {
+	background: var(--accent-strong, #176d68);
+	border-bottom-width: 1px;
+	color: #ffffff;
+	padding-bottom: 0.6em;
+}
+
+body.dark-mode #header nav.links ul li.nav-cta a[aria-current="page"] {
+	background: #65d7cf;
+	color: #08211f;
+}
+
+/* Sidebar profile links: one flat list, same on every page. */
+#sidebar .profile-links {
+	list-style: none;
+	padding: 0;
+}
+
+#sidebar .profile-links li {
+	border-top: 1px solid var(--line, rgba(43, 57, 63, 0.14));
+	padding: 0;
+}
+
+#sidebar .profile-links li:first-child {
+	border-top: 0;
+}
+
+#sidebar .profile-links li a {
+	border-bottom: 0;
+	display: block;
+	font-size: 0.9em;
+	padding: 0.7em 0;
+}
+
+#sidebar .profile-links li a:hover {
+	color: var(--accent-strong, #176d68);
+}
+
+body.dark-mode #sidebar .profile-links li a:hover {
+	color: #65d7cf;
+}
+
+/* Fixed prev/next, replacing the per-page button rows that all differed. */
+.page-nav {
+	border-top: 1px solid var(--line, rgba(43, 57, 63, 0.14));
+	display: flex;
+	gap: 1rem;
+	justify-content: space-between;
+	margin-top: 2rem;
+	padding-top: 1.5rem;
+	width: 100%;
+}
+
+.page-nav a {
+	border-bottom: 0;
+	display: block;
+	max-width: 48%;
+}
+
+.page-nav a.page-nav-next {
+	margin-left: auto;
+	text-align: right;
+}
+
+.page-nav a span {
+	color: #5c666b;
+	display: block;
+	font-size: 0.7em;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+}
+
+.page-nav a strong {
+	color: var(--accent-strong, #176d68);
+	font-size: 1em;
+}
+
+.page-nav a:hover strong {
+	text-decoration: underline;
+}
+
+body.dark-mode .page-nav a span {
+	color: #a9b4b8;
+}
+
+body.dark-mode .page-nav a strong {
+	color: #65d7cf;
+}
+
+/* Selected work on the homepage: three real artifacts, each linking out. */
+.selected-work {
+	list-style: none;
+	padding: 0;
+}
+
+.selected-work li {
+	border-left: 3px solid var(--accent-strong, #176d68);
+	margin-bottom: 1.25em;
+	padding: 0 0 0 1.25em;
+}
+
+.selected-work li a {
+	border-bottom: 0;
+}
+
+.selected-work li a strong {
+	color: var(--ink, #263238);
+}
+
+.selected-work li a:hover strong {
+	color: var(--accent-strong, #176d68);
+	text-decoration: underline;
+}
+
+.selected-work-meta {
+	color: #5c666b;
+	display: block;
+	font-size: 0.85em;
+	margin-top: 0.35em;
+}
+
+body.dark-mode .selected-work li {
+	border-left-color: #65d7cf;
+}
+
+body.dark-mode .selected-work li a strong {
+	color: #e8e8e8;
+}
+
+body.dark-mode .selected-work li a:hover strong {
+	color: #65d7cf;
+}
+
+body.dark-mode .selected-work-meta {
+	color: #a9b4b8;
+}
+
+@media screen and (max-width: 736px) {
+	.page-nav {
+		flex-direction: column;
+	}
+
+	.page-nav a,
+	.page-nav a.page-nav-next {
+		max-width: 100%;
+		text-align: left;
+	}
+}
