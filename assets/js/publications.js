@@ -36,6 +36,7 @@ function updatePublicationActions() {
 	);
 	const resultCount = filteredPublications.length;
 
+	syncFilterActiveState();
 	clearButton.disabled = !hasActiveControls;
 	exportButton.disabled = resultCount === 0;
 	exportButton.setAttribute(
@@ -54,6 +55,29 @@ function isTypingContext(el) {
 	return el.closest && el.closest('[contenteditable="true"]');
 }
 
+/** Surface how current the bibliographic data is (data.json is generated, not hand-edited). */
+function showDataGeneratedAt(data) {
+	const el = document.getElementById('data-generated');
+	if (!el) return;
+	const stamp = data.generated_at || data.cleaned_at;
+	if (!stamp) return;
+	const d = new Date(stamp);
+	if (isNaN(d)) return;
+	el.textContent = 'Last compiled ' +
+		d.toLocaleDateString('en-GB', { year: 'numeric', month: 'long' }) + '.';
+}
+
+/** Mark controls that are actually narrowing the list (CSS cannot detect select state). */
+function syncFilterActiveState() {
+	[['search-input', v => v.trim() !== ''],
+	 ['type-filter', v => v !== ''],
+	 ['year-filter', v => v !== ''],
+	 ['sort-by', v => v !== 'year-desc']].forEach(([id, isActive]) => {
+		const el = document.getElementById(id);
+		if (el) el.classList.toggle('is-filter-active', isActive(el.value));
+	});
+}
+
 // Load publications data
 async function loadPublications() {
 	try {
@@ -64,6 +88,8 @@ async function loadPublications() {
 		
 		updateStats();
 		populateYearFilter();
+		showDataGeneratedAt(data);
+		sortPublications(document.getElementById('sort-by').value);
 		displayPublications();
 		updatePublicationActions();
 	} catch (error) {
@@ -190,17 +216,20 @@ function displayPublications() {
 		const title = escapeHtml(pub.title || '');
 		const authorsStr = authors.map(escapeHtml).join(', ');
 		const venue = pub.venue ? escapeHtml(pub.venue) : '';
-		const snippet = pub.snippet ? escapeHtml(pub.snippet.substring(0, 200)) + (pub.snippet.length > 200 ? '...' : '') : '';
+		const showSnippet = type !== 'patent';
+		const snippet = (showSnippet && pub.snippet) ? escapeHtml(pub.snippet.substring(0, 200)) + (pub.snippet.length > 200 ? '...' : '') : '';
 		const year = getPublicationYear(pub);
 		return `
 			<div class="publication-item">
-				<div class="publication-title">${title}</div>
+				<div class="publication-title">${pub.url
+					? `<a href="${escapeHtml(pub.url)}" rel="noopener noreferrer" target="_blank">${title}</a>`
+					: title}</div>
 				<div class="publication-authors">${authorsStr}</div>
 				${venue ? `<div class="publication-venue">${venue}</div>` : ''}
 				<div class="publication-meta">
 					${year ? `<span class="publication-year">${year}</span>` : ''}
 					${(pub.cited_by || 0) > 0 ? `<span class="publication-citations">${escapeHtml(String(pub.cited_by))} citations</span>` : ''}
-					<span class="publication-type ${typeClass}">${type.toUpperCase()}</span>
+					<span class="publication-type ${typeClass}">${(type === 'report' ? 'preprint' : type).toUpperCase()}</span>
 				</div>
 				${snippet ? `<div class="publication-snippet">${snippet}</div>` : ''}
 			</div>

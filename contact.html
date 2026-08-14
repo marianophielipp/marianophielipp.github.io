@@ -9,6 +9,9 @@
 		<title>Contact - Mariano Phielipp</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="canonical" href="https://marianophielipp.github.io/contact.html" />
+		<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+		<meta name="theme-color" content="#141b1e" media="(prefers-color-scheme: dark)" />
 		<meta name="description" content="Contact Dr. Mariano Phielipp, Director of Embodied Intelligence at All3.com in London, for AI and robotics collaboration." />
 		
 		<!-- OpenGraph meta tags -->
@@ -30,6 +33,7 @@
 		<meta name="twitter:image:alt" content="Mariano Phielipp — Director of Embodied Intelligence" />
 		<meta name="twitter:site" content="@mphielipp" />
 		
+		<link rel="icon" href="favicon.svg" type="image/svg+xml" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -37,6 +41,7 @@
 	</head>
 	<body class="is-preload">
 		<script>(function(){try{var t=localStorage.getItem('marianophielipp-theme');if(t==='dark'||(!t&&window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches))document.body.classList.add('dark-mode');}catch(e){}})();</script>
+		<a class="skip-link" href="#main">Skip to main content</a>
 
 		<!-- Wrapper -->
 			<div id="wrapper">
@@ -54,7 +59,7 @@
 						</nav>
 						<nav class="main">
 							<ul>
-								<li><a href="#" id="theme-toggle" class="icon solid fa-moon" aria-label="Switch to dark mode"><span class="label">Theme</span></a></li>
+								<li><a href="#" role="button" id="theme-toggle" class="icon solid fa-moon" aria-label="Switch to dark mode"><span class="label">Theme</span></a></li>
 								<li class="menu">
 									<a class="fa-bars" href="#menu">Menu</a>
 								</li>
@@ -115,21 +120,21 @@
 					</section>
 
 				<!-- Main -->
-					<div id="main">
+					<div id="main" role="main" tabindex="-1">
 
 						<!-- Post -->
 							<article class="post">
 								<header>
 									<div class="title">
-										<h2><a href="#">Get in Touch</a></h2>
+										<h2>Get in Touch</h2>
 										<p>Connect for Collaborations, Research Opportunities, or Inquiries</p>
 									</div>
 									<div class="meta">
 										<time class="published" datetime="2026-08">Updated August 2026</time>
-										<a href="#" class="author"><span class="name">Mariano Phielipp</span><img src="images/avatar.jpeg" alt="Mariano Phielipp" /></a>
+										<span class="author"><span class="name">Mariano Phielipp</span><img src="images/avatar.jpeg" alt="Mariano Phielipp" /></span>
 									</div>
 								</header>
-								<span class="image featured"><img src="images/hero-embodied-intelligence.jpg" alt="Embodied intelligence systems in a robotics laboratory" width="1968" height="799" fetchpriority="high" /></span>
+								<span class="image featured"><img src="images/hero-embodied-intelligence-1400.jpg" srcset="images/hero-embodied-intelligence-700.jpg 700w, images/hero-embodied-intelligence-1400.jpg 1400w, images/hero-embodied-intelligence.jpg 1968w" sizes="(max-width: 736px) 100vw, 700px" alt="Embodied intelligence systems in a robotics laboratory" width="1400" height="568" fetchpriority="high" /></span>
 								
 								<h3>Professional Contact</h3>
 								<p>I'm always interested in connecting with researchers, industry professionals, and students who share my passion for advancing artificial intelligence and robotics. Whether you're interested in collaboration opportunities, research discussions, or simply want to learn more about my work, I'd be happy to hear from you.</p>
@@ -158,7 +163,7 @@
 								<h3>Areas of Collaboration</h3>
 								<p>I'm particularly interested in collaborations in the following areas:</p>
 								<ul>
-									<li><strong>Humanoid Robotics:</strong> Visual Language Action (VLA) models, human-robot interaction, and robotic learning systems</li>
+									<li><strong>Intelligent &amp; Embodied Robotics:</strong> Vision-Language-Action (VLA) models, robot learning, and autonomy across humanoid, legged, and manipulator platforms</li>
 									<li><strong>Human-Robot Interaction (HRI):</strong> Natural communication interfaces, collaborative robotics, and interaction design</li>
 									<li><strong>AI for Science:</strong> Scientific discovery, materials science, and computational chemistry</li>
 									<li><strong>Deep Reinforcement Learning:</strong> Goal-conditioned policies, model-based learning, and imitation learning</li>
@@ -185,7 +190,7 @@
 								</ul>
 								
 								<h3>Research Interests</h3>
-								<p>My current research focuses on advancing humanoid robotics through Visual Language Action (VLA) models, Human-Robot Interaction (HRI) projects, AI for science applications, and deep reinforcement learning. I'm particularly interested in developing systems that can integrate vision, language, and action to create more capable and intuitive robotic systems.</p>
+								<p>My current research focuses on advancing intelligent and embodied robotics through Vision-Language-Action (VLA) models, Human-Robot Interaction (HRI), fleet-scale autonomy and mission control, AI for science applications, and deep reinforcement learning. I'm particularly interested in developing systems that can integrate vision, language, and action to create more capable and intuitive robotic systems.</p>
 								
 								<p>I'm always open to discussing new research directions and potential collaborations that align with these interests.</p>
 								
@@ -205,7 +210,7 @@
 
 						<!-- Intro -->
 							<section id="intro">
-								<a href="#" class="logo"><img src="images/avatar.jpeg" alt="Mariano Phielipp" /></a>
+								<a href="index.html" class="logo"><img src="images/avatar.jpeg" alt="Mariano Phielipp" /></a>
 								<header>
 									<h2>Mariano Phielipp</h2>
 									<p>Director of Embodied Intelligence at All3.com</p>
@@ -219,31 +224,28 @@
 									<!-- Mini Post -->
 										<article class="mini-post">
 											<header>
-												<h3><a href="research.html">Humanoid Robotics</a></h3>
-												<time class="published" datetime="2025-01-15">January 15, 2025</time>
-												<a href="#" class="author"><img src="images/avatar.jpeg" alt="Mariano Phielipp" /></a>
+												<h3><a href="research.html">Embodied &amp; Intelligent Robotics</a></h3>
+												<span class="author"><img src="images/avatar.jpeg" alt="" /></span>
 											</header>
-											<a href="research.html" class="image"><img src="images/hero-embodied-intelligence.jpg" alt="Humanoid Robotics" width="1968" height="799" loading="lazy" /></a>
+											<a href="research.html" class="image"><img src="images/hero-embodied-intelligence-700.jpg" alt="" width="700" height="284" loading="lazy" /></a>
 										</article>
 
 									<!-- Mini Post -->
 										<article class="mini-post">
 											<header>
 												<h3><a href="research.html">AI for Science</a></h3>
-												<time class="published" datetime="2024-12-20">December 20, 2024</time>
-												<a href="#" class="author"><img src="images/avatar.jpeg" alt="Mariano Phielipp" /></a>
+												<span class="author"><img src="images/avatar.jpeg" alt="" /></span>
 											</header>
-											<a href="research.html" class="image"><img src="images/hero-robot-learning.jpg" alt="AI for Science" width="1966" height="800" loading="lazy" /></a>
+											<a href="research.html" class="image"><img src="images/hero-robot-learning-700.jpg" alt="" width="700" height="285" loading="lazy" /></a>
 										</article>
 
 									<!-- Mini Post -->
 										<article class="mini-post">
 											<header>
 												<h3><a href="research.html">Deep Reinforcement Learning</a></h3>
-												<time class="published" datetime="2024-11-10">November 10, 2024</time>
-												<a href="#" class="author"><img src="images/avatar.jpeg" alt="Mariano Phielipp" /></a>
+												<span class="author"><img src="images/avatar.jpeg" alt="" /></span>
 											</header>
-											<a href="research.html" class="image"><img src="images/hero-robot-learning.jpg" alt="Deep Reinforcement Learning" width="1966" height="800" loading="lazy" /></a>
+											<a href="research.html" class="image"><img src="images/hero-robot-learning-700.jpg" alt="" width="700" height="285" loading="lazy" /></a>
 										</article>
 
 								</div>
@@ -256,18 +258,16 @@
 										<article>
 											<header>
 												<h3><a href="bio.html">Professional Background</a></h3>
-												<time class="published" datetime="2025-01-01">January 1, 2025</time>
 											</header>
-											<a href="bio.html" class="image"><img src="images/hero-technical-leadership.jpg" alt="Professional Background" width="1967" height="799" loading="lazy" /></a>
+											<a href="bio.html" class="image"><img src="images/hero-technical-leadership-700.jpg" alt="" width="700" height="284" loading="lazy" /></a>
 										</article>
 									</li>
 									<li>
 										<article>
 											<header>
 												<h3><a href="publications.html">Publications</a></h3>
-												<time class="published" datetime="2024-12-15">December 15, 2024</time>
 											</header>
-											<a href="publications.html" class="image"><img src="images/hero-robot-learning.jpg" alt="Publications" width="1966" height="800" loading="lazy" /></a>
+											<a href="publications.html" class="image"><img src="images/hero-robot-learning-700.jpg" alt="" width="700" height="285" loading="lazy" /></a>
 										</article>
 									</li>
 								</ul>
@@ -276,7 +276,7 @@
 						<!-- About -->
 							<section class="blurb">
 								<h2>Collaboration Opportunities</h2>
-								<p>I'm interested in collaborating on research projects in humanoid robotics, AI for science, and deep reinforcement learning. Whether you're a researcher, student, or industry professional, I'd be happy to discuss potential partnerships and opportunities.</p>
+								<p>I'm interested in collaborating on research projects in intelligent robotics, AI for science, and deep reinforcement learning. Whether you're a researcher, student, or industry professional, I'd be happy to discuss potential partnerships and opportunities.</p>
 								<ul class="actions">
 									<li><a href="mailto:mphielipp@gmail.com" class="button">Get in Touch</a></li>
 								</ul>

@@ -655,3 +655,64 @@ body.dark-mode .publication-snippet {
 		transition-duration: 0.01ms !important;
 	}
 }
+
+
+/* ------------------------------------------------------------------
+   Review fixes, August 2026
+   ------------------------------------------------------------------ */
+
+/* Keyboard users need a way past the header and sidebar. */
+.skip-link {
+	background: var(--surface, #ffffff);
+	border-radius: 0 0 6px 0;
+	color: var(--accent-strong, #176d68);
+	font-weight: 700;
+	left: 0;
+	padding: 0.75rem 1.25rem;
+	position: absolute;
+	top: 0;
+	transform: translateY(-120%);
+	transition: transform 0.15s ease;
+	z-index: 10001;
+}
+
+.skip-link:focus {
+	outline: 3px solid var(--accent-strong, #176d68);
+	transform: translateY(0);
+}
+
+#main:focus {
+	outline: none;
+}
+
+/* #aaa on a near-white breadcrumb bar was 2.18:1. */
+.breadcrumb ul li.current {
+	color: #5c666b;
+}
+
+/* #aaa at 8px on the footer panel was 2.04:1. */
+#footer .copyright,
+#footer .copyright a {
+	color: #5c666b;
+}
+
+body.dark-mode #footer .copyright {
+	color: #a9b4b8;
+}
+
+/* The byline avatar is now a <span>; keep the template's circular framing. */
+.post > header .meta span.author,
+.mini-post header span.author {
+	display: inline-flex;
+	align-items: center;
+}
+
+.post > header .meta span.author .name {
+	margin-right: 0.75em;
+}
+
+.post > header .meta span.author img,
+.mini-post header span.author img {
+	border-radius: 100%;
+	object-fit: cover;
+}
