@@ -1,8 +1,8 @@
 {
   "generated_at": "2025-07-09T10:11:31.658322Z",
   "cleaned_at": "2025-07-09T10:11:31.658955Z",
-  "total_publications": 67,
-  "publications_with_years": 32,
+  "total_publications": 66,
+  "publications_with_years": 31,
   "publications_with_citations": 45,
   "publications": [
     {
@@ -16,19 +16,6 @@
       "cited_by": 14,
       "url": "https://patents.google.com/patent/US9818414B2/en",
       "snippet": "Int. Cl. GIOL 21/00(2013. 01) GIOL 19/00(2013. 01) GIOL 19/018(2013. 01) GIOL 15/22(2006. 01) US CI. CPC............ GIOL 19/018 (2013. 01); G10L 15/22 (2013. 01); GIOL 2015/225 (2013. 01) Field of Classification Search None",
-      "year": 2013
-    },
-    {
-      "title": "System, method and computer program product for identity inference in a user device",
-      "type": "patent",
-      "issued_year": 2013,
-      "authors": [
-        "Mariano J Phielipp"
-      ],
-      "venue": "US 2013/0006898 - pre-grant publication of US 8,630,963",
-      "cited_by": 0,
-      "url": "https://patents.google.com/patent/US20130006898A1/en",
-      "snippet": "Patent for identity inference in a user device.",
       "year": 2013
     },
     {
