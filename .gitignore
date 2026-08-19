@@ -13,3 +13,7 @@ scripts/_data/
 .DS_Store
 _backup_pre_structure_20260814/
 _backup_pre_patch3_20260814/
+
+# Internal review notes. Kept locally for reference, not published:
+# anything in this repo is served at marianophielipp.github.io/<path>.
+AUDIT.md
