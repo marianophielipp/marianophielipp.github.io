@@ -103,7 +103,11 @@ async function loadPublications() {
 function updateStats() {
 	const totalPubs = allPublications.length;
 	const papers = allPublications.filter(pub => isPaper(pub)).length;
-	const patents = allPublications.filter(pub => isPatent(pub)).length;
+	// Count granted patents only. Pending and abandoned applications stay in the
+	// list, each labelled with its status, but neither is a granted patent.
+	const patents = allPublications.filter(
+		pub => isPatent(pub) && /\(granted/.test(pub.venue || '')
+	).length;
 	const totalCitations = allPublications.reduce((sum, pub) => sum + (pub.cited_by || 0), 0);
 	
 	document.getElementById('total-pubs').textContent = totalPubs;
@@ -221,9 +225,6 @@ function displayPublications() {
 		const snippet = (showSnippet && pub.snippet) ? escapeHtml(pub.snippet.substring(0, 200)) + (pub.snippet.length > 200 ? '...' : '') : '';
 		const year = getPublicationYear(pub);
 		const hasLink = Boolean(pub.url);
-		// No URL on the record? Offer a search rather than a dead title.
-		const scholarUrl = 'https://scholar.google.com/scholar?q=' +
-			encodeURIComponent(pub.title || '');
 		return `
 			<div class="publication-item ${hasLink ? 'has-link' : 'no-link'}">
 				<div class="publication-title">${hasLink
@@ -235,7 +236,6 @@ function displayPublications() {
 					${year ? `<button type="button" class="publication-year" data-filter-year="${year}" title="Show only ${year}" aria-label="Filter to ${year}">${year}</button>` : ''}
 					<button type="button" class="publication-type ${typeClass}" data-filter-type="${type}" title="Show only ${typeLabel}s" aria-label="Filter to ${typeLabel}s">${typeLabel.toUpperCase()}</button>
 					${(pub.cited_by || 0) > 0 ? `<span class="publication-citations">${escapeHtml(String(pub.cited_by))} citations</span>` : ''}
-					${hasLink ? '' : `<a class="publication-find" href="${escapeHtml(scholarUrl)}" rel="noopener noreferrer" target="_blank">Find on Google Scholar</a>`}
 				</div>
 				${snippet ? `<div class="publication-snippet">${snippet}</div>` : ''}
 			</div>

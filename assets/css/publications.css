@@ -548,31 +548,3 @@ body.dark-mode .publication-citations {
 	color: #a9b4b8;
 }
 
-/* 45 of 67 records carry no URL. Offer a search instead of a dead title. */
-.publication-find {
-	border-bottom: 1px dotted rgba(23, 109, 104, 0.45);
-	color: #5c666b;
-	font-size: 0.78rem;
-	margin-left: auto;
-}
-
-.publication-find:hover {
-	border-bottom-color: var(--accent-strong, #176d68);
-	color: var(--accent-strong, #176d68);
-}
-
-body.dark-mode .publication-find {
-	border-bottom-color: rgba(101, 215, 207, 0.45);
-	color: #a9b4b8;
-}
-
-body.dark-mode .publication-find:hover {
-	border-bottom-color: #65d7cf;
-	color: #65d7cf;
-}
-
-@media screen and (max-width: 736px) {
-	.publication-find {
-		margin-left: 0;
-	}
-}
