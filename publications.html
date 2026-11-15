@@ -135,17 +135,17 @@
 								<!-- Publications Controls -->
 								<div class="publications-controls">
 									<div class="row">
-										<input type="text" id="search-input" placeholder="Search publications…" title="Shortcuts: / focus search · Ctrl+Shift+L (⌘⇧L on Mac) reset filters" autocomplete="off">
-										<select id="type-filter">
+										<input type="text" id="search-input" aria-label="Search publications" placeholder="Search publications…" title="Shortcuts: / focus search · Ctrl+Shift+L (⌘⇧L on Mac) reset filters" autocomplete="off">
+										<select id="type-filter" aria-label="Filter by type">
 											<option value="">All Types</option>
 											<option value="paper">Papers</option>
 											<option value="patent">Patents</option>
 											<option value="report">Preprints</option>
 										</select>
-										<select id="year-filter">
+										<select id="year-filter" aria-label="Filter by year">
 											<option value="">All Years</option>
 										</select>
-										<select id="sort-by">
+										<select id="sort-by" aria-label="Sort by">
 											<option value="year-desc">Year (Newest First)</option>
 											<option value="year-asc">Year (Oldest First)</option>
 											<option value="citations-desc">Citations (High to Low)</option>
