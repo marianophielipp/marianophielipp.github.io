@@ -1,9 +1,9 @@
 {
   "generated_at": "2025-07-09T10:11:31.658322Z",
   "cleaned_at": "2025-07-09T10:11:31.658955Z",
-  "total_publications": 66,
+  "total_publications": 64,
   "publications_with_years": 31,
-  "publications_with_citations": 45,
+  "publications_with_citations": 44,
   "publications": [
     {
       "title": "Dialogue system with audio watermark",
@@ -318,7 +318,7 @@
       ],
       "venue": "arXiv preprint arXiv:2405.05495",
       "cited_by": 2,
-      "url": "",
+      "url": "https://arxiv.org/abs/2405.05495",
       "snippet": "The floorplanning of Systems-on-a-Chip (SoCs) and of chip sub-systems is a crucial step in the physical design flow as it determines the optimal shapes and locations of the blocks that make up the system. Simulated Annealing (SA) has been the method of choice for tackling classical floorplanning problems where the objective is to minimize wire-length and the total placement area. The goal in industry-relevant floorplanning problems, however, is not only to minimize area and wire-length, but to do that while respecting hard placement constraints that specify the general area and/or the specific locations for the placement of some blocks. We show that simply incorporating these constraints into the SA objective function leads to sub-optimal, and often illegal, solutions. We propose the Constraints-Aware Simulated Annealing (CA-SA) method and show that it strongly outperforms vanilla SA in floorplanning problems with hard placement constraints. We developed a new floorplanning tool on top of CA-SA: PARSAC (Parallel Simulated Annealing with Constraints). PARSAC is an efficient, easy-to-use, and massively parallel floorplanner. Unlike current SA-based or learning-based floorplanning tools that cannot effectively incorporate hard placement-constraints, PARSAC can quickly construct the Pareto-optimal legal solutions front for constrained floorplanning problems. PARSAC also outperforms traditional SA on legacy floorplanning benchmarks. PARSAC is available as an open-source repository for researchers to replicate and build on our result.",
       "year": 0,
       "issued_year": 2024
@@ -345,7 +345,7 @@
       ],
       "venue": "arXiv preprint arXiv:2205.10739",
       "cited_by": 0,
-      "url": "",
+      "url": "https://arxiv.org/abs/2205.10739",
       "snippet": "Decision makers often wish to use offline historical data to compare sequential-action policies at various world states. Importantly, computational tools should produce confidence values for such offline policy comparison (OPC) to account for statistical variance and limited data coverage. Nevertheless, there is little work that directly evaluates the quality of confidence values for OPC. In this work, we address this issue by creating benchmarks for OPC with Confidence (OPCC), derived by adding sets of policy comparison queries to datasets from offline reinforcement learning. In addition, we present an empirical evaluation of the risk versus coverage trade-off for a class of model-based baselines. In particular, the baselines learn ensembles of dynamics models, which are used in various ways to produce simulations for answering queries with confidence values. While our results suggest advantages for certain baseline variations, there appears to be significant room for improvement in future work.",
       "year": 0,
       "issued_year": 2022
@@ -356,7 +356,7 @@
         "Santiago Miret",
         "Vui Seng Chua",
         "Mattias Marder",
-        "Mariano Phiellip",
+        "Mariano Phielipp",
         "Nilesh Jain",
         "Somdeb Majumdar"
       ],
@@ -364,22 +364,6 @@
       "cited_by": 8,
       "url": "",
       "snippet": "Mixed-precision quantization is a powerful tool to enable memory and compute savings of neural network workloads by deploying different sets of bit-width precisions on separate compute operations. In this work, we present a flexible and scalable framework for automated mixed-precision quantization that concurrently optimizes task performance, memory compression, and compute savings through multi-objective evolutionary computing. Our framework centers on Neuroevolution-Enhanced Multi-Objective Optimization (NEMO), a novel search method, which combines established search methods with the representational power of neural networks. Within NEMO, the population is divided into structurally distinct sub-populations, or species, which jointly create the Pareto frontier of solutions for the multi-objective problem. At each generation, species perform separate mutation and crossover operations, and are re …",
-      "year": 0
-    },
-    {
-      "title": "Moto: Offline to online fine-tuning for model-based reinforcement learning",
-      "authors": [
-        "Rafael Rafailov",
-        "Kyle Beltran Hatch",
-        "Victor Kolev",
-        "John D Martin",
-        "Mariano Phielipp",
-        "Chelsea Finn"
-      ],
-      "venue": "",
-      "cited_by": 1,
-      "url": "",
-      "snippet": "We study the problem of offline-to-online reinforcement learning from high-dimensional pixel observations. While recent model-free approaches successfully use offline pre-training with online fine-tuning to either improve the performance of the data-collection policy or adapt to novel tasks, model-based approaches still remain underutilized in this setting. In this work, we argue that existing methods for high-dimensional model-based offline RL are not suitable for offline-to-online fine-tuning due to issues with representation learning shifts, off-dynamics data, and non-stationary rewards. We propose a simple on-policy model-based method with adaptive behavior regularization. In our simulation experiments, we find that our approach successfully solves long-horizon robot manipulation tasks completely from images by using a combination of offline data and online interactions.",
       "year": 0
     },
     {
@@ -427,7 +411,7 @@
       ],
       "venue": "arXiv preprint arXiv:2212.04573",
       "cited_by": 25,
-      "url": "",
+      "url": "https://arxiv.org/abs/2212.04573",
       "snippet": "Language-conditioned policies allow robots to interpret and execute human instructions. Learning such policies requires a substantial investment with regards to time and compute resources. Still, the resulting controllers are highly device-specific and cannot easily be transferred to a robot with different morphology, capability, appearance or dynamics. In this paper, we propose a sample-efficient approach for training language-conditioned manipulation policies that allows for rapid transfer across different types of robots. By introducing a novel method, namely Hierarchical Modularity, and adopting supervised attention across multiple sub-modules, we bridge the divide between modular and end-to-end learning and enable the reuse of functional building blocks. In both simulated and real world robot manipulation experiments, we demonstrate that our method outperforms the current state-of-the-art methods and can transfer policies across 4 different robots in a sample-efficient manner. Finally, we show that the functionality of learned sub-modules is maintained beyond the training process and can be used to introspect the robot decision-making process. Code is available at https://github.com/ir-lab/ModAttn.",
       "year": 0,
       "issued_year": 2022
@@ -459,7 +443,7 @@
       ],
       "venue": "arXiv preprint arXiv:2106.08482",
       "cited_by": 7,
-      "url": "",
+      "url": "https://arxiv.org/abs/2106.08482",
       "snippet": "Inter-agent communication can significantly increase performance in multi-agent tasks that require co-ordination to achieve a shared goal. Prior work has shown that it is possible to learn inter-agent communication protocols using multi-agent reinforcement learning and message-passing network architectures. However, these models use an unconstrained broadcast communication model, in which an agent communicates with all other agents at every step, even when the task does not require it. In real-world applications, where communication may be limited by system constraints like bandwidth, power and network capacity, one might need to reduce the number of messages that are sent. In this work, we explore a simple method of minimizing communication while maximizing performance in multi-task learning: simultaneously optimizing a task-specific objective and a communication penalty. We show that the objectives can be optimized using Reinforce and the Gumbel-Softmax reparameterization. We introduce two techniques to stabilize training: 50% training and message forwarding. Training with the communication penalty on only 50% of the episodes prevents our models from turning off their outgoing messages. Second, repeating messages received previously helps models retain information, and further improves performance. With these techniques, we show that we can reduce communication by 75% with no loss of performance.",
       "year": 0,
       "issued_year": 2021
@@ -516,7 +500,7 @@
       ],
       "venue": "arXiv preprint arXiv:2302.14242",
       "cited_by": 3,
-      "url": "",
+      "url": "https://arxiv.org/abs/2302.14242",
       "snippet": "Recent progress in deep reinforcement learning (RL) and computer vision enables artificial agents to solve complex tasks, including locomotion, manipulation and video games from high-dimensional pixel observations. However, domain specific reward functions are often engineered to provide sufficient learning signals, requiring expert knowledge. While it is possible to train vision-based RL agents using only sparse rewards, additional challenges in exploration arise. We present a novel and efficient method to solve sparse-reward robot manipulation tasks from only image observations by utilizing a few demonstrations. First, we learn an embedded neural dynamics model from demonstration transitions and further fine-tune it with the replay buffer. Next, we reward the agents for staying close to the demonstrated trajectories using a distance metric defined in the embedding space. Finally, we use an off-policy, model-free vision RL algorithm to update the control policies. Our method achieves state-of-the-art sample efficiency in simulation and enables efficient training of a real Franka Emika Panda manipulator.",
       "year": 0,
       "issued_year": 2023
@@ -641,25 +625,10 @@
       ],
       "venue": "arXiv preprint arXiv:1911.11744",
       "cited_by": 6,
-      "url": "",
+      "url": "https://arxiv.org/abs/1911.11744",
       "snippet": "In this work we propose a novel end-to-end imitation learning approach which combines natural language, vision, and motion information to produce an abstract representation of a task, which in turn is used to synthesize specific motion controllers at run-time. This multimodal approach enables generalization to a wide variety of environmental conditions and allows an end-user to direct a robot policy through verbal communication. We empirically validate our approach with an extensive set of simulations and show that it achieves a high task success rate over a variety of conditions while remaining amenable to probabilistic interpretability.",
       "year": 0,
       "issued_year": 2019
-    },
-    {
-      "title": "Imitation Learning of Robot Policies using Language, Vision and Motion",
-      "authors": [
-        "Simon Stepputtis",
-        "Joseph Campbell",
-        "Mariano Phielipp",
-        "Chitta Baral",
-        "Heni Ben Amor"
-      ],
-      "venue": "",
-      "cited_by": 0,
-      "url": "",
-      "snippet": "In this work we propose a novel end-to-end imitation learning approach which combines natural language, vision, and motion information to produce an abstract representation of a task, which in turn can be used to synthesize specific motion controllers at run-time. This multimodal approach enables generalization to a wide variety of environmental conditions and allows an end-user to influence a robot policy through verbal communication. We empirically validate our approach with an extensive set of simulations and show that it achieves a high task success rate over a variety of conditions while remaining amenable to probabilistic interpretability.",
-      "year": 0
     },
     {
       "title": "Human perception driven indexing and labeling of faces",
@@ -682,7 +651,7 @@
       ],
       "venue": "arXiv preprint arXiv:1905.01537",
       "cited_by": 19,
-      "url": "",
+      "url": "https://arxiv.org/abs/1905.01537",
       "snippet": "Hierarchy in reinforcement learning agents allows for control at multiple time scales yielding improved sample efficiency, the ability to deal with long time horizons and transferability of sub-policies to tasks outside the training distribution. It is often implemented as a master policy providing goals to a sub-policy. Ideally, we would like the goal-spaces to be learned, however, properties of optimal goal spaces still remain unknown and consequently there is no method yet to learn optimal goal spaces. Motivated by this, we systematically analyze how various modifications to the ground-truth goal-space affect learning in hierarchical models with the aim of identifying important properties of optimal goal spaces. Our results show that, while rotation of ground-truth goal spaces and noise had no effect, having additional unnecessary factors significantly impaired learning in hierarchical models.",
       "year": 0,
       "issued_year": 2019
@@ -1021,6 +990,6 @@
       "year": 0
     }
   ],
-  "reviewed_at": "2026-08-14",
+  "reviewed_at": "2026-11-15",
   "review_note": "Patent venues, statuses and record URLs verified against Google Patents/USPTO. Selected paper venues and years verified against the published proceedings. Remaining year/venue gaps come from the Google Scholar export and need a fresh scholar run."
 }

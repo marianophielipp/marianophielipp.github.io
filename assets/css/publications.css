@@ -325,11 +325,6 @@ body.dark-mode .publications-controls .publication-action-secondary:hover:not(:d
 }
 
 /* Search Highlight */
-.publication-item.highlight {
-	background: rgba(46, 186, 174, 0.05);
-	border-left-color: #2ebaae;
-}
-
 /* Filter Active State */
 .publications-controls select:not([value=""]) {
 	border-color: #2ebaae;

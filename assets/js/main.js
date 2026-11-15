@@ -34,6 +34,7 @@
 			.panel({
 				delay: 500,
 				hideOnClick: true,
+				hideOnEscape: true,
 				hideOnSwipe: true,
 				resetScroll: true,
 				resetForms: true,
@@ -46,10 +47,23 @@
 		$menuTrigger.attr({ 'aria-controls': 'menu', 'aria-expanded': 'false' });
 		$menu.attr('aria-hidden', 'true');
 
+		var menuWasVisible = false;
+
 		function syncMenuState() {
 			var visible = $body.hasClass('is-menu-visible');
 			$menuTrigger.attr('aria-expanded', visible ? 'true' : 'false');
 			$menu.attr('aria-hidden', visible ? 'false' : 'true');
+			if (visible === menuWasVisible) return;
+			menuWasVisible = visible;
+			// Move focus into the panel on open, and back to the trigger on close.
+			// The panel is visibility:hidden until its transition starts, so defer the focus call.
+			if (visible) {
+				window.setTimeout(function() {
+					if ($body.hasClass('is-menu-visible')) $menu.find('a').first().trigger('focus');
+				}, 100);
+			} else if (!document.activeElement || document.activeElement === document.body || $.contains($menu[0], document.activeElement)) {
+				$menuTrigger.filter(':visible').first().trigger('focus');
+			}
 		}
 
 		if (window.MutationObserver) {

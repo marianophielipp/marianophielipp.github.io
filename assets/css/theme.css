@@ -723,8 +723,9 @@ body.dark-mode #footer .copyright {
    ------------------------------------------------------------------ */
 
 /* The hamburger duplicated the header nav at every width. Header nav is
-   hidden below 737px, so the panel trigger belongs there and nowhere else. */
-@media screen and (min-width: 737px) {
+   hidden at 980px and below (main.css), so the panel trigger belongs there
+   and nowhere else. The two breakpoints must stay adjacent: 980 / 981. */
+@media screen and (min-width: 981px) {
 	#header nav.main li.menu {
 		display: none;
 	}
@@ -911,5 +912,13 @@ body.dark-mode .selected-work-meta {
 	.page-nav a.page-nav-next {
 		max-width: 100%;
 		text-align: left;
+	}
+}
+
+/* Below 481px the date, avatar and name do not fit on one row (the name was
+   clipped at the card edge). The name is already in the intro card above. */
+@media screen and (max-width: 480px) {
+	.post > header .meta span.author .name {
+		display: none;
 	}
 }

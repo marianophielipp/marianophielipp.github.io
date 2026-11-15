@@ -81,7 +81,7 @@ function syncFilterActiveState() {
 // Load publications data
 async function loadPublications() {
 	try {
-		const response = await fetch('data.json?v=20260807');
+		const response = await fetch('data.json?v=20261115');
 		const data = await response.json();
 		allPublications = data.publications || [];
 		filteredPublications = [...allPublications];
@@ -165,7 +165,8 @@ function filterPublications() {
 			(pub.title && pub.title.toLowerCase().includes(searchTerm)) ||
 			getAuthors(pub).some(author => String(author).toLowerCase().includes(searchTerm)) ||
 			(pub.venue && pub.venue.toLowerCase().includes(searchTerm)) ||
-			(pub.snippet && pub.snippet.toLowerCase().includes(searchTerm));
+			// Patent snippets are not displayed, so they are not searched either.
+			(!isPatent(pub) && pub.snippet && pub.snippet.toLowerCase().includes(searchTerm));
 		
 		// Type filter
 		const matchesType = !typeFilter || getPublicationType(pub) === typeFilter;
@@ -186,11 +187,16 @@ function filterPublications() {
 // Sort publications
 function sortPublications(sortBy) {
 	switch(sortBy) {
+		// Records without a year sort last in both directions; year 0 is "unknown", not "oldest".
 		case 'year-desc':
 			filteredPublications.sort((a, b) => getPublicationYear(b) - getPublicationYear(a));
 			break;
 		case 'year-asc':
-			filteredPublications.sort((a, b) => getPublicationYear(a) - getPublicationYear(b));
+			filteredPublications.sort((a, b) => {
+				const ya = getPublicationYear(a), yb = getPublicationYear(b);
+				if (!ya || !yb) return (ya ? 0 : 1) - (yb ? 0 : 1);
+				return ya - yb;
+			});
 			break;
 		case 'citations-desc':
 			filteredPublications.sort((a, b) => (b.cited_by || 0) - (a.cited_by || 0));
@@ -327,23 +333,5 @@ document.addEventListener('DOMContentLoaded', function() {
 			e.preventDefault();
 			clearFilters();
 		}
-	});
-	
-	// Add search highlighting
-	document.getElementById('search-input').addEventListener('input', function() {
-		const searchTerm = this.value.toLowerCase();
-		const items = document.querySelectorAll('.publication-item');
-		
-		items.forEach(item => {
-			const title = item.querySelector('.publication-title').textContent.toLowerCase();
-			const authors = item.querySelector('.publication-authors').textContent.toLowerCase();
-			const venue = item.querySelector('.publication-venue')?.textContent.toLowerCase() || '';
-			
-			if (searchTerm && (title.includes(searchTerm) || authors.includes(searchTerm) || venue.includes(searchTerm))) {
-				item.classList.add('highlight');
-			} else {
-				item.classList.remove('highlight');
-			}
-		});
 	});
 });

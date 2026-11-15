@@ -37,8 +37,8 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="assets/css/theme.css?v=20260807d" />
-		<link rel="stylesheet" href="assets/css/publications.css?v=20260807b" />
+		<link rel="stylesheet" href="assets/css/theme.css?v=20261115" />
+		<link rel="stylesheet" href="assets/css/publications.css?v=20261115" />
 	</head>
 	<body class="is-preload">
 		<script>(function(){try{var t=localStorage.getItem('marianophielipp-theme');if(t==='dark'||(!t&&window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches))document.body.classList.add('dark-mode');}catch(e){}})();</script>
@@ -68,16 +68,6 @@
 						</nav>
 					</header>
 
-				<!-- Breadcrumb -->
-					<nav class="breadcrumb">
-						<div class="container">
-							<ul>
-								<li><a href="index.html">Home</a></li>
-								<li class="current">Publications &amp; Patents</li>
-							</ul>
-						</div>
-					</nav>
-
 				<!-- Menu -->
 					<section id="menu">
 						<section>
@@ -98,6 +88,16 @@
 				<!-- Main -->
 					<div id="main" role="main" tabindex="-1">
 
+						<!-- Breadcrumb: inside #main so it is not a third flex column of #wrapper -->
+						<nav class="breadcrumb">
+							<div class="container">
+								<ul>
+									<li><a href="index.html">Home</a></li>
+									<li class="current">Publications &amp; Patents</li>
+								</ul>
+							</div>
+						</nav>
+
 						<!-- Post -->
 							<article class="post">
 								<header>
@@ -110,7 +110,7 @@
 										<span class="author"><span class="name">Mariano Phielipp</span><img src="images/avatar.jpeg" alt="Mariano Phielipp" /></span>
 									</div>
 								</header>
-								<span class="image featured"><img src="images/hero-robot-learning-1400.jpg" srcset="images/hero-robot-learning-700.jpg 700w, images/hero-robot-learning-1400.jpg 1400w, images/hero-robot-learning.jpg 1968w" sizes="(max-width: 736px) 100vw, 700px" alt="Robotic hand learning from objects and multimodal data" width="1400" height="570" fetchpriority="high" /></span>
+								<span class="image featured"><img src="images/hero-robot-learning-1400.jpg" srcset="images/hero-robot-learning-700.jpg 700w, images/hero-robot-learning-1400.jpg 1400w, images/hero-robot-learning.jpg 1968w" sizes="(max-width: 736px) 100vw, (max-width: 1280px) calc(100vw - 154px), 880px" alt="Robotic hand learning from objects and multimodal data" width="1400" height="570" fetchpriority="high" /></span>
 								
 								<!-- Publications Stats -->
 								<div id="publications-stats" class="publications-stats" style="display: none;">
@@ -244,8 +244,8 @@
 			<script src="assets/js/browser.min.js" defer></script>
 			<script src="assets/js/breakpoints.min.js" defer></script>
 			<script src="assets/js/util.js?v=20260807" defer></script>
-			<script src="assets/js/main.js?v=20260807" defer></script>
-			<script src="assets/js/publications.js?v=20260807b" defer></script>
+			<script src="assets/js/main.js?v=20261115" defer></script>
+			<script src="assets/js/publications.js?v=20261115" defer></script>
 
 	</body>
 </html>
