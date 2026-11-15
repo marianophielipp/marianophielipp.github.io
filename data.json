@@ -2,7 +2,7 @@
   "generated_at": "2025-07-09T10:11:31.658322Z",
   "cleaned_at": "2025-07-09T10:11:31.658955Z",
   "total_publications": 64,
-  "publications_with_years": 31,
+  "publications_with_years": 37,
   "publications_with_citations": 44,
   "publications": [
     {
@@ -262,7 +262,8 @@
       "cited_by": 25,
       "url": "",
       "snippet": "We describe new techniques for computing a smooth triangular mesh surface that surrounds an enumerated volume consisting of a collection of points from a 3D rectilinear grid. The surface has the topology of an isosurface computed by a marching cubes method applied to a field function that has the value one at the points in the volume and zero for points not in the volume. The vertices are confined to the edges of the grid that penetrate this separating surface and the precise positions are computed so as to optimize a certain energy functional applied to the surface. We use efficient iterative methods to compute the optimal separating surfaces. We lift the concept of energy functionals for planar curves to isosurfaces by means of the 4*-network which is a unique collection of orthogonal planar polygons lying on the isosurface. The general strategy that we describe here leads to methods that are simple, efficient, and …",
-      "year": 0
+      "year": 0,
+      "issued_year": 2003
     },
     {
       "title": "Searching for high-value molecules using reinforcement learning and transformers",
@@ -484,11 +485,12 @@
         "Mariano Phielipp",
         "Ladislau Boloni"
       ],
-      "venue": "",
+      "venue": "International Conference on Learning Representations (ICLR)",
       "cited_by": 17,
       "url": "",
       "snippet": "Modern deep reinforcement learning (DRL) has been successful in solving a range of challenging sequential decision-making problems. Most of these algorithms use an ensemble of neural networks as their backbone structure and benefit from the diversity among the neural networks to achieve optimal results. Unfortunately, the members of the ensemble can converge to the same point either the parametric space or representation space during the training phase, therefore, losing all the leverage of an ensemble. In this paper, we describe Maximize Ensemble Diversity in Reinforcement Learning (MED-RL), a set of regularization methods inspired from the economics and consensus optimization to improve diversity in the ensemble-based deep reinforcement learning methods by encouraging inequality between the networks during training. We integrated MED-RL in five of the most common ensemble-based deep RL algorithms for both continuous and discrete control tasks and evaluated on six Mujoco environments and six Atari games. Our results show that MED-RL augmented algorithms outperform their un-regularized counterparts significantly and in some cases achieved more than 300 in performance gains.",
-      "year": 0
+      "year": 0,
+      "issued_year": 2022
     },
     {
       "title": "Learning sparse control tasks from pixels by latent nearest-neighbor-guided explorations",
@@ -589,11 +591,12 @@
         "Mariano Phielipp",
         "Guillermo Sapiro"
       ],
-      "venue": "Advances in Neural Information Processing Systems",
+      "venue": "Advances in Neural Information Processing Systems (NeurIPS)",
       "cited_by": 24,
       "url": "",
       "snippet": "Agents trained via deep reinforcement learning (RL) routinely fail to generalize to unseen environments, even when these share the same underlying dynamics as the training levels. Understanding the generalization properties of RL is one of the challenges of modern machine learning. Towards this goal, we analyze policy learning in the context of Partially Observable Markov Decision Processes (POMDPs) and formalize the dynamics of training levels as instances. We prove that, independently of the exploration strategy, reusing instances introduces significant changes on the effective Markov dynamics the agent observes during training. Maximizing expected rewards impacts the learned belief state of the agent by inducing undesired instance-specific speed-running policies instead of generalizable ones, which are sub-optimal on the training set. We provide generalization bounds to the value gap in train and test environments based on the number of training instances, and use insights based on these to improve performance on unseen levels. We propose training a shared belief representation over an ensemble of specialized policies, from which we compute a consensus policy that is used for data collection, disallowing instance-specific exploitation. We experimentally validate our theory, observations, and the proposed computational solution over the CoinRun benchmark.",
-      "year": 0
+      "year": 0,
+      "issued_year": 2020
     },
     {
       "title": "Improved Silent Data Error Detection Through Test Optimization Using Reinforcement Learning",
@@ -719,7 +722,9 @@
       "cited_by": 0,
       "url": "",
       "snippet": "Morphology-aware policy learning is a means of enhancing policy sample efficiency by aggregating data from multiple agents. These types of policies have previously been shown to help generalize over dynamic, kinematic, and limb configuration variations between agent morphologies. Unfortunately, these policies still have sub-optimal zero-shot performance compared to end-to-end finetuning on morphologies at deployment. This limitation has ramifications in practical applications such as robotics because further data collection to perform end-to-end finetuning can be computationally expensive. In this work, we investigate combining morphology-aware pretraining with \\textit{parameter efficient finetuning} (PEFT) techniques to help reduce the learnable parameters necessary to specialize a morphology-aware policy to a target embodiment. We compare directly tuning sub-sets of model weights, input learnable adapters, and prefix tuning techniques for online finetuning. Our analysis reveals that PEFT techniques in conjunction with policy pre-training generally help reduce the number of samples to necessary to improve a policy compared to training models end-to-end from scratch. We further find that tuning as few as less than 1\\% of total parameters will improve policy performance compared the zero-shot performance of the base pretrained a policy.",
-      "year": 0
+      "year": 0,
+      "issued_year": 2025,
+      "type": "report"
     },
     {
       "title": "Efficient Design-and-Control Automation with Reinforcement Learning and Adaptive Exploration",
@@ -817,7 +822,9 @@
       "cited_by": 0,
       "url": "",
       "snippet": "*In silico* design and optimization of new materials primarily relies on high-accuracy atomic simulators that perform density functional theory (DFT) calculations. While recent works showcase the strong potential of machine learning to accelerate the material design process, they mostly consist of generative approaches that do not use direct DFT signals as feedback to improve training and generation mainly due to DFT's high computational cost. To aid the adoption of direct DFT signals in the materials design loop through online reinforcement learning (RL), we propose **CrystalGym**, an open-source RL environment for crystalline material discovery. Using CrystalGym, we benchmark value- and policy-based reinforcement learning algorithms for designing various crystals conditioned on target properties. Concretely, we optimize for challenging properties like the band gap, bulk modulus, and density, which are …",
-      "year": 0
+      "year": 0,
+      "issued_year": 2025,
+      "type": "report"
     },
     {
       "title": "Crystal Design Amidst Noisy DFT Signals: A Reinforcement Learning Approach",
@@ -937,11 +944,12 @@
         "Mariano Phielipp",
         "Glen Berseth"
       ],
-      "venue": "",
+      "venue": "International Conference on Machine Learning (ICML)",
       "cited_by": 34,
       "url": "",
       "snippet": "The prototypical approach to reinforcement learning involves training policies tailored to a particular agent from scratch for every new morphology. Recent work aims to eliminate the re-training of policies by investigating whether a morphology-agnostic policy, trained on a diverse set of agents with similar task objectives, can be transferred to new agents with unseen morphologies without re-training. This is a challenging problem that required previous approaches to use hand-designed descriptions of the new agent’s morphology. Instead of hand-designing this description, we propose a data-driven method that learns a representation of morphology directly from the reinforcement learning objective. Ours is the first reinforcement learning algorithm that can train a policy to generalize to new agent morphologies without requiring a description of the agent’s morphology in advance. We evaluate our approach on the standard benchmark for agent-agnostic control, and improve over the current state of the art in zero-shot generalization to new agents. Importantly, our method attains good performance without an explicit description of morphology.",
-      "year": 0
+      "year": 0,
+      "issued_year": 2022
     },
     {
       "title": "Analytically directed data collection in sensor network",
