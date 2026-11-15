@@ -71,5 +71,5 @@ Then visit `http://localhost:8000` in your web browser.
 ## Contact
 
 - LinkedIn: [mariano-phielipp](https://www.linkedin.com/in/mariano-phielipp/)
-- Twitter: [@mphielipp](https://x.com/mphielipp)
+- X: [@mphielipp](https://x.com/mphielipp)
 - Email: mphielipp@gmail.com

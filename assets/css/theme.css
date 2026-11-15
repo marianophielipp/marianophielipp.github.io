@@ -963,3 +963,8 @@ body.dark-mode #header .main ul li > a {
 #footer .icons li {
 	padding-right: 0.6em;
 }
+
+/* X logo: Font Awesome 5 has no X glyph, so the icon is an inline SVG. */
+.icon.icon-x svg {
+	display: block;
+}
