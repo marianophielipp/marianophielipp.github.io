@@ -11,7 +11,7 @@ Dr. Mariano Phielipp is a Director of Embodied Intelligence, specializing in Dee
 Four sections, one vocabulary. The same labels are used in the header, the mobile
 menu panel, the prev/next footer and the sidebar.
 
-- **Home** (`index.html`) — positioning and three selected pieces of work
+- **Home** (`index.html`) — positioning and five selected pieces of work
 - **About** (`bio.html`) — background, roles, education, awards, patents
 - **Research** (`research.html`) — research themes
 - **Publications** (`publications.html`) — searchable record driven by `data.json`
