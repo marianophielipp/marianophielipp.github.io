@@ -950,3 +950,16 @@ body.dark-mode .breadcrumb ul li a {
 body.dark-mode #header .main ul li > a {
 	color: #aaa;
 }
+
+/* Sidebar footer icons were 13-19 x 17px; WCAG 2.2 asks for 24 x 24 targets. */
+#footer .icons li > a {
+	align-items: center;
+	display: inline-flex;
+	justify-content: center;
+	min-height: 24px;
+	min-width: 24px;
+}
+
+#footer .icons li {
+	padding-right: 0.6em;
+}
