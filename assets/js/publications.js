@@ -44,6 +44,23 @@ function updatePublicationActions() {
 		`Export ${resultCount} filtered publication${resultCount === 1 ? '' : 's'} as JSON`
 	);
 	exportCount.textContent = `${resultCount} ${resultCount === 1 ? 'record' : 'records'}`;
+	announceResultCount(resultCount, hasActiveControls);
+}
+
+/** Tell screen-reader users how many records the current filters leave.
+    The region is aria-live="polite"; typing is debounced so each keystroke is not read out. */
+let announceTimer = null;
+function announceResultCount(resultCount, hasActiveControls) {
+	const status = document.getElementById('results-status');
+	if (!status || allPublications.length === 0) return;
+	const total = allPublications.length;
+	const text = hasActiveControls
+		? `Showing ${resultCount} of ${total} records`
+		: `Showing all ${total} records`;
+	window.clearTimeout(announceTimer);
+	announceTimer = window.setTimeout(function () {
+		status.textContent = text;
+	}, 400);
 }
 
 /** True if keyboard events should not run page shortcuts (user is typing elsewhere). */

@@ -543,3 +543,14 @@ body.dark-mode .publication-citations {
 	color: #a9b4b8;
 }
 
+/* Result count: visible, and announced to screen readers via aria-live. */
+.results-status {
+	color: #5c666b;
+	font-size: 0.8em;
+	margin: 0 0 1em 0;
+	min-height: 1.65em;
+}
+
+body.dark-mode .results-status {
+	color: #a9b4b8;
+}
