@@ -968,3 +968,12 @@ body.dark-mode #header .main ul li > a {
 .icon.icon-x svg {
 	display: block;
 }
+
+/* Sidebar footer icons: #aaa on the canvas was 2.04:1 in light mode; icons need 3:1. */
+#footer .icons {
+	color: #5c666b;
+}
+
+body.dark-mode #footer .icons {
+	color: #888;
+}
