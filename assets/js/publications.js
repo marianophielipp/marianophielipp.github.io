@@ -98,7 +98,7 @@ function syncFilterActiveState() {
 // Load publications data
 async function loadPublications() {
 	try {
-		const response = await fetch('data.json?v=20261115');
+		const response = await fetch('data.json?v=20261116');
 		const data = await response.json();
 		allPublications = data.publications || [];
 		filteredPublications = [...allPublications];
@@ -118,18 +118,22 @@ async function loadPublications() {
 
 // Update statistics
 function updateStats() {
-	const totalPubs = allPublications.length;
+	// Papers + preprints + patents account for every record in the list.
 	const papers = allPublications.filter(pub => isPaper(pub)).length;
-	// Count granted patents only. Pending and abandoned applications stay in the
-	// list, each labelled with its status, but neither is a granted patent.
-	const patents = allPublications.filter(
-		pub => isPatent(pub) && /\(granted/.test(pub.venue || '')
-	).length;
+	const preprints = allPublications.filter(pub => getPublicationType(pub) === 'report').length;
+	const patentRecords = allPublications.filter(pub => isPatent(pub));
+	const patents = patentRecords.length;
+	const granted = patentRecords.filter(pub => /\(granted/.test(pub.venue || '')).length;
+	const pending = patentRecords.filter(pub => /\(pending/.test(pub.venue || '')).length;
 	const totalCitations = allPublications.reduce((sum, pub) => sum + (pub.cited_by || 0), 0);
 	
-	document.getElementById('total-pubs').textContent = totalPubs;
 	document.getElementById('papers').textContent = papers;
+	document.getElementById('preprints').textContent = preprints;
 	document.getElementById('patents').textContent = patents;
+	// Only spell out the split when it accounts for every patent record.
+	document.getElementById('patents-label').textContent = (granted + pending === patents)
+		? `Patents (${granted} granted, ${pending} pending)`
+		: 'Patents';
 	document.getElementById('citations').textContent = totalCitations;
 	document.getElementById('publications-stats').style.display = 'flex';
 }

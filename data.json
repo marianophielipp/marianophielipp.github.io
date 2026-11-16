@@ -1,9 +1,9 @@
 {
   "generated_at": "2025-07-09T10:11:31.658322Z",
   "cleaned_at": "2025-07-09T10:11:31.658955Z",
-  "total_publications": 64,
-  "publications_with_years": 37,
-  "publications_with_citations": 44,
+  "total_publications": 62,
+  "publications_with_years": 35,
+  "publications_with_citations": 42,
   "publications": [
     {
       "title": "Dialogue system with audio watermark",
@@ -168,20 +168,6 @@
       "cited_by": 0,
       "url": "https://patents.google.com/patent/US10791368B2/en",
       "snippet": "Systems, methods, and computer program products described herein may allow for the capture of a user's reaction to an advertisement. The reaction may be verbal or may take the form of a gesture. Once the reaction is captured, the reaction may be interpreted to infer whether the user's opinion of the advertised product or service is positive. The opinion may be combined with metadata that is associated with the advertisement. The metadata may include the identity of the product or service being adver tised and/or may include the identity of the advertiser, ie, the producer or source of the product or service. The combination of the user's identity information, the metadata, and the user's opinion may collectively represent the user's interest in the advertised product or service. This interest information may be saved in a wish list or shopping list for the user, and may be stored via a network at a location removed from the …",
-      "year": 0
-    },
-    {
-      "title": "System, method and computer program product for linking content availability to media consumption",
-      "type": "patent",
-      "issued_year": 2013,
-      "authors": [
-        "John W Carroll",
-        "Mariano J Phielipp"
-      ],
-      "venue": "US app. 13/175,186 (abandoned)",
-      "cited_by": 5,
-      "url": "https://patents.google.com/patent/US20130007045A1/en",
-      "snippet": "The systems, methods and computer program products described herein may allow a user to view a desired content item, on the condition that the user has viewed other content that the content provider defines as a prerequisite content item. When a user views content, this fact may be recorded in the viewing history data structure associated with the user. If the user wishes to see a content item that has a prerequisite content item, the content provider may scan the viewing history to see whether or not the user has seen the prerequisite content item. If so, then the requested content item may be",
       "year": 0
     },
     {
@@ -950,23 +936,6 @@
       "snippet": "The prototypical approach to reinforcement learning involves training policies tailored to a particular agent from scratch for every new morphology. Recent work aims to eliminate the re-training of policies by investigating whether a morphology-agnostic policy, trained on a diverse set of agents with similar task objectives, can be transferred to new agents with unseen morphologies without re-training. This is a challenging problem that required previous approaches to use hand-designed descriptions of the new agent’s morphology. Instead of hand-designing this description, we propose a data-driven method that learns a representation of morphology directly from the reinforcement learning objective. Ours is the first reinforcement learning algorithm that can train a policy to generalize to new agent morphologies without requiring a description of the agent’s morphology in advance. We evaluate our approach on the standard benchmark for agent-agnostic control, and improve over the current state of the art in zero-shot generalization to new agents. Importantly, our method attains good performance without an explicit description of morphology.",
       "year": 0,
       "issued_year": 2022
-    },
-    {
-      "title": "Analytically directed data collection in sensor network",
-      "type": "patent",
-      "issued_year": 2018,
-      "authors": [
-        "Robert L Vaughn",
-        "Sukhwinder S Cheema",
-        "Mark D Savoy",
-        "Mariano J Phielipp",
-        "Suraj Sindia"
-      ],
-      "venue": "US app. 15/201,377 (abandoned)",
-      "cited_by": 9,
-      "url": "https://patents.google.com/patent/US20180006888A1/en",
-      "snippet": "Inventors: Robert L. VAUGHN, Portland, OR (US); Sukhwinder S. CHEEMA, Santa Clara, CA (US); Mark D. SAVOY,",
-      "year": 0
     },
     {
       "title": "Accelerating Visual Sparse-Reward Learning with Latent Nearest-Demonstration-Guided Explorations",
