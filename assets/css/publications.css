@@ -554,3 +554,28 @@ body.dark-mode .publication-citations {
 body.dark-mode .results-status {
 	color: #a9b4b8;
 }
+
+/* One-sentence summary of each record, written from its abstract. */
+.publication-tldr {
+	color: #263238;
+	font-size: 0.95rem;
+	line-height: 1.55;
+	margin: 0.6rem 0 0.75rem;
+}
+
+.publication-tldr-label {
+	color: #176d68;
+	font-size: 0.7rem;
+	font-weight: 700;
+	letter-spacing: 0.12em;
+	margin-right: 0.35em;
+	text-transform: uppercase;
+}
+
+body.dark-mode .publication-tldr {
+	color: #edf3f4;
+}
+
+body.dark-mode .publication-tldr-label {
+	color: #65d7cf;
+}

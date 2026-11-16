@@ -98,7 +98,7 @@ function syncFilterActiveState() {
 // Load publications data
 async function loadPublications() {
 	try {
-		const response = await fetch('data.json?v=20261116');
+		const response = await fetch('data.json?v=20261117');
 		const data = await response.json();
 		allPublications = data.publications || [];
 		filteredPublications = [...allPublications];
@@ -186,6 +186,7 @@ function filterPublications() {
 			(pub.title && pub.title.toLowerCase().includes(searchTerm)) ||
 			getAuthors(pub).some(author => String(author).toLowerCase().includes(searchTerm)) ||
 			(pub.venue && pub.venue.toLowerCase().includes(searchTerm)) ||
+			(pub.tldr && pub.tldr.toLowerCase().includes(searchTerm)) ||
 			// Patent snippets are not displayed, so they are not searched either.
 			(!isPatent(pub) && pub.snippet && pub.snippet.toLowerCase().includes(searchTerm));
 		
@@ -250,6 +251,7 @@ function displayPublications() {
 		const venue = pub.venue ? escapeHtml(pub.venue) : '';
 		const showSnippet = type !== 'patent';
 		const snippet = (showSnippet && pub.snippet) ? escapeHtml(pub.snippet.substring(0, 200)) + (pub.snippet.length > 200 ? '...' : '') : '';
+		const tldr = pub.tldr ? escapeHtml(pub.tldr) : '';
 		const year = getPublicationYear(pub);
 		const hasLink = Boolean(pub.url);
 		return `
@@ -259,6 +261,7 @@ function displayPublications() {
 					: title}</div>
 				<div class="publication-authors">${authorsStr}</div>
 				${venue ? `<div class="publication-venue">${venue}</div>` : ''}
+				${tldr ? `<p class="publication-tldr"><span class="publication-tldr-label">TL;DR</span> ${tldr}</p>` : ''}
 				<div class="publication-meta">
 					${year ? `<button type="button" class="publication-year" data-filter-year="${year}" title="Show only ${year}" aria-label="Filter to ${year}">${year}</button>` : ''}
 					<button type="button" class="publication-type ${typeClass}" data-filter-type="${type}" title="Show only ${typeLabel}s" aria-label="Filter to ${typeLabel}s">${typeLabel.toUpperCase()}</button>

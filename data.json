@@ -7,6 +7,7 @@
   "publications": [
     {
       "title": "Dialogue system with audio watermark",
+      "tldr": "Embeds a watermark in the audio a dialogue system plays, then checks incoming microphone audio for it and responds differently depending on whether it is present.",
       "type": "patent",
       "issued_year": 2017,
       "authors": [
@@ -20,6 +21,7 @@
     },
     {
       "title": "Fast, accurate, and practical identity inference using tv remote controls",
+      "tldr": "Learns to identify who is holding a TV remote from how they use it, incrementally and online, including from partially labeled data; runs in real time for households of 2 to 4 people.",
       "authors": [
         "Mariano Phielipp",
         "Magdiel Galan",
@@ -35,6 +37,7 @@
     },
     {
       "title": "Automatic Identity Inference for Smart TVs.",
+      "tldr": "Recognizes who is in front of a TV with a mounted camera, learning face models online from as little as one labeled example; precision and recall in the upper nineties on a 10-hour, 8-person dataset.",
       "authors": [
         "Avneesh Singh Saluja",
         "Frank Mokaya",
@@ -49,6 +52,7 @@
     },
     {
       "title": "Using words as lexical basis functions for automatically indexing face images in a manner that correlates with human perception of similarity",
+      "tldr": "Asks whether faces can be indexed the way people perceive them, using descriptive words such as \"bearded\" or \"bespectacled\" as the dimensions of the index.",
       "authors": [
         "Mariano Phielipp",
         "John A Black Jr",
@@ -62,6 +66,7 @@
     },
     {
       "title": "Using collaborative conversational agents and metric prediction to perform prompt-based physical circuit design",
+      "tldr": "A tool agent and a designer agent, sharing a vocabulary of EDA terms and natural language, recommend and apply changes to a chip design; a trained model's predictions are used to select candidate architectures.",
       "type": "patent",
       "issued_year": 2024,
       "authors": [
@@ -83,6 +88,7 @@
     },
     {
       "title": "User interface with software lensing for very long lists of content",
+      "tldr": "A list interface in which a lens list shows the options matching an aperture box's position on an index list, and enlarges an option as the pointer approaches it.",
       "type": "patent",
       "issued_year": 2015,
       "authors": [
@@ -97,6 +103,7 @@
     },
     {
       "title": "Towards scalable imitation learning for multi-agent systems with graph neural networks",
+      "tldr": "A graph neural network that predicts and imitates swarm motion from observed trajectories, with layer-wise tuning and padded, mixed data to help it scale.",
       "authors": [
         "Siyu Zhou",
         "Chaitanya Rajasekhar",
@@ -111,6 +118,7 @@
     },
     {
       "title": "The Reflective Explorer: Online Meta-Exploration from Offline Data in Realistic Robotic Tasks",
+      "tldr": "The first offline model-based meta-RL algorithm that works from images with sparse rewards; it solves a realistic robot manipulation meta-learning task where naive combinations of earlier methods fail.",
       "authors": [
         "Rafael Rafailov",
         "Varun Kumar Vijay",
@@ -127,6 +135,7 @@
     },
     {
       "title": "Technologies for predictive monitoring of a characteristic of a system",
+      "tldr": "Predicts a system's primary sensor reading from a secondary sensor's measurement, so the characteristic can be monitored predictively.",
       "type": "patent",
       "issued_year": 2019,
       "authors": [
@@ -143,6 +152,7 @@
     },
     {
       "title": "Technologies for physical assault detection using secure clothing and/or clothing accessories",
+      "tldr": "Garment-mounted sensor modules detect removal of clothing, use a model to decide whether an assault is under way, and alert a trusted party.",
       "type": "patent",
       "issued_year": 2019,
       "authors": [
@@ -159,6 +169,7 @@
     },
     {
       "title": "Systems, methods, and computer program products for capturing natural responses to advertisements",
+      "tldr": "Captures a viewer's spoken or gestured reaction to an advertisement, infers whether it is positive, and saves that interest to a wish list or shopping list.",
       "type": "patent",
       "issued_year": 2020,
       "authors": [
@@ -172,6 +183,7 @@
     },
     {
       "title": "System and method of using neuroevolution-enhanced multi-objective optimization for mixed-precision quantization of deep neural networks",
+      "tldr": "Uses NEMO search to train graph neural networks that choose mixed-precision quantization for a deep neural network against conflicting objectives.",
       "type": "patent",
       "issued_year": 2022,
       "authors": [
@@ -190,6 +202,7 @@
     },
     {
       "title": "System and method for pruning filters in deep neural networks",
+      "tldr": "Compresses a deep neural network by clustering its layers into groups and pruning filters at a ratio chosen per group, optionally using a graph neural network for both steps.",
       "type": "patent",
       "issued_year": 2022,
       "authors": [
@@ -206,6 +219,7 @@
     },
     {
       "title": "System and method for controlling inter-agent communication in multi-agent systems",
+      "tldr": "An agent's learned policy weighs the task value of sending a message against its cost, and sends it to other agents only when sending is favored.",
       "type": "patent",
       "issued_year": 2022,
       "authors": [
@@ -222,6 +236,7 @@
     },
     {
       "title": "SwarmNet: Towards Imitation Learning of Multi-Robot Behavior with Graph Neural Networks",
+      "tldr": "SwarmNet is a neural network that learns to predict and imitate the behavior of an observed swarm of agents, tested on generated swarm motion data.",
       "authors": [
         "Siyu Zhou",
         "Mariano J Phielipp",
@@ -237,6 +252,7 @@
     },
     {
       "title": "Shrouds: Optimal separating surfaces for enumerated volumes",
+      "tldr": "Computes a smooth triangular mesh surrounding a set of 3D grid points by optimizing an energy functional over a marching-cubes-style surface.",
       "authors": [
         "Gregory M Nielson",
         "Gary Graf",
@@ -253,6 +269,7 @@
     },
     {
       "title": "Searching for high-value molecules using reinforcement learning and transformers",
+      "tldr": "ChemRLformer: a simpler text-based RL algorithm for molecular design that reaches state-of-the-art results across 25 tasks and shows which design choices actually help.",
       "authors": [
         "Raj Ghugare",
         "Santiago Miret",
@@ -269,6 +286,7 @@
     },
     {
       "title": "Pretraining graph neural networks for few-shot analog circuit modeling and design",
+      "tldr": "Pretrains a graph neural network to predict DC voltages across many circuits, so it can adapt with few examples to new topologies and to metrics that are costlier to simulate.",
       "authors": [
         "Kourosh Hakhamaneshi",
         "Marcel Nassar",
@@ -284,6 +302,7 @@
     },
     {
       "title": "Predicting Future User Activities with Constrained Non-Linear Models",
+      "tldr": "Predicts future user activities from their history with constrained non-linear models, motivated by the high bias of simple averaged-history predictors and the high variance of deep sequence models.",
       "authors": [
         "Mariano Phielipp",
         "Brano Kveton"
@@ -296,6 +315,7 @@
     },
     {
       "title": "PARSAC: Fast, Human-quality Floorplanning for Modern SoCs with Complex Design Constraints",
+      "tldr": "PARSAC: an open-source, massively parallel floorplanner built on constraints-aware simulated annealing, which finds legal Pareto-optimal layouts under hard placement constraints where plain simulated annealing fails.",
       "authors": [
         "Hesham Mostafa",
         "Uday Mallappa",
@@ -312,6 +332,7 @@
     },
     {
       "title": "On Training Flexible Robots using Deep Reinforcement Learning",
+      "tldr": "A systematic study showing that deep RL policy search can learn efficient, robust policies for flexible robots whose dynamics are hard to model.",
       "authors": [
         "Zach Dwiel",
         "Madhavun Candadai",
@@ -325,6 +346,7 @@
     },
     {
       "title": "Offline Policy Comparison with Confidence: Benchmarks and Baselines",
+      "tldr": "Benchmarks for comparing policies from offline data with confidence values (OPCC), plus model-ensemble baselines that leave significant room for improvement.",
       "authors": [
         "Anurag Koul",
         "Mariano Phielipp",
@@ -339,6 +361,7 @@
     },
     {
       "title": "Neuroevolution-enhanced multi-objective optimization for mixed-precision quantization",
+      "tldr": "NEMO: a neuroevolution-based multi-objective search for mixed-precision quantization that jointly optimizes task performance, memory compression, and compute savings.",
       "authors": [
         "Santiago Miret",
         "Vui Seng Chua",
@@ -355,6 +378,7 @@
     },
     {
       "title": "Moto: Offline pre-training to online fine-tuning for model-based robot learning",
+      "tldr": "MOTO: an on-policy model-based method for offline pre-training followed by online fine-tuning from images; it solves MetaWorld tasks and the Franka Kitchen environment from pixels.",
       "authors": [
         "Rafael Rafailov",
         "Kyle Beltran Hatch",
@@ -372,6 +396,7 @@
     },
     {
       "title": "Motion2vec: Semi-supervised representation learning from surgical videos",
+      "tldr": "Motion2Vec learns a motion-centric embedding of surgical video with a Siamese network and segments it into actions using only a small set of labeled segments.",
       "authors": [
         "Ajay Kumar Tanwani",
         "Pierre Sermanet",
@@ -389,6 +414,7 @@
     },
     {
       "title": "Modularity through attention: Efficient training and transfer of language-conditioned policies for robot manipulation",
+      "tldr": "Hierarchical Modularity with supervised attention trains language-conditioned manipulation policies sample-efficiently and transfers them across four different robots.",
       "authors": [
         "Yifan Zhou",
         "Shubham Sonawani",
@@ -405,6 +431,7 @@
     },
     {
       "title": "Model-Based Adversarial Imitation Learning As Online Fine-Tuning",
+      "tldr": "Argues that conservative offline-RL algorithms suit model-based adversarial imitation learning, and shows better performance and safety on a long-range manipulation task from images.",
       "authors": [
         "Rafael Rafailov",
         "Victor Kolev",
@@ -422,6 +449,7 @@
     },
     {
       "title": "Minimizing communication while maximizing performance in multi-agent reinforcement learning",
+      "tldr": "Adds a communication penalty to multi-agent RL training and, with two stabilizing techniques, cuts messages by 75% with no loss of performance.",
       "authors": [
         "Varun Kumar Vijay",
         "Hassam Sheikh",
@@ -437,6 +465,7 @@
     },
     {
       "title": "Minimally Invasive Morphology Adaptation via Parameter Efficient Fine-Tuning",
+      "tldr": "Shows that tuning as little as 0.01% of a morphology-agnostic policy's parameters measurably improves performance on a target robot over zero-shot transfer.",
       "authors": [
         "Michael Przystupa",
         "Hongyao Tang",
@@ -453,6 +482,7 @@
     },
     {
       "title": "Method of determining profiles for widget channel viewers",
+      "tldr": "Builds viewer profiles automatically by spectral clustering of attribute vectors describing installed TV widgets, then uses them to present content of likely interest.",
       "type": "patent",
       "issued_year": 2014,
       "authors": [
@@ -466,6 +496,7 @@
     },
     {
       "title": "Maximizing ensemble diversity in deep reinforcement learning",
+      "tldr": "MED-RL: regularizers that keep the networks in an RL ensemble from collapsing to the same solution, improving five common ensemble algorithms on MuJoCo and Atari.",
       "authors": [
         "Hassam Sheikh",
         "Mariano Phielipp",
@@ -480,6 +511,7 @@
     },
     {
       "title": "Learning sparse control tasks from pixels by latent nearest-neighbor-guided explorations",
+      "tldr": "Solves sparse-reward manipulation from images with a few demonstrations by rewarding the agent for staying near demonstrated trajectories in a learned embedding space; trained on a real Franka Panda arm.",
       "authors": [
         "Ruihan Zhao",
         "Ufuk Topcu",
@@ -495,6 +527,7 @@
     },
     {
       "title": "Learning modular language-conditioned robot policies through attention",
+      "tldr": "Journal extension of Hierarchical Modularity: more tasks in the hierarchy and an automated pipeline for synthesizing many novel objects, for training and transferring language-conditioned policies across robots.",
       "authors": [
         "Yifan Zhou",
         "Shubham Sonawani",
@@ -510,6 +543,7 @@
     },
     {
       "title": "Learning intrinsic symbolic rewards in reinforcement learning",
+      "tldr": "Discovers dense rewards as small symbolic trees, which are easier to analyze than neural reward models, and uses them to train policies in MuJoCo, Atari, and Pygame.",
       "authors": [
         "Hassam Ullah Sheikh",
         "Shauharda Khadka",
@@ -525,6 +559,7 @@
     },
     {
       "title": "Learning conditional policies for crystal design using offline reinforcement learning",
+      "tldr": "Frames crystal design as sequential decision-making and uses conservative Q-learning with DFT-derived rewards to generate stable crystals for a desired band gap.",
       "authors": [
         "Prashant Govindarajan",
         "Santiago Miret",
@@ -541,6 +576,7 @@
     },
     {
       "title": "Learning Transferable Policies By Inferring Agent Morphology",
+      "tldr": "Learns a representation of an agent's morphology directly from the RL objective, so a policy generalizes to unseen morphologies without a hand-designed description.",
       "authors": [
         "Brandon Trabucco",
         "Mariano Phielipp",
@@ -554,6 +590,7 @@
     },
     {
       "title": "Language-conditioned imitation learning for robot manipulation tasks",
+      "tldr": "Pairs demonstrations with spoken descriptions to train visuomotor policies for a seven-degree-of-freedom arm that can be directed by new language commands at run time.",
       "authors": [
         "Simon Stepputtis",
         "Joseph Campbell",
@@ -571,6 +608,7 @@
     },
     {
       "title": "Instance-based generalization in reinforcement learning",
+      "tldr": "Shows that reusing training levels pushes RL agents toward instance-specific policies, gives generalization bounds, and proposes a consensus policy over an ensemble, validated on CoinRun.",
       "authors": [
         "Martin Bertran",
         "Natalia Martinez",
@@ -586,6 +624,7 @@
     },
     {
       "title": "Improved Silent Data Error Detection Through Test Optimization Using Reinforcement Learning",
+      "tldr": "Uses reinforcement learning to optimize a family of open-source Eigen tests, making them more effective at detecting silent data errors in data-center hardware.",
       "authors": [
         "Manu Shamsa",
         "John D Martin",
@@ -605,6 +644,7 @@
     },
     {
       "title": "Imitation learning of robot policies by combining language, vision and demonstration",
+      "tldr": "An end-to-end imitation learning approach that combines language, vision, and motion into a task representation, letting a user direct a robot policy verbally.",
       "authors": [
         "Simon Stepputtis",
         "Joseph Campbell",
@@ -621,6 +661,7 @@
     },
     {
       "title": "Human perception driven indexing and labeling of faces",
+      "tldr": "Develops and validates methods for indexing face images in terms of human concepts, starting from ground-truth descriptions collected from human participants.",
       "authors": [
         "Mariano Phielipp"
       ],
@@ -632,6 +673,7 @@
     },
     {
       "title": "Hierarchical policy learning is sensitive to goal space design",
+      "tldr": "Finds that hierarchical RL is unaffected by rotated or noisy goal spaces but significantly impaired by unnecessary extra factors in the goal space.",
       "authors": [
         "Zach Dwiel",
         "Madhavun Candadai",
@@ -647,6 +689,7 @@
     },
     {
       "title": "Group SELFIES: a robust fragment-based molecular string representation",
+      "tldr": "Group SELFIES adds tokens for functional groups and substructures to the SELFIES molecular string representation while keeping its chemical robustness guarantees.",
       "authors": [
         "Austin H Cheng",
         "Andy Cai",
@@ -664,6 +707,7 @@
     },
     {
       "title": "Goal-conditioned imitation learning",
+      "tldr": "goalGAIL uses demonstrations to speed up learning a policy that can reach any goal without a designed reward, and works even with action-free or suboptimal demonstrations.",
       "authors": [
         "Yiming Ding",
         "Carlos Florensa",
@@ -679,6 +723,7 @@
     },
     {
       "title": "FloorSet-a VLSI Floorplanning Dataset with Design Constraints of Real-World SOCs.",
+      "tldr": "FloorSet: two datasets of 1M synthetic floorplan layouts each, reflecting real SoC constraints, as a benchmark for machine-learning floorplanning.",
       "authors": [
         "Uday Mallappa",
         "Hesham Mostafa",
@@ -695,6 +740,7 @@
     },
     {
       "title": "Efficient Morphology-Aware Policy Transfer to New Embodiments",
+      "tldr": "Combines morphology-aware pretraining with parameter-efficient fine-tuning; tuning under 1% of parameters improves a policy on a new embodiment over zero-shot performance.",
       "authors": [
         "Michael Przystupa",
         "Hongyao Tang",
@@ -714,6 +760,7 @@
     },
     {
       "title": "Efficient Design-and-Control Automation with Reinforcement Learning and Adaptive Exploration",
+      "tldr": "EDiSon learns design and control together, using sequential RL policies and a memory of good designs to replay; evaluated on robot morphology and Tetris-based design tasks.",
       "authors": [
         "Jiajun Fan",
         "Hongyao Tang",
@@ -730,6 +777,7 @@
     },
     {
       "title": "Device and method for real-time offset adjustment of a semiconductor die placement",
+      "tldr": "Predicts an offset for semiconductor die placement from a die-mounting tool's real-time operating parameters and adjusts the placement coordinates accordingly.",
       "authors": [
         "Hong Seung Yeon",
         "Mariano Phielipp",
@@ -749,6 +797,7 @@
     },
     {
       "title": "Description of a modeling, simulation, animation, and real-time control (mosart) environment for a class of 6-dof dynamical systems",
+      "tldr": "Control3D-Lab: an interactive environment for modeling, simulating, animating, and controlling six-degree-of-freedom systems such as aircraft, helicopters, missiles, submarines, and satellites, for controls teaching and research.",
       "authors": [
         "Armando A Rodriguez",
         "Oguzhan Cifdaloz",
@@ -763,6 +812,7 @@
     },
     {
       "title": "Description of a modeling, simulation, animation, and real-time control (MoSART) environment for a broad class of dynamical systems",
+      "tldr": "Control3D-Lab: an interactive modeling, simulation, animation, and real-time control environment for a broad class of dynamical systems, from pendulum and robotic systems to aircraft.",
       "authors": [
         "Armando A Rodriguez",
         "Oguzhan Cifdaloz",
@@ -783,6 +833,7 @@
     },
     {
       "title": "DNS: Determinantal point process based neural network sampler for ensemble reinforcement learning",
+      "tldr": "DNS samples a subset of an RL ensemble's networks to update at each step, matching REDQ's reward on MuJoCo with less than half the computation.",
       "authors": [
         "Hassam Sheikh",
         "Kizza Frisbee",
@@ -796,6 +847,7 @@
     },
     {
       "title": "CrystalGym: A New Benchmark for Materials Discovery Using Reinforcement Learning",
+      "tldr": "CrystalGym: an open-source RL environment that puts direct DFT feedback in the loop, used to benchmark RL algorithms for designing crystals with target properties.",
       "authors": [
         "Prashant Govindarajan",
         "Mathieu Reymond",
@@ -814,6 +866,7 @@
     },
     {
       "title": "Crystal Design Amidst Noisy DFT Signals: A Reinforcement Learning Approach",
+      "tldr": "Finds that RL policies for band-gap-targeted crystal design train well on learned proxy rewards but fail to converge on noisy DFT-based rewards.",
       "authors": [
         "Prashant Govindarajan",
         "Mathieu Reymond",
@@ -829,6 +882,7 @@
     },
     {
       "title": "Conformer search using SE3-transformers and imitation learning",
+      "tldr": "Predicts a molecule's 3D structure by setting torsion angles one at a time with an SE(3)-equivariant policy trained by behavioral cloning on QM9.",
       "authors": [
         "Luca Thiede",
         "Santiago Miret",
@@ -845,6 +899,7 @@
     },
     {
       "title": "Computing systems for peripheral control",
+      "tldr": "Control logic that, on a trigger signal plus sensed user interaction, generates a control signal to operate a peripheral such as a camera or audio output device.",
       "type": "patent",
       "issued_year": 2016,
       "authors": [
@@ -865,6 +920,7 @@
     },
     {
       "title": "Clone swarms: Learning to predict and control multi-robot systems by imitation",
+      "tldr": "SwarmNet learns to predict and imitate an observed swarm's behavior; a comparison shows other interaction models approaching its performance as their components are modified.",
       "authors": [
         "Siyu Zhou",
         "Mariano J Phielipp",
@@ -880,6 +936,7 @@
     },
     {
       "title": "Can the high-level content of natural images be indexed using local analysis?",
+      "tldr": "Tests how well humans can identify mid- and high-level image content from small regions of outdoor scenery images, as a guide for local image indexing.",
       "authors": [
         "John Arthur Black Jr",
         "Mariano Phielipp",
@@ -894,6 +951,7 @@
     },
     {
       "title": "Behavioral cloning for crystal design",
+      "tldr": "Treats crystal design as sequential prediction: an equivariant policy trained by behavioral cloning assigns elements to the nodes of a crystal skeleton.",
       "authors": [
         "Prashant Govindarajan",
         "Santiago Miret",
@@ -910,6 +968,7 @@
     },
     {
       "title": "Automatic user identification from button presses recorded in a feature vector",
+      "tldr": "Identifies a user without a login by comparing how they press device buttons against stored feature-vector profiles, so content can be tailored.",
       "type": "patent",
       "issued_year": 2014,
       "authors": [
@@ -925,6 +984,7 @@
     },
     {
       "title": "Anymorph: Learning transferable polices by inferring agent morphology",
+      "tldr": "AnyMorph learns a morphology representation from the RL objective itself, improving zero-shot generalization to unseen agents without a hand-written morphology description.",
       "authors": [
         "Brandon Trabucco",
         "Mariano Phielipp",
@@ -939,6 +999,7 @@
     },
     {
       "title": "Accelerating Visual Sparse-Reward Learning with Latent Nearest-Demonstration-Guided Explorations",
+      "tldr": "LaNE rewards exploration near a few demonstrations in a DINOv2-based embedding space, enabling under-an-hour RL training from scratch on a Franka Panda robot.",
       "authors": [
         "Ruihan Zhao",
         "Sandeep P Chinchali",
@@ -952,6 +1013,7 @@
     },
     {
       "title": "A Reinforcement Learning Pipeline for Band Gap-directed Crystal Generation",
+      "tldr": "An active-learning-style pipeline pairing an RL policy with a band-gap network fine-tuned on DFT data, to optimize crystal compositions for a target band gap.",
       "authors": [
         "Prashant Govindarajan",
         "Mathieu Reymond",
