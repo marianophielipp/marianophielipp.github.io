@@ -23,7 +23,7 @@ Reading order for prev/next: Home -> About -> Research -> Publications -> Contac
 ## Publications data
 
 The live site reads only `data.json` at the repo root. `scripts/gscholar.py`
-fetches from Google Scholar and `scripts/clean_publications.py` normalises it into
+fetches from Google Scholar and `scripts/clean_publications.py` normalizes it into
 `_data/`; `data.json` is the published result. Patent entries carry their US number
 and filing status, verified against USPTO and Google Patents records.
 
