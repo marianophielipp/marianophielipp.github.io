@@ -263,17 +263,6 @@ body.dark-mode .publications-controls .publication-action-secondary:hover:not(:d
 	background: #4d616b;
 }
 
-.publication-snippet {
-	margin-top: 1rem;
-	font-size: 0.9rem;
-	line-height: 1.6;
-	color: #646464;
-	padding: 1rem;
-	background: rgba(160, 160, 160, 0.075);
-	border-radius: 4px;
-	border-left: 3px solid #2ebaae;
-}
-
 /* Loading and No Results */
 .loading {
 	text-align: center;

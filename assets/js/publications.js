@@ -186,9 +186,8 @@ function filterPublications() {
 			(pub.title && pub.title.toLowerCase().includes(searchTerm)) ||
 			getAuthors(pub).some(author => String(author).toLowerCase().includes(searchTerm)) ||
 			(pub.venue && pub.venue.toLowerCase().includes(searchTerm)) ||
-			(pub.tldr && pub.tldr.toLowerCase().includes(searchTerm)) ||
-			// Patent snippets are not displayed, so they are not searched either.
-			(!isPatent(pub) && pub.snippet && pub.snippet.toLowerCase().includes(searchTerm));
+			// Abstract snippets are not displayed, so they are not searched either.
+			(pub.tldr && pub.tldr.toLowerCase().includes(searchTerm));
 		
 		// Type filter
 		const matchesType = !typeFilter || getPublicationType(pub) === typeFilter;
@@ -249,8 +248,6 @@ function displayPublications() {
 		const title = escapeHtml(pub.title || '');
 		const authorsStr = authors.map(escapeHtml).join(', ');
 		const venue = pub.venue ? escapeHtml(pub.venue) : '';
-		const showSnippet = type !== 'patent';
-		const snippet = (showSnippet && pub.snippet) ? escapeHtml(pub.snippet.substring(0, 200)) + (pub.snippet.length > 200 ? '...' : '') : '';
 		const tldr = pub.tldr ? escapeHtml(pub.tldr) : '';
 		const year = getPublicationYear(pub);
 		const hasLink = Boolean(pub.url);
@@ -267,7 +264,6 @@ function displayPublications() {
 					<button type="button" class="publication-type ${typeClass}" data-filter-type="${type}" title="Show only ${typeLabel}s" aria-label="Filter to ${typeLabel}s">${typeLabel.toUpperCase()}</button>
 					${(pub.cited_by || 0) > 0 ? `<span class="publication-citations">${escapeHtml(String(pub.cited_by))} citations</span>` : ''}
 				</div>
-				${snippet ? `<div class="publication-snippet">${snippet}</div>` : ''}
 			</div>
 		`;
 	}).join('');
